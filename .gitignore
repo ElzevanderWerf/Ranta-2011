@@ -1,0 +1,10 @@
+#files
+*.gfo
+Prop.pgf
+*.xlsx
+
+#folders
+.stack-work/*
+cade-2011-original/*
+cade-2011-original-test/*
+.spyproject/*
