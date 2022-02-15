@@ -2,6 +2,7 @@
 *.gfo
 Prop.pgf
 *.xlsx
+translationcorpus-1.0.1.csv
 
 #folders
 .stack-work/*

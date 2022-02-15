@@ -22,6 +22,7 @@ class RandomGenerator:
         """
         # TODO I ignored list conjunction and disjunction for now. 
         # How about remove 7 and 8 and only focus on core syntax?
+        # TODO should variables always be bound in a formula? Then I need to change a lot of things.
         if n == 0:
             return self.makeAtom(n-1)
         else:
@@ -132,19 +133,21 @@ rg = RandomGenerator(arithmLexicon)
 random_formula = rg.makeProp(3)
 print(random_formula)
 
-# Randomly generate 1000 formulas
-formulas = []
-for i in range(1000):
-    rg = RandomGenerator(arithmLexicon)
-    formulas.append(rg.makeProp(3))
-    
-#print(formulas[:10])
-
-
-# Write formulas to file with newlines
-with(open(r'test4Latex.tmp', 'w')) as f:
-    f.write('\n'.join(formulas))
-f.close()
+# =============================================================================
+# # Randomly generate 1000 formulas
+# formulas = []
+# for i in range(1000):
+#     rg = RandomGenerator(arithmLexicon)
+#     formulas.append(rg.makeProp(3))
+#     
+# #print(formulas[:10])
+# 
+# 
+# # Write formulas to file with newlines
+# with(open(r'test4Latex.tmp', 'w')) as f:
+#     f.write('\n'.join(formulas))
+# f.close()
+# =============================================================================
 
 
 
