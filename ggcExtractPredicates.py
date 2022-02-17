@@ -1,3 +1,5 @@
+"""Python script to extract all predicate and function  names from 
+ggc-formulas.tmp."""
 import re
 
 with(open(r'ggc-formulas.tmp', 'r')) as f:

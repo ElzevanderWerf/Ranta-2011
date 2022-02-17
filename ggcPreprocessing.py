@@ -8,9 +8,10 @@ import re
 ggc_df = pd.read_csv("translationcorpus-1.0.1.csv", 
                      header=0, 
                      error_bad_lines=False)
+print("original number of translations",len(ggc_df) )
 
 # Take the canonical form of the formulas that were correct, 
-# and remove duplicates (dict.fromkeys() is used for keeping the order):
+# and remove duplicates (dict.fromkeys() is used for keeping the original order):
 formulas = list(dict.fromkeys(ggc_df[(ggc_df["status"] == "correct")]["canonical"]))
 #print("initial amount of correct formulas:", len(formulas)) --> 26089
 

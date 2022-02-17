@@ -1,3 +1,6 @@
+"""Python script to create a list of randomly generated FOL formulas in
+Latex notation, for a given test lexicon."""
+
 import random
 
 r = random.SystemRandom()
