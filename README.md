@@ -13,9 +13,10 @@ This is the original version of Ranta's code, taken from [cade-2011](https://git
 
 			slash : Str -> Bool => Str = \f -> table {True => "\\" + f ; False => top (prefix 3 "\\sim" (constant ("\\" + f)))} ;
 
-I have done the following three tests to translate between lan										 
+I have done the following three tests to come up with a set of logical formulas and their English translations, for study 1 (post-editing):
+									 
 #### Test 1: GF random generation
-**Filenames start with test1**
+**(Filenames start with test1)**
 0. In `Prop.gf` and `PropLatex.gf`, I removed (commented out) the geometry lexicon (the functions `Vertical`, `Horizontal`, `Parallel`, `Line`, `Point`, `Centre`, and `Intersection`), so that I would only generate formulas with arithmetic predicates and functions.
    
 1. Random generation. I opened the GF shell and imported the Latex grammar as follows:
@@ -39,7 +40,7 @@ I have done the following three tests to translate between lan
 	
 		main-is: TransTest.hs
 		
-    `TransTest.hs` includes code to read the generated latex formulas from an input-file and parse and linearize them into optimized English translations. These translations are written to another output-file. There might be more than one parse of a latex formula, so there might be more than one English translation for each Latex formula. That is why the English translations file is longer than the Latex formulas file, but for readability there is an extra space between the translations of one Latex formula and the next one.
+    `TransTest.hs` includes code to read sentences or formulas from an input-file and parse and linearize them into a source language, with optimization. These translations are written to another output-file. There might be more than one parse of a latex formula, so there might be more than one target language translation for each input sentence. That is why the output file is longer than the input file, but for readability there is an extra space between the translations of one source language sentence and the next one.
 4. Running `TransTest.hs`:
     I build the executable `trans.exe`:
 
@@ -47,22 +48,22 @@ I have done the following three tests to translate between lan
 		
     To run `TransTest.hs`, do
 
-		>stack run trans <input-file> <output-file>
+		>>stack run trans <source-language> <input-file> <target-language> <output-file>
 		
-	So in our case:
+	So in our case, translating a file of Latex formulas into English:
 	
-		>stack run trans test1Latex.tmp test1Eng.tmp
+		>stack run trans PropLatex test1Latex.tmp PropEng test1Eng.tmp
 		
 6. For combining the two files (`test1Latex.tmp` and `test1Eng.tmp`) into one, for readability, I wrote a Python script in `makecsv.py` that writes the formulas with translations to a csv file. To run the script, do:
 
-		>python <latex-file> <english-translations-file> <output-csv>
+		>python makecsv.py <source-lang-file> <target-lang-file> <output-csv>
     In this case:
     
 		>python makecsv.py test1Latex.tmp test1Eng.tmp test1.csv
 
 
 #### TEST 2
-**Filenames start with ggc**
+**(Filenames start with ggc)**
 The usefulness of the translations of is very low, because of the way the random generation function is built. Therefore, I have decided to use the Grade Grinder Corpus (in `translationcorpus-1.0.1.csv`) for generating more useful Latex formulas. This means that we skip the generation steps (1-2) from TEST 1, and instead do the following:
 
 1. The Python script in `ggcPreprocessing.py` writes a list of useful formulas to the file `ggc-formulas.tmp`, with the following preprocessing to ignore weird formulas and include spacing:
@@ -70,30 +71,24 @@ The usefulness of the translations of is very low, because of the way the random
 	- Remove all formulas with NaN.
 	- Remove formulas with these specific characters or strings: "=", "<", ">", "^", "+", "*", "%", "is", "not", "equivalent", ".", "\"", "\\", "0", "1", "2", "3", "4", "5", ":" (these are part of structures that are not parsable by Ranta’s system).
 	- Remove formulas with 3- and 4-place predicates (not parsable by Ranta's system either).
-	- Add spaces to the formulas, a
+	- Add spaces to the formulas, so that they are parsable by the GF shell (see also next step for why I did this).
 	- Remove formulas with more than 100 characters (because the GF shell gets stuck at the formulas that are too long)
+
+	Running took about 8 minutes.
 2. I made a GF grammar for the GGC notation, called `PropGGC` in `PropGGC.gf` (in this way, I could do the translations from GGC to Latex notation very easily).
 3. The Python script in `ggcExtractPredicates.py` extracts the list of 1- and 2-place predicates used in the corpus. I added these predicates to the grammars of English, Latex and GGC, and commented out the other two test lexicons.
-5. Read through the file of GGC formulas (`ggc-formulas.tmp`), parsed them, and generated the Latex linearizations of these formulas:
-
-		>gf PropGGC.gf PropLatex.gf
-		>rf -file=ggc-formulas.tmp -lines | p -lang=GGC | l -lang=Latex | wf -file=ggc-Latex.tmp
-6. I ran TransTest.hs with arguments `ggc-Latex.tmp` and `ggc-Eng.tmp`:
+4. I ran TransTest.hs with arguments `ggc-formulas.tmp` and `ggc-eng.tmp` (this took about 15 minutes):
 
 		>make pgf
 		>stack build
-		>stack run trans ggc-Latex.tmp ggc-Eng.tmp
+		>stack run trans ggc-formulas.tmp ggc-eng.tmp PropEng
 		
-7. I used `makecsv.py` to combine into them again into a csv for readability:
+5. I used `makecsv.py` to combine them again into a csv for readability:
 
-		>python makecsv.py ggc-Latex.tmp ggc-Eng.tmp ggc-latex-to-eng.csv
-		>python makecsv.py ggc-formulas.tmp ggc-Eng.tmp ggc-formulas-to-eng.csv
-		
-**TODO**: maybe directly translate from GGC-formulas to English with transTest.hs. Then I do not need to limit the formulas to 100 characters.
-
+		>python makecsv.py ggc-formulas.tmp ggc-eng.tmp ggc-formulas-to-eng.csv
 
 #### TEST 3 
-**Filenames start with test3**
+**(Filenames start with test3)**
 I designed a random generation function myself, which should include more different numbers and variables, and not allow for vacuous quantification.
     1. In `test3RrandomGeneration.py`, I wrote a Python script to randomly generate formulas. The output generated formulas are in `test3Latex.tmp`.
 **TODO**: unfinished
