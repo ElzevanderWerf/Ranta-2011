@@ -62,7 +62,7 @@ I have done the following three tests to come up with a set of logical formulas 
 		>python makecsv.py test1Latex.tmp test1Eng.tmp test1.csv
 
 
-#### TEST 2
+#### TEST 2: Grade Grinder Corpus translations
 **(Filenames start with ggc)**
 The usefulness of the translations of is very low, because of the way the random generation function is built. Therefore, I have decided to use the Grade Grinder Corpus (in `translationcorpus-1.0.1.csv`) for generating more useful Latex formulas. This means that we skip the generation steps (1-2) from TEST 1, and instead do the following:
 
@@ -87,7 +87,7 @@ The usefulness of the translations of is very low, because of the way the random
 
 		>python makecsv.py ggc-formulas.tmp ggc-eng.tmp ggc-formulas-to-eng.csv
 
-#### TEST 3 
+#### TEST 3 Own random generation function
 **(Filenames start with test3)**
 I designed a random generation function myself, which should include more different numbers and variables, and not allow for vacuous quantification.
     1. In `test3RrandomGeneration.py`, I wrote a Python script to randomly generate formulas. The output generated formulas are in `test3Latex.tmp`.
