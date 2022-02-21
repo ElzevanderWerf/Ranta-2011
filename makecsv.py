@@ -1,5 +1,8 @@
-"""Python script to combine generated latex (arg0) and english (arg1) files 
-into a csv file (arg2)."""
+"""Python script to combine generated source language (arg0) and 
+target language (arg1) files into a csv file (arg2).
+
+To run the script, do:
+    >python makecsv.py <source-lang-file> <target-lang-file> <output-csv>"""
 
 import sys
 import pandas as pd
