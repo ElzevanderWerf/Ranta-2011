@@ -90,5 +90,5 @@ The usefulness of the translations of is very low, because of the way the random
 #### TEST 3 Own random generation function
 **(Filenames start with test3)**
 I designed a random generation function myself, which should include more different numbers and variables, and not allow for vacuous quantification.
-    1. In `test3RrandomGeneration.py`, I wrote a Python script to randomly generate formulas. The output generated formulas are in `test3Latex.tmp`.
-**TODO**: unfinished
+    1. In `test3RandomGenerationLatex.py`, I wrote a Python script to randomly generate formulas in Latex notation, with an arithmetic lexicon. The output generated formulas are in `test3Latex.tmp`.
+    2. In `test3RandomGenerationGGC.py`, I wrote a Python script to randomly generate formulas in GGC notation, with a lexicon similar as the one in GGC. The output generated formulas are in `test3GGC.tmp`.
