@@ -8,7 +8,7 @@ import re
 ggc_df = pd.read_csv("translationcorpus-1.0.1.csv", 
                      header=0, 
                      error_bad_lines=False)
-print("original number of translations",len(ggc_df) )
+#print("original number of translations",len(ggc_df) )
 
 # Take the canonical form of the formulas that were correct, 
 # and remove duplicates (dict.fromkeys() is used for keeping the original order):
@@ -44,9 +44,9 @@ formulas = [f[:-1] if f[-1]==' ' else f for f in formulas]
 formulas = [f for f in formulas if len(f)<100]
 #print("after removing formulas longer than 100 characters:", len(formulas)) --> 5463
 
-# Write formulas to file with newlines
-# with(open(r'ggc-formulas.tmp', 'w')) as f:
-#     f.write('\n'.join(formulas))
-# f.close()
+#Write formulas to file with newlines
+with(open(r'ggc-formulas.tmp', 'w')) as f:
+    f.write('\n'.join(formulas))
+f.close()
 
 
