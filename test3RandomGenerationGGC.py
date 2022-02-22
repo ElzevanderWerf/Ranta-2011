@@ -67,12 +67,6 @@ class RandomGenerator:
         elif i == 2:    # kind predicate
             return r.choice(self.lex.Kinds) + " ( " + self.makeTerm(n-1) + " )"
         
-    def makeKind(self):
-        """
-        Return a randomly chosen kind predicate from the lexicon.
-        """
-        return r.choice(self.lex.Kinds)
-        
     def makeTerm(self, n):
         """
         Randomly generate a term from the lexicon, with maximum depth n.

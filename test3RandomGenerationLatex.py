@@ -65,13 +65,7 @@ class RandomGenerator:
         elif i == 1:    # 2-place predicate
             return self.toLatex(r.choice(self.lex.Pred2s)) + " { " + self.makeTerm(n-1) + " } { " + self.makeTerm(n-1) + " }"
         elif i == 2:    # kind predicate
-            return self.makeTerm(n-1) + " \\in " + self.makeKind()
-        
-    def makeKind(self):
-        """
-        Return a randomly chosen kind predicate from the lexicon.
-        """
-        return r.choice(self.lex.Kinds)
+            return self.makeTerm(n-1) + " \\in " + r.choice(self.lex.Kinds)
         
     def makeTerm(self, n):
         """
