@@ -57,7 +57,7 @@ lin
   Cube = mkCN (P.mkN "cube") ;
   Prime = mkCN (P.mkN "prime") ;
   Person = mkCN (P.mkN "person") ;
-  Tet = mkCN (P.mkN "tetahedron") ;
+  Tet = mkCN (P.mkN "tetrahedron") ;
   Pet = mkCN (P.mkN "pet") ;
   Small = mkAP (P.mkA "small") ;
   Medium = mkAP (P.mkA "medium") ;
