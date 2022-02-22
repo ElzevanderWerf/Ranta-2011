@@ -91,8 +91,16 @@ The usefulness of the translations of is very low, because of the way the random
 **(Filenames start with test3)**
 I designed a random generation function myself, which should include more different numbers and variables, and not allow for vacuous quantification.
 
-1. In `test3RandomGenerationLatex.py`, I wrote a Python script to randomly generate formulas in Latex notation, with an arithmetic lexicon. The output generated formulas are in `test3Latex.tmp`.
-2. In `test3RandomGenerationGGC.py`, I wrote a Python script to randomly generate formulas in GGC notation, with a lexicon similar as the one in GGC. The output generated formulas are in `test3GGC.tmp`.
-3. 4. I ran TransTest.hs with arguments `test3GGC.tmp` and `test3Eng.tmp` (this took about ?? minutes):
+1. In `test3RandomGenerationLatex.py`, I wrote a Python script to randomly generate formulas in Latex notation, with an arithmetic lexicon. 50 generated formulas are in `test3Latex.tmp`.
+2. In `test3RandomGenerationGGC.py`, I wrote a Python script to randomly generate formulas in GGC notation, with a lexicon similar as the one in GGC. 50 generated formulas are in `test3GGC.tmp`.
+3. I ran TransTest.hs with arguments `test3GGC.tmp` and `test3Eng.tmp` (this took about ?? minutes):
 
 		>stack run trans PropGGC out/test3GGC.tmp PropEng out/test3Eng.tmp
+
+		
+#### The final experiment
+**(Filenames start with exp1)**
+1. I used `makecsv.py` to combine the files `test3GGC.tmp` and `test3Eng.tmp` into a csv for readability:
+
+		>python makecsv.py out/test3GGC.tmp out/test3Eng.tmp out/exp1-rg-to-eng.csv
+2. The Python script in `exp1.py` writes a random sample of 50 formulas and translations from `ggc-formulas-to-eng.csv` to the file `exp1-rg-to-eng.csv`.
