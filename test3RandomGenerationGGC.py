@@ -121,13 +121,15 @@ formulas = []
 rg = RandomGenerator(ggcLexicon)
 rg.maxdepth = depth
 
-for i in range(50):
-    formulas.append(rg.makeProp(depth))
+while len(formulas) < 50:
+    prop = rg.makeProp(depth)
+    if len(prop) <= 100:
+        formulas.append(prop)
     rg.new_var_i = 0    #set again to 0 for generating a new prop
     rg.new_cons_i = 0   #set again to 0 for generating a new prop
 
 # Write formulas to file with newlines
-with(open(r'test3GGC.tmp', 'w')) as f:
+with(open(r'out/test3GGC.tmp', 'w')) as f:
     f.write('\n'.join(formulas))
 f.close()
 

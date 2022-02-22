@@ -142,9 +142,12 @@ formulas = []
 rg = RandomGenerator(arithmLexicon)
 rg.maxdepth = depth
 
-for i in range(50):
-    formulas.append(rg.makeProp(depth))
+while len(formulas) < 50:
+    prop = rg.makeProp(depth)
+    if len(prop) <= 100:
+        formulas.append(prop)
     rg.new_var_i = 0    #set again to 0 for generating a new prop
+
 
 # Write formulas to file with newlines
 with(open(r'out/test3Latex.tmp', 'w')) as f:
