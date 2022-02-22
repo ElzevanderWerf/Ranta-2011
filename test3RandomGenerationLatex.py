@@ -147,7 +147,7 @@ for i in range(50):
     rg.new_var_i = 0    #set again to 0 for generating a new prop
 
 # Write formulas to file with newlines
-with(open(r'test3Latex.tmp', 'w')) as f:
+with(open(r'out/test3Latex.tmp', 'w')) as f:
     f.write('\n'.join(formulas))
 f.close()
 

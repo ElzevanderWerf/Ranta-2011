@@ -45,7 +45,7 @@ formulas = [f for f in formulas if len(f)<100]
 #print("after removing formulas longer than 100 characters:", len(formulas)) --> 5463
 
 #Write formulas to file with newlines
-with(open(r'ggc-formulas.tmp', 'w')) as f:
+with(open(r'out/ggc-formulas.tmp', 'w')) as f:
     f.write('\n'.join(formulas))
 f.close()
 

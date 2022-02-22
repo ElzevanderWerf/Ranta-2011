@@ -13,7 +13,7 @@ This is the original version of Ranta's code, taken from [cade-2011](https://git
 
 			slash : Str -> Bool => Str = \f -> table {True => "\\" + f ; False => top (prefix 3 "\\sim" (constant ("\\" + f)))} ;
 
-I have done the following three tests to come up with a set of logical formulas and their English translations, for study 1 (post-editing):
+I have done the following three tests to create a set of logical formulas and their English translations, for study 1 (post-editing). The generated files are in folder `out`.
 									 
 #### Test 1: GF random generation
 **(Filenames start with test1)**
@@ -24,12 +24,12 @@ I have done the following three tests to come up with a set of logical formulas 
 	    >gf cade-2011-original-test/PropLatex.gf
    In the GF shell, I generated 1000 trees with:
    
-		>gr -number=1000 | wf -file=test1.tmp
+		>gr -number=1000 | wf -file=out/test1.tmp
    Note that the default generation depth is 4 (so the maximum depth of the generated abstract syntax trees is 4).
 		
 2. I read through these trees and generated the latex linearizations of these trees:
 
-		>rf -file=test1.tmp -lines -tree | l -lang=Latex | wf -file=test1Latex.tmp
+		>rf -file=out/test1.tmp -lines -tree | l -lang=Latex | wf -file=out/test1Latex.tmp
 		
    Result: a file of 1000 Latex formulas, called `test1Latex.tmp`.
    
@@ -52,14 +52,14 @@ I have done the following three tests to come up with a set of logical formulas 
 		
 	So in our case, translating a file of Latex formulas into English:
 	
-		>stack run trans PropLatex test1Latex.tmp PropEng test1Eng.tmp
+		>stack run trans PropLatex out/test1Latex.tmp PropEng out/test1Eng.tmp
 		
 6. For combining the two files (`test1Latex.tmp` and `test1Eng.tmp`) into one, for readability, I wrote a Python script in `makecsv.py` that writes the formulas with translations to a csv file. To run the script, do:
 
 		>python makecsv.py <source-lang-file> <target-lang-file> <output-csv>
     In this case:
     
-		>python makecsv.py test1Latex.tmp test1Eng.tmp test1.csv
+		>python makecsv.py out/test1Latex.tmp out/test1Eng.tmp out/test1.csv
 
 
 #### TEST 2: Grade Grinder Corpus translations
@@ -81,14 +81,18 @@ The usefulness of the translations of is very low, because of the way the random
 
 		>make pgf
 		>stack build
-		>stack run trans ggc-formulas.tmp ggc-eng.tmp PropEng
+		>stack run trans PropGGC out/ggc-formulas.tmp PropEng out/ggc-eng.tmp
 		
 5. I used `makecsv.py` to combine them again into a csv for readability:
 
-		>python makecsv.py ggc-formulas.tmp ggc-eng.tmp ggc-formulas-to-eng.csv
+		>python makecsv.py out/ggc-formulas.tmp out/ggc-eng.tmp out/ggc-formulas-to-eng.csv
 
 #### TEST 3 Own random generation function
 **(Filenames start with test3)**
 I designed a random generation function myself, which should include more different numbers and variables, and not allow for vacuous quantification.
-    1. In `test3RandomGenerationLatex.py`, I wrote a Python script to randomly generate formulas in Latex notation, with an arithmetic lexicon. The output generated formulas are in `test3Latex.tmp`.
-    2. In `test3RandomGenerationGGC.py`, I wrote a Python script to randomly generate formulas in GGC notation, with a lexicon similar as the one in GGC. The output generated formulas are in `test3GGC.tmp`.
+
+1. In `test3RandomGenerationLatex.py`, I wrote a Python script to randomly generate formulas in Latex notation, with an arithmetic lexicon. The output generated formulas are in `test3Latex.tmp`.
+2. In `test3RandomGenerationGGC.py`, I wrote a Python script to randomly generate formulas in GGC notation, with a lexicon similar as the one in GGC. The output generated formulas are in `test3GGC.tmp`.
+3. 4. I ran TransTest.hs with arguments `test3GGC.tmp` and `test3Eng.tmp` (this took about ?? minutes):
+
+		>stack run trans PropGGC out/test3GGC.tmp PropEng out/test3Eng.tmp
