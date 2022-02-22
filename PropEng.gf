@@ -52,7 +52,7 @@ lin
 --  Product = mkFun2 "product" ;
 --  Nat = mkCN (P.mkN "number") ;
 
-  Dodec = mkCN (P.mkN "dodecagon") ;
+  Dodec = mkCN (P.mkN "dodecahedron") ;
   Student = mkCN (P.mkN "student") ;
   Cube = mkCN (P.mkN "cube") ;
   Prime = mkCN (P.mkN "prime") ;

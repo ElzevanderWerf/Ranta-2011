@@ -37,9 +37,9 @@
 35,Pet ( x1 ),x1 is a pet,0,0,0,0
 36,"/ x1 SameSize ( a , x1 )",there is an element x1 such that a is the same size as x1,0,0,0,0
 37,Person ( a ),a is a person,0,0,0,0
-38,"/ x1 ( ( Dodec ( a ) & FrontOf ( x2 , x2 ) ) $ ~ Prime ( b ) )","there is an element x1 such that if a is a dodecagon and x2 is in front of itself , then b is not a prime",0,0,0,0
+38,"/ x1 ( ( Dodec ( a ) & FrontOf ( x2 , x2 ) ) $ ~ Prime ( b ) )","there is an element x1 such that if a is a dodecahedron and x2 is in front of itself , then b is not a prime",0,0,0,0
 39,"/ x1 SameShape ( a , a )",there is an element x1 such that a is the same shape as itself,0,0,0,0
-40,( ( Tet ( x1 ) | Even ( a ) ) | ( Pet ( b ) & Dodec ( a ) ) ) $ @ x1 ( Even ( c ) & Large ( x1 ) ),"if at least one of these holds : \item x1 is a tetahedron , a is even \item b is a pet and a is a dodecagon , then for all x1 , c is even and x1 is large",0,0,0,0
+40,( ( Tet ( x1 ) | Even ( a ) ) | ( Pet ( b ) & Dodec ( a ) ) ) $ @ x1 ( Even ( c ) & Large ( x1 ) ),"if at least one of these holds : \item x1 is a tetahedron , a is even \item b is a pet and a is a dodecahedron , then for all x1 , c is even and x1 is large",0,0,0,0
 41,"( Even ( a ) | @ x1 Large ( x2 ) ) $ ( SameRow ( b , x1 ) $ ~ Small ( b ) )","if a is even or for all x1 , x2 is large , then if b is in the same row as x1 , then b is not small",0,0,0,0
 42,"( ( Pet ( x1 ) $ Tet ( a ) ) $ ( SameSize ( b , x2 ) | Pet ( x1 ) ) ) | Even ( b )","at least one of these holds : \item if if x1 is a pet , then a is a tetahedron , then b is the same size as x2 or x1 is a pet \item b is even",0,0,0,0
 43,/ x1 / x1 ~ Student ( x2 ),there is an element x1 such that there is an element x1 such that x2 is not a student,0,0,0,0
@@ -47,5 +47,5 @@
 45,Pet ( a ),a is a pet,0,0,0,0
 46,"@ x1 ( ~ Smaller ( a , b ) | ( BackOf ( x1 , x1 ) $ Cube ( c ) ) )","for all x1 , at least one of these holds : \item a is not smaller than b \item if x1 is in back of itself , then c is a cube",0,0,0,0
 47,"@ x1 ~ ( Larger ( a , a ) & SameSize ( x2 , a ) )","for all x1 , it is not the case that a is larger than itself and x2 is the same size as a",0,0,0,0
-48,~ ( Prime ( x1 ) | Dodec ( x2 ) ) & ( / x3 Large ( x2 ) | Tet ( a ) ),all these hold : \item it is not the case that x1 is a prime or x2 is a dodecagon \item there is an element x3 such that x2 is large or a is a tetahedron,0,0,0,0
+48,~ ( Prime ( x1 ) | Dodec ( x2 ) ) & ( / x3 Large ( x2 ) | Tet ( a ) ),all these hold : \item it is not the case that x1 is a prime or x2 is a dodecahedron \item there is an element x3 such that x2 is large or a is a tetahedron,0,0,0,0
 49,"/ x1 ( Larger ( a , a ) | @ x2 Adjoins ( x1 , a ) )","there is an element x1 such that a is larger than itself or for all x2 , x1 is adjacent to a",0,0,0,0

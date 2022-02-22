@@ -98,7 +98,7 @@ I designed a random generation function myself, which should include more differ
 		>stack run trans PropGGC out/test3GGC.tmp PropEng out/test3Eng.tmp
 
 		
-#### The final experiment
+#### THE FINAL EXPERIMENT
 **(Filenames start with exp1)**
 1. I used `makecsv.py` to combine the files `test3GGC.tmp` and `test3Eng.tmp` into a csv for readability:
 
