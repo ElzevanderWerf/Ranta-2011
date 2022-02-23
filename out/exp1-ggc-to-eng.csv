@@ -1,51 +1,51 @@
 ,Unnamed: 0,Source language,Translation 1,Translation 2,Translation 3,Translation 4,Translation 5
-1151,1151,@ x ( Dodec ( x ) $ ( Small ( x ) | Large ( x ) | Medium ( x ) ) ),"every dodecahedron is small , large or medium",0,0,0,0
-808,808,Tet ( a ) & ~ Large ( c ),a is a tetahedron and c is not large,0,0,0,0
-4980,4980,"~ / x ( Cube ( x ) & / z RightOf ( x , z ) )",it is not the case that there is a cube x such that there is an element z such that x is right of z,0,0,0,0
-2746,2746,"~ / x / y / z ( Cube ( y ) & Cube ( z ) & FrontOf ( x , y ) & BackOf ( x , z ) & Large ( x ) )","it is not the case that there is an element x such that there is an element y such that there is an element z such that y is a cube , z is a cube , x is in front of y , x is in back of z and x is large",0,0,0,0
-1270,1270,/ z ( Dodec ( z ) $ ( Small ( z ) | Medium ( z ) | Large ( z ) ) ),"there is an element z such that if z is a dodecahedron , then z is small , medium or large",0,0,0,0
-4662,4662,"@ x ( ( LeftOf ( x , a ) $ LeftOf ( x , b ) ) & @ y ( ~ LeftOf ( y , a ) $ ~ LeftOf ( y , b ) ) )","for all x , all these hold : \item if x is left of a , then x is left of b \item for all y , if y is not left of a , then y is not left of b",0,0,0,0
-2230,2230,"@ x ( ( Cube ( x ) & Small ( x ) ) $ @ y RightOf ( x , a ) )","for all x , if x is a cube and x is small , then for all y , x is right of a",0,0,0,0
-590,590,"( Cube ( a ) & Cube ( d ) ) $ ( LeftOf ( d , a ) | LeftOf ( a , d ) )","if a is a cube and d is a cube , then d is left of a or a is left of d",0,0,0,0
-2540,2540,"~ @ x ( Tet ( x ) $ ~ / y ( Tet ( y ) & ~ SameCol ( y , x ) ) )","it is not the case that for all tetahedrons x , it is not the case that there is a tetahedron y such that y is not in the same column as x",0,0,0,0
-3254,3254,"~ / x / y ( Tet ( x ) & SameSize ( x , y ) & Cube ( y ) )","it is not the case that there is an element x such that there is an element y such that x is a tetahedron , x is the same size as y and y is a cube",0,0,0,0
-1975,1975,"@ v ( Cube ( v ) $ ~ ( SameCol ( v , a ) | SameCol ( v , b ) ) )","for all cubes v , it is not the case that v is in the same column as a or in the same column as b",0,0,0,0
-4977,4977,"/ x ( Cube ( x ) & ~ @ y ( Tet ( y ) $ Larger ( y , x ) ) )",there is a cube x such that it is not the case that every tetahedron is larger than x,0,0,0,0
-481,481,"SameShape ( d , c ) & Cube ( c ) & ~ Small ( d ) & ~ Small ( c )","d is the same shape as c , c is a cube , d is not small and c is not small",0,0,0,0
-4524,4524,"~ / x ( LeftOf ( x , b ) & ~ LeftOf ( x , a ) ) & ~ / y ( LeftOf ( y , a ) & ~ LeftOf ( y , b ) )",it is not the case that there is an element x such that x is left of b and x is not left of a and it is not the case that there is an element y such that y is left of a and y is not left of b,0,0,0,0
-1714,1714,"~ / y ( Cube ( y ) & RightOf ( y , b ) )",it is not the case that some cube is right of b,0,0,0,0
-2752,2752,"@ y ( ( Cube ( y ) & @ x ( Tet ( x ) $ FrontOf ( y , x ) ) ) $ Large ( y ) )","for all y , if y is a cube and y is in front of every tetahedron , then y is large",0,0,0,0
-308,308,"BackOf ( b , c ) | FrontOf ( b , c )",b is in back of c or in front of c,0,0,0,0
-114,114,"~ ( Smaller ( d , e ) | Larger ( d , e ) )",it is not the case that d is smaller than e or larger than e,0,0,0,0
-2557,2557,"@ u @ v ( ( Cube ( u ) & Cube ( v ) ) $ SameCol ( u , v ) )","for all u , for all v , if u is a cube and v is a cube , then u is in the same column as v",0,0,0,0
-4079,4079,"@ y / x ( ~ Large ( y ) $ FrontOf ( x , y ) )","for all y , there is an element x such that if y is not large , then x is in front of y",0,0,0,0
-1963,1963,"@ y ~ ( Cube ( y ) & RightOf ( a , y ) )","for all y , it is not the case that y is a cube and a is right of y",0,0,0,0
-1933,1933,"@ w ( Cube ( w ) $ ( RightOf ( w , a ) & LeftOf ( w , b ) ) )",every cube is right of a and left of b,0,0,0,0
-4846,4846,"@ x ( Cube ( x ) $ ~ / z RightOf ( x , z ) )","for all cubes x , it is not the case that there is an element z such that x is right of z",0,0,0,0
-4829,4829,"@ x / y ( Cube ( x ) $ ( Tet ( y ) & RightOf ( y , x ) & SameSize ( x , y ) ) )","for all x , there is an element y such that if x is a cube , then y is a tetahedron , y is right of x and x is the same size as y",0,0,0,0
-3277,3277,"~ / y / x ( Dodec ( y ) & BackOf ( x , y ) )",it is not the case that there is an element y such that there is an element x such that y is a dodecahedron and x is in back of y,0,0,0,0
-4937,4937,"@ x / y ( Cube ( x ) $ ( RightOf ( y , x ) & SameSize ( x , y ) & Tet ( y ) ) )","for all x , there is an element y such that if x is a cube , then y is right of x , x is the same size as y and y is a tetahedron",0,0,0,0
-5247,5247,"@ x / y ( ( Cube ( x ) $ ( RightOf ( y , x ) & Tet ( y ) ) ) & SameRow ( x , y ) )","for all x , there is an element y such that all these hold : \item if x is a cube , then y is right of x and y is a tetahedron \item x is in the same row as y",0,0,0,0
-3054,3054,"/ t ( Cube ( t ) & ~ / y ( Tet ( y ) & ~ BackOf ( y , t ) ) )",there is a cube t such that it is not the case that there is a tetahedron y such that y is not in back of t,0,0,0,0
-1843,1843,"/ w ( RightOf ( b , w ) & Cube ( w ) & Large ( w ) )","there is an element w such that b is right of w , w is a cube and w is large",0,0,0,0
-4350,4350,"~ / x ( LeftOf ( x , a ) & @ y ( ~ LeftOf ( y , b ) | Larger ( x , y ) ) )","it is not the case that there is an element x such that x is left of a and for all y , y is not left of b or x is larger than y",0,0,0,0
-3796,3796,"@ x ( ( Dodec ( x ) & @ u ~ RightOf ( u , x ) ) $ / z LeftOf ( z , x ) )","for all x , if x is a dodecahedron and for all u , u is not right of x , then there is an element z such that z is left of x",0,0,0,0
-2135,2135,"/ z ~ Adjoins ( a , z )",there is an element z such that a is not adjacent to z,0,0,0,0
-4579,4579,"~ @ x ( Cube ( x ) $ ~ Larger ( a , x ) ) $ @ y ( Tet ( y ) $ Smaller ( a , y ) )","if it is not the case that for all cubes x , a is not larger than x , then a is smaller than every tetahedron",0,0,0,0
-4255,4255,"~ / x ( LeftOf ( x , a ) & @ y ( LeftOf ( y , b ) $ Larger ( x , y ) ) )","it is not the case that there is an element x such that x is left of a and for all y , if y is left of b , then x is larger than y",0,0,0,0
-3201,3201,"@ x ( / y ( SameSize ( x , y ) & Cube ( y ) ) $ ~ Tet ( x ) )","for all x , if there is an element y such that x is the same size as y and y is a cube , then x is not a tetahedron",0,0,0,0
-1861,1861,"/ x / y ( Large ( x ) & Cube ( x ) & LeftOf ( x , b ) )","there is an element x such that there is an element y such that x is large , x is a cube and x is left of b",0,0,0,0
-19,19,"RightOf ( e , b ) | LeftOf ( b , e )",e is right of b or b is left of e,0,0,0,0
-2900,2900,"@ x ( / y / z ( Cube ( y ) & Cube ( z ) & FrontOf ( x , z ) & BackOf ( x , y ) ) $ ~ Large ( x ) )","for all x , if there is an element y such that there is an element z such that y is a cube , z is a cube , x is in front of z and x is in back of y , then x is not large",0,0,0,0
-291,291,"~ ( FrontOf ( d , b ) | FrontOf ( d , c ) | FrontOf ( c , b ) )","it is not the case that d is in front of b , d is in front of c or c is in front of b",0,0,0,0
-4466,4466,"~ / x ( LeftOf ( x , b ) & / y ( LeftOf ( y , a ) & Smaller ( y , x ) ) )",it is not the case that there is an element x such that x is left of b and there is an element y such that y is left of a and smaller than x,0,0,0,0
-5215,5215,"@ x @ y ( RightOf ( x , y ) $ ( ~ Cube ( x ) | ~ Cube ( y ) ) )","for all x , for all y , if x is right of y , then x is not a cube or y is not a cube",0,0,0,0
-2980,2980,"/ x / y ( Large ( x ) & Cube ( x ) & FrontOf ( x , y ) & Small ( y ) & Cube ( y ) )","there is an element x such that there is an element y such that x is large , x is a cube , x is in front of y , y is small and y is a cube",0,0,0,0
-4113,4113,"@ x @ y ( ( Dodec ( y ) & Cube ( x ) ) $ ( BackOf ( x , y ) $ Smaller ( x , y ) ) )","for all x , for all y , if y is a dodecahedron and x is a cube , then if x is in back of y , then x is smaller than y",0,0,0,0
-1995,1995,"@ x ( ( SameCol ( x , b ) | SameCol ( x , a ) ) $ ~ Cube ( x ) )","for all x , if x is in the same column as b or in the same column as a , then x is not a cube",0,0,0,0
-4295,4295,"@ y ( / x ( Cube ( x ) & Larger ( a , x ) & Tet ( y ) ) $ Smaller ( a , y ) )","for all y , if there is an element x such that x is a cube , a is larger than x and y is a tetahedron , then a is smaller than y",0,0,0,0
-2951,2951,"@ x ( Dodec ( x ) $ ~ / y BackOf ( y , x ) )","for all dodecahedrons x , it is not the case that there is an element y such that y is in back of x",0,0,0,0
-245,245,"SameCol ( d , a ) & SameRow ( e , d ) & SameCol ( b , e )","d is in the same column as a , e is in the same row as d and b is in the same column as e",0,0,0,0
-3684,3684,"@ x ( ( Dodec ( x ) & ~ / v RightOf ( v , x ) ) $ Small ( x ) )","for all x , if x is a dodecahedron and it is not the case that there is an element v such that v is right of x , then x is small",0,0,0,0
-1147,1147,/ w ( Dodec ( w ) & Small ( w ) ),some dodecahedron is small,0,0,0,0
-4851,4851,"@ x @ y ( Cube ( y ) $ ~ RightOf ( y , x ) )","for all x , for all cubes y , y is not right of x",0,0,0,0
+3446,3446,"@ x ( ( Dodec ( x ) & ~ / z RightOf ( z , x ) ) $ Small ( x ) )","for all x , if x is a dodecahedron and it is not the case that there is an element z such that z is right of x , then x is small",0,0,0,0
+3065,3065,"@ x @ y ( ( Tet ( x ) & Cube ( y ) ) $ ~ SameSize ( x , y ) )","for all x , for all y , if x is a tetrahedron and y is a cube , then x is not the same size as y",0,0,0,0
+2463,2463,"/ y / x ( Cube ( y ) & Tet ( x ) & Larger ( y , x ) )","there is an element y such that there is an element x such that y is a cube , x is a tetrahedron and y is larger than x",0,0,0,0
+5025,5025,"@ x / y ( Cube ( x ) $ ( Tet ( y ) & RightOf ( y , x ) & SameRow ( y , x ) ) )","for all x , there is an element y such that if x is a cube , then y is a tetrahedron , y is right of x and y is in the same row as x",0,0,0,0
+3798,3798,"@ x ( ~ ( Cube ( x ) & / y BackOf ( y , x ) ) | Small ( x ) )","for all x , it is not the case that x is a cube and there is an element y such that y is in back of x or x is small",0,0,0,0
+355,355,"~ FrontOf ( c , b ) & ~ FrontOf ( d , b ) & ~ FrontOf ( c , c ) & ~ FrontOf ( d , c )","c is not in front of b , d is not in front of b , c is not in front of c and d is not in front of c",0,0,0,0
+1677,1677,"~ / x ( RightOf ( x , b ) & Cube ( x ) )",it is not the case that there is an element x such that x is right of b and x is a cube,0,0,0,0
+1079,1079,Medium ( c ) $ ( ~ Cube ( f ) & ~ Cube ( e ) & ~ Cube ( d ) ),"if c is medium , then f is not a cube , e is not a cube and d is not a cube",0,0,0,0
+1967,1967,"@ z ( Cube ( z ) $ ~ ( SameCol ( z , a ) | SameCol ( z , b ) ) )","for all cubes z , it is not the case that z is in the same column as a or in the same column as b",0,0,0,0
+854,854,"SameShape ( d , b ) $ ( SameSize ( b , d ) & SameSize ( d , b ) )","if d is the same shape as b , then b is the same size as d and d is the same size as b",0,0,0,0
+2913,2913,"@ x ( ~ / v BackOf ( v , x ) $ Cube ( x ) )","for all x , if it is not the case that there is an element v such that v is in back of x , then x is a cube",0,0,0,0
+1366,1366,~ / z ( Large ( z ) & Cube ( z ) ),it is not the case that there is an element z such that z is large and z is a cube,0,0,0,0
+4521,4521,"~ / x ( @ y ( LeftOf ( y , b ) $ Larger ( x , y ) ) & LeftOf ( x , a ) )","it is not the case that there is an element x such that for all y , if y is left of b , then x is larger than y and x is left of a",0,0,0,0
+4096,4096,"@ y ( Cube ( y ) $ @ x ( FrontOf ( x , y ) $ Small ( y ) ) )","for all cubes y , for all x , if x is in front of y , then y is small",0,0,0,0
+3101,3101,"@ x ( ( Dodec ( x ) & / y ( LeftOf ( x , y ) & Cube ( y ) ) ) $ Large ( x ) )","for all x , if x is a dodecahedron and there is an element y such that x is left of y and y is a cube , then x is large",0,0,0,0
+4634,4634,"/ y ( ( Larger ( a , y ) & Cube ( y ) ) $ @ z ( Tet ( z ) $ Smaller ( y , z ) ) )","there is an element y such that if a is larger than y and y is a cube , then y is smaller than every tetrahedron",0,0,0,0
+1708,1708,"/ x ( Cube ( x ) & LeftOf ( x , b ) & Large ( x ) & LeftOf ( x , b ) )","there is an element x such that x is a cube , x is left of b , x is large and x is left of b",0,0,0,0
+5299,5299,"@ v ( ( Cube ( v ) & Small ( v ) ) $ / w BackOf ( v , w ) )","for all v , if v is a cube and v is small , then there is an element w such that v is in back of w",0,0,0,0
+715,715,"Larger ( a , c ) & ~ Large ( a ) & Larger ( e , c ) & ~ Large ( e )","a is larger than c , a is not large , e is larger than c and e is not large",0,0,0,0
+2976,2976,"/ y ( Large ( y ) & Cube ( y ) & / x ( FrontOf ( y , x ) & Small ( x ) & Cube ( x ) ) )","there is an element y such that y is large , y is a cube and there is an element x such that y is in front of x , x is small and x is a cube",0,0,0,0
+3379,3379,"@ x / y / z ( Dodec ( x ) $ ( ~ RightOf ( y , x ) $ LeftOf ( z , x ) ) )","for all x , there is an element y such that there is an element z such that if x is a dodecahedron , then if y is not right of x , then z is left of x",0,0,0,0
+627,627,"( Cube ( a ) & Cube ( d ) ) $ ( RightOf ( a , d ) | LeftOf ( a , d ) )","if a is a cube and d is a cube , then a is right of d or left of d",0,0,0,0
+2390,2390,@ y ( Pet ( y ) $ ~ Person ( y ) ),"for all pets y , y is not a person",0,0,0,0
+2793,2793,"/ x ( Cube ( x ) & Large ( x ) & / y ( Small ( y ) & FrontOf ( x , y ) & Cube ( y ) ) )","there is an element x such that x is a cube , x is large and there is an element y such that y is small , x is in front of y and y is a cube",0,0,0,0
+907,907,"Dodec ( b ) $ ( ( ~ FrontOf ( b , d ) & ~ BackOf ( b , d ) ) | FrontOf ( b , d ) )","if b is a dodecahedron , then at least one of these holds : \item b is not in front of d and b is not in back of d \item b is in front of d",0,0,0,0
+2637,2637,"~ @ x @ y ( Tet ( x ) $ @ y ( Tet ( y ) $ SameCol ( x , y ) ) )","it is not the case that for all x , for all y , if x is a tetrahedron , then x is in the same column as every tetrahedron",0,0,0,0
+3119,3119,"@ x / z ( ( Dodec ( x ) & ~ / y RightOf ( y , x ) ) $ LeftOf ( z , x ) )","for all x , there is an element z such that if x is a dodecahedron and it is not the case that there is an element y such that y is right of x , then z is left of x",0,0,0,0
+5362,5362,"/ x / y ( ( Tet ( x ) & Small ( x ) ) | ( BackOf ( x , y ) & Cube ( y ) ) )",there is an element x such that there is an element y such that at least one of these holds : \item x is a tetrahedron and x is small \item x is in back of y and y is a cube,0,0,0,0
+711,711,"RightOf ( c , d ) $ ( LeftOf ( b , e ) & RightOf ( b , c ) )","if c is right of d , then b is left of e and right of c",0,0,0,0
+221,221,"~ FrontOf ( d , b ) & ~ FrontOf ( d , c ) & ~ FrontOf ( c , b )","d is not in front of b , d is not in front of c and c is not in front of b",0,0,0,0
+472,472,"Small ( c ) $ RightOf ( c , a )","if c is small , then c is right of a",0,0,0,0
+1652,1652,"/ v ( Cube ( v ) & Large ( v ) & LeftOf ( v , b ) & BackOf ( v , c ) )","there is an element v such that v is a cube , v is large , v is left of b and v is in back of c",0,0,0,0
+4150,4150,"@ w @ y ( ( Cube ( w ) & Dodec ( y ) & BackOf ( w , y ) ) $ Smaller ( w , y ) )","for all w , for all y , if w is a cube , y is a dodecahedron and w is in back of y , then w is smaller than y",0,0,0,0
+4115,4115,"~ / x ( Cube ( x ) & / y ( BackOf ( x , y ) & ~ Small ( x ) ) )",it is not the case that there is a cube x such that there is an element y such that x is in back of y and x is not small,0,0,0,0
+1005,1005,"~ FrontOf ( b , d ) $ ( Dodec ( b ) $ ( ~ BackOf ( b , d ) & ~ FrontOf ( b , d ) ) )","if b is not in front of d , then if b is a dodecahedron , then b is not in back of d and b is not in front of d",0,0,0,0
+2332,2332,@ u ~ ( Medium ( u ) & Cube ( u ) ),"for all u , it is not the case that u is medium and u is a cube",0,0,0,0
+957,957,"~ ( Larger ( a , c ) $ Large ( a ) ) & ~ ( Larger ( e , c ) $ Large ( e ) )","it is not the case that if a is larger than c , then a is large and it is not the case that if e is larger than c , then e is large",0,0,0,0
+4299,4299,"@ x @ y ( ( Smaller ( x , y ) & LeftOf ( y , b ) ) $ ~ LeftOf ( x , a ) )","for all x , for all y , if x is smaller than y and y is left of b , then x is not left of a",0,0,0,0
+4059,4059,"@ x @ y ~ ( Cube ( x ) & Dodec ( y ) & BackOf ( x , y ) & ~ Smaller ( x , y ) )","for all x , for all y , it is not the case that x is a cube , y is a dodecahedron , x is in back of y and x is not smaller than y",0,0,0,0
+3231,3231,"@ x ( ( Dodec ( x ) & / y ( Cube ( y ) & LeftOf ( x , y ) ) ) $ ( Dodec ( x ) & Large ( x ) ) )","for all x , if x is a dodecahedron and x is left of some cube , then x is a dodecahedron and x is large",0,0,0,0
+1721,1721,/ x ~ Large ( x ) | / x ~ Dodec ( x ),there is an element x such that x is not large or there is an element x such that x is not a dodecahedron,0,0,0,0
+182,182,"~ ( Larger ( e , c ) & Smaller ( c , e ) ) & ~ ( Larger ( d , c ) & Smaller ( c , d ) )",it is not the case that e is larger than c and c is smaller than e and it is not the case that d is larger than c and c is smaller than d,0,0,0,0
+5353,5353,"@ x ( Dodec ( e ) | ( Dodec ( x ) $ LeftOf ( e , x ) ) )","for all x , at least one of these holds : \item e is a dodecahedron \item if x is a dodecahedron , then e is left of x",0,0,0,0
+293,293,"~ FrontOf ( c , b ) & ~ FrontOf ( c , c ) & ~ FrontOf ( d , b ) & ~ FrontOf ( d , c )","c is not in front of b , c is not in front of c , d is not in front of b and d is not in front of c",0,0,0,0
+1786,1786,"/ x ~ ( ( Large ( x ) & Cube ( x ) ) $ ~ ( LeftOf ( x , b ) & BackOf ( x , c ) ) )","there is an element x such that it is not the case that if x is large and x is a cube , then it is not the case that x is left of b and in back of c",0,0,0,0
+3653,3653,"@ x ( @ y ( Dodec ( x ) & ~ LeftOf ( x , y ) ) $ Small ( x ) )","for all x , if for all y , x is a dodecahedron and x is not left of y , then x is small",0,0,0,0
+5238,5238,"~ / y ( Cube ( y ) & / z ( Cube ( z ) & RightOf ( y , z ) ) )",it is not the case that some cube is right of some cube,0,0,0,0
+974,974,( Small ( c ) & Dodec ( d ) ) $ ~ ( Large ( d ) | Small ( d ) ),"if c is small and d is a dodecahedron , then it is not the case that d is large or small",0,0,0,0
+1694,1694,"@ x ( LeftOf ( b , x ) $ ~ Cube ( x ) )","for all x , if b is left of x , then x is not a cube",0,0,0,0
+697,697,"~ FrontOf ( a , b ) $ ~ Tet ( a )","if a is not in front of b , then a is not a tetrahedron",0,0,0,0
