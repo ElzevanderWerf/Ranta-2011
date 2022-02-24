@@ -15,7 +15,7 @@ This is the original version of Ranta's code, taken from [cade-2011](https://git
 
 I have done the following three tests to create a set of logical formulas and their English translations, for study 1 (post-editing). The generated files are in folder `out`.
 									 
-#### Test 1: GF random generation
+#### TEST 1: GF random generation
 **(Filenames start with test1)**
 0. In `Prop.gf` and `PropLatex.gf`, I removed (commented out) the geometry lexicon (the functions `Vertical`, `Horizontal`, `Parallel`, `Line`, `Point`, `Centre`, and `Intersection`), so that I would only generate formulas with arithmetic predicates and functions.
    
@@ -98,9 +98,12 @@ I designed a random generation function myself, which should include more differ
 		>stack run trans PropGGC out/test3GGC.tmp PropEng out/test3Eng.tmp
 
 		
-#### THE FINAL EXPERIMENT
+#### PREPARING EXPERIMENT 1
 **(Filenames start with exp1)**
 1. I used `makecsv.py` to combine the files `test3GGC.tmp` and `test3Eng.tmp` into a csv for readability:
 
 		>python makecsv.py out/test3GGC.tmp out/test3Eng.tmp out/exp1-rg-to-eng.csv
-2. The Python script in `exp1.py` writes a random sample of 50 formulas and translations from `ggc-formulas-to-eng.csv` to the file `exp1-rg-to-eng.csv`.
+2. The Python script in `ggcSubsetFormulasToEng.py` writes a random sample of 50 formulas and translations from `ggc-formulas-to-eng.csv` to the file `exp1-rg-to-eng.csv`.
+
+#### EXPERIMENT 1 ANALYSIS
+**(Files in folder exp1)**
