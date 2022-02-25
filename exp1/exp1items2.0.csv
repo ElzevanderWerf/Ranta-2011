@@ -1,0 +1,24 @@
+Section number in Google Forms;Condition;ID;Source language;Translation 1;Translation 2;Translation 3;Translation 4;Translation 5
+2;GGC;3446;@ x ( ( Dodec ( x ) & ~ / z RightOf ( z , x ) ) $ Small ( x ) );for all x , if x is a dodecahedron and it is not the case that there is an element z such that z is right of x , then x is small;0;0;0;0
+3;GGC;3065;@ x @ y ( ( Tet ( x ) & Cube ( y ) ) $ ~ SameSize ( x , y ) );for all x , for all y , if x is a tetrahedron and y is a cube , then x is not the same size as y;0;0;0;0
+4;GGC;2463;/ y / x ( Cube ( y ) & Tet ( x ) & Larger ( y , x ) );there is an element y such that there is an element x such that y is a cube , x is a tetrahedron and y is larger than x;0;0;0;0
+5;GGC;5025;@ x / y ( Cube ( x ) $ ( Tet ( y ) & RightOf ( y , x ) & SameRow ( y , x ) ) );for all x , there is an element y such that if x is a cube , then y is a tetrahedron , y is right of x and y is in the same row as x;0;0;0;0
+6;GGC;3798;@ x ( ~ ( Cube ( x ) & / y BackOf ( y , x ) ) | Small ( x ) );for all x , it is not the case that x is a cube and there is an element y such that y is in back of x or x is small;0;0;0;0
+7;GGC;355;~ FrontOf ( c , b ) & ~ FrontOf ( d , b ) & ~ FrontOf ( c , c ) & ~ FrontOf ( d , c );c is not in front of b , d is not in front of b , c is not in front of c and d is not in front of c;0;0;0;0
+8;GGC;1677;~ / x ( RightOf ( x , b ) & Cube ( x ) );it is not the case that there is an element x such that x is right of b and x is a cube;0;0;0;0
+9;GGC;1079;Medium ( c ) $ ( ~ Cube ( f ) & ~ Cube ( e ) & ~ Cube ( d ) );if c is medium , then f is not a cube , e is not a cube and d is not a cube;0;0;0;0
+10;GGC;1967;@ z ( Cube ( z ) $ ~ ( SameCol ( z , a ) | SameCol ( z , b ) ) );for all cubes z , it is not the case that z is in the same column as a or in the same column as b;0;0;0;0
+11;GGC;854;SameShape ( d , b ) $ ( SameSize ( b , d ) & SameSize ( d , b ) );if d is the same shape as b , then b is the same size as d and d is the same size as b;0;0;0;0
+12;RG;0;~ ( Person ( x1 ) | Medium ( x1 ) ) & @ x2 @ x1 Medium ( x3 );it is not the case that x1 is a person or x1 is medium and for all x2 , for all x1 , x3 is medium;0;0;0;0
+13;RG;1;@ x1 ( ( FrontOf ( x2 , a ) $ Adjoins ( a , x3 ) ) $ ( Even ( x4 ) | Person ( x2 ) ) );for all x1 , if if x2 is in front of a , then a is adjacent to x3 , then x4 is even or x2 is a person;0;0;0;0
+14;RG;2;@ x1 @ x2 / x2 Adjoins ( a , a );for all x1 , for all x2 , there is an element x2 such that a is adjacent to itself;0;0;0;0
+15;RG;5;~ ( ( Even ( a ) & Cube ( a ) ) | ( SameRow ( x1 , x1 ) | Medium ( x1 ) ) );it is not the case that at least one of these holds : \item a is even and a is a cube , x1 is in the same row as itself \item x1 is medium;0;0;0;0
+16;RG;6;~ ( / x1 RightOf ( x2 , x3 ) $ ( Smaller ( x2 , a ) & Large ( x1 ) ) );it is not the case that if there is an element x1 such that x2 is right of x3 , then x2 is smaller than a and x1 is large;0;0;0;0
+17;RG;7;/ x1 ( Tet ( a ) | Cube ( b ) ) | ( Prime ( b ) | ~ Student ( x2 ) );there is an element x1 such that a is a tetrahedron or b is a cube , b is a prime or x2 is not a student;0;0;0;0
+18;RG;8;~ ( ( Pet ( x1 ) | FrontOf ( a , x1 ) ) | Larger ( a , x2 ) );it is not the case that x1 is a pet , a is in front of x1 or a is larger than x2;0;0;0;0
+19;RG;9;( @ x1 Pet ( a ) | / x2 SameSize ( b , a ) ) | SameShape ( x2 , c );for all x1 , a is a pet , there is an element x2 such that b is the same size as a or x2 is the same shape as c;0;0;0;0
+20;RG;11;@ x1 @ x2 SameRow ( a , x1 ) | ~ / x1 LeftOf ( x3 , b );for all x1 , for all x2 , a is in the same row as x1 or it is not the case that there is an element x1 such that x3 is left of b;0;0;0;0
+21;RG;13;~ ( SameCol ( x1 , a ) & Cube ( b ) ) & Cube ( c );it is not the case that x1 is in the same column as a and b is a cube and c is a cube;0;0;0;0
+43;Filler wrong symbol;21;~ / x1 ( SameShape ( a , b ) $ SameRow ( x2 , x2 ) );it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself;;;;
+23;Filler missing info;23;@ x1 ( Tet ( x1 ) | Prime ( x2 ) ) | / x1 ( Person ( x1 ) $ Student ( x2 ) );for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student;;;;
+24;Filler extra info;24;/ x1 @ x2 Larger ( x1 , a ) & @ x2 ~ Pet ( x3 );there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet;;;;
