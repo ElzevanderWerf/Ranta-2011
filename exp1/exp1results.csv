@@ -1,0 +1,229 @@
+,Section,Question,1
+0,1,Tijdstempel,24-2-2022 11:24:50
+1,2,1,1
+2,2,2,
+3,2,3,3
+4,2,4,2
+5,2,5,Any dodecahedron that has nothing right of it is small.
+6,3,1,1
+7,3,2,
+8,3,3,4
+9,3,4,2
+10,3,5,tetrahedrons and cubes are never the same size
+11,4,1,1
+12,4,2,
+13,4,3,4
+14,4,4,2
+15,4,5,some cube is larger than some tetrahedron
+16,5,1,1
+17,5,2,
+18,5,3,3
+19,5,4,1
+20,5,5,every cube has a tetrahedron right of it in the same row.
+21,6,1,1
+22,6,2,
+23,6,3,3
+24,6,4,2
+25,6,5,"nothing is a cube with something in the back of it, or small"
+26,7,1,1
+27,7,2,
+28,7,3,4
+29,7,4,3
+30,7,5,"c and d are not in front of b, and they are not in front of c"
+31,8,1,1
+32,8,2,
+33,8,3,3
+34,8,4,2
+35,8,5,nothing is both right of b and a cube at the same time
+36,9,1,1
+37,9,2,
+38,9,3,4
+39,9,4,3
+40,9,5,"if c is medium, then f, e, and d are not cubes"
+41,10,1,1
+42,10,2,
+43,10,3,4
+44,10,4,3
+45,10,5,Every cube is neither in the same column as a nor in the same column as b
+46,11,1,1
+47,11,2,
+48,11,3,3
+49,11,4,2
+50,11,5,"If d and b have the same shape, then they have the same size."
+51,12,1,1
+52,12,2,
+53,12,3,2
+54,12,4,3
+55,12,5,Everything that has no element in the back is a cube.
+56,13,1,1
+57,13,2,
+58,13,3,4
+59,13,4,2
+60,13,5,There are no large cubes.
+61,14,1,1
+62,14,2,
+63,14,3,2
+64,14,4,2
+65,14,5,there is no element x such that x is larger than all elements that are left of b                                and x is left of a
+66,15,1,1
+67,15,2,
+68,15,3,4
+69,15,4,2
+70,15,5,"If everything is in front of any cube, then that cube is small."
+71,16,1,1
+72,16,2,
+73,16,3,3
+74,16,4,2
+75,16,5,"if a dodecahedron has a cube right of it, then it is large"
+76,17,1,1
+77,17,2,
+78,17,3,3
+79,17,4,2
+80,17,5,"if some cube is smaller than a, then y is smaller than every tetrahedron"
+81,18,1,1
+82,18,2,
+83,18,3,5
+84,18,4,3
+85,18,5,Something is a large cube and left of b
+86,19,1,1
+87,19,2,
+88,19,3,3
+89,19,4,2
+90,19,5,all small cubes are in back of something
+91,20,1,1
+92,20,2,
+93,20,3,4
+94,20,4,3
+95,20,5,"a is larger than c but not large, and e is larger than c but not large"
+96,21,1,1
+97,21,2,
+98,21,3,3
+99,21,4,2
+100,21,5,"there is an element y such that y is large , y is a cube and there is an element x such that y is in front of x , x is small and x is a cube  There is a small cube that has a large cube in front of it."
+101,22,1,1
+102,22,2,
+103,22,3,3
+104,22,4,2
+105,22,5,"x1 is not a person and not medium, and x3 is medium"
+106,23,1,1
+107,23,2,
+108,23,3,1
+109,23,4,1
+110,23,5,
+111,24,1,1
+112,24,2,
+113,24,3,4
+114,24,4,2
+115,24,5,a is adjacent to itself
+116,25,1,1
+117,25,2,
+118,25,3,5
+119,25,4,4
+120,25,5,
+121,26,1,1
+122,26,2,
+123,26,3,4
+124,26,4,5
+125,26,5,
+126,27,1,1
+127,27,2,
+128,27,3,3
+129,27,4,4
+130,27,5,None of these hold: - a is an even cube - x1 is in the same row as itself - x1 is medium
+131,28,1,1
+132,28,2,
+133,28,3,2
+134,28,4,2
+135,28,5,"it is not the case that if x2 is right of x3, then x2 is smaller than a and x1 is large"
+136,29,1,1
+137,29,2,
+138,29,3,4
+139,29,4,3
+140,29,5,
+141,30,1,1
+142,30,2,
+143,30,3,4
+144,30,4,3
+145,30,5,
+146,31,1,1
+147,31,2,
+148,31,3,2
+149,31,4,2
+150,31,5,a is a pet or b is the same size as a or x2 is the same shape as c
+151,32,1,1
+152,32,2,
+153,32,3,5
+154,32,4,5
+155,32,5,
+156,33,1,1
+157,33,2,
+158,33,3,3
+159,33,4,2
+160,33,5,"a is in the same row as everything else, or x3 is not left of b"
+161,34,1,1
+162,34,2,
+163,34,3,5
+164,34,4,5
+165,34,5,
+166,35,1,1
+167,35,2,
+168,35,3,1
+169,35,4,2
+170,35,5,"It is not the case that both x1 is in the same column as a and b is cube. Furthermore, c is a cube."
+171,36,1,1
+172,36,2,
+173,36,3,5
+174,36,4,5
+175,36,5,
+176,37,1,1
+177,37,2,
+178,37,3,3
+179,37,4,2
+180,37,5,x1 is not medium or x2 is not a cube or a is medium
+181,38,1,1
+182,38,2,
+183,38,3,3
+184,38,4,3
+185,38,5,
+186,39,1,1
+187,39,2,
+188,39,3,3
+189,39,4,1
+190,39,5,"If all elements are even, then a is tetrahedron."
+191,40,1,1
+192,40,2,
+193,40,3,3
+194,40,4,1
+195,40,5,a is small or x2 is not even
+196,41,1,1
+197,41,2,
+198,41,3,3
+199,41,4,2
+200,41,5,"Both of these hold:  - a is larger than x1  - if x2 is large, then x3 is a prime"
+201,42,1,1
+202,42,2,
+203,42,3,4
+204,42,4,2
+205,42,5,
+206,43,1,0
+207,43,2,conjunction instead of implication
+208,43,3,3
+209,43,4,2
+210,43,5,"If x2 is not in the same row as itself, then a is not in the same shape as b."
+211,44,1,0
+212,44,2,missing information (a is a pet)
+213,44,3,3
+214,44,4,2
+215,44,5,There is an element bigger than x2 and a is a tetrahedron
+216,45,1,0
+217,45,2,Missing information
+218,45,3,3
+219,45,4,2
+220,45,5,Everything is a tetrahedron or x2 is a prime or x2 is a student
+221,46,1,0
+222,46,2,the scope of x1 does not go over the second part of the formula (after &)
+223,46,3,3
+224,46,4,2
+225,46,5,Something is larger than a and x3 is not a pet
+226,47,6,Bad: vacuous quantification. Good: short formulas
+227,47,7,

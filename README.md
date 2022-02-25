@@ -107,3 +107,16 @@ I designed a random generation function myself, which should include more differ
 
 #### EXPERIMENT 1 ANALYSIS
 **(Files in folder exp1)**
+1. I exported the file `exp1results.tsv` from the Google Form, which contains the results of the experiment.
+There are x? responses to the following set of questions:
+    - How would you rate your knowledge of and familiarity with first-order logic?
+    - For each of the test items in exp1items.csv, the following questions:
+        1. Is the translation correct?
+        2. If your answer to the previous question was "no", explain why the translation is incorrect.
+        3. Is the translation clear?
+        4. Is the translation fluent?
+        5. Do you have a suggestion for a better translation? If so, then write it down here.
+    - Give a general structured review of the strengths and weaknesses of the translation system. With which types of formulas does the system have difficulties? For which types of formulas do you believe the system performs sufficiently well?
+    - Do you have any final comments?
+2. The Python script in `exp1analysis.py` does some preprocessing steps on this tsv, writes it to `exp1results.csv`, and performs some analyses:
+    1. TODO
