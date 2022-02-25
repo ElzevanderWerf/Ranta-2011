@@ -1,8 +1,10 @@
-#files
+#files and file types
 *.gfo
 Prop.pgf
 *.xlsx
 translationcorpus-1.0.1.csv
+*.JPG
+*.png
 
 #folders
 .stack-work/*
