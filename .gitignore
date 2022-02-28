@@ -5,6 +5,8 @@ Prop.pgf
 translationcorpus-1.0.1.csv
 *.JPG
 *.png
+*.jpg
+exp1/Legend.JPG
 
 #folders
 .stack-work/*

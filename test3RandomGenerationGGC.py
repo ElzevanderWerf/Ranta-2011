@@ -109,15 +109,15 @@ ggcLexicon = Lexicon(["Small", "Medium", "Large", "Even"],      #Pred1s
 # print(random_formula)
 
 
-# Randomly generate 50 formulas with a certain maximum depth
+# Randomly generate 1000 formulas with a certain maximum depth
 depth = 3       # maximum depth
 formulas = []
 rg = RandomGenerator(ggcLexicon)
 rg.maxdepth = depth
 
-while len(formulas) < 50:
+while len(formulas) < 1000:
     prop = rg.makeProp(depth)
-    if len(prop) <= 100:
+    if len(prop) >= 20 and len(prop) <= 100:
         formulas.append(prop)
     rg.new_var_i = 0    #set again to 0 for generating a new prop
     rg.new_cons_i = 0   #set again to 0 for generating a new prop
