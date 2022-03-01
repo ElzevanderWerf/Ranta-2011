@@ -64,16 +64,16 @@ lin
   Large = mkAP (P.mkA "large") ;
   Even = mkAP (P.mkA "even") ;
   Adjoins = P.mkA2 (P.mkA "adjacent") to_Prep ;
-  SameCol = P.mkA2 (P.mkA "in the same column") (P.mkPrep "as") ; -- this is wrong I know
-  LeftOf = P.mkA2 (P.mkA "left") (P.mkPrep "of") ;
-  RightOf = P.mkA2 (P.mkA "right") (P.mkPrep "of") ;
-  Smaller = P.mkA2 (P.mkA "smaller") (P.mkPrep "than") ; -- this is wrong I know
-  FrontOf = P.mkA2 (P.mkA "in front") (P.mkPrep "of") ; -- this is wrong I know
-  Larger = P.mkA2 (P.mkA "larger") (P.mkPrep "than") ; -- this is wrong I know
-  SameRow = P.mkA2 (P.mkA "in the same row") (P.mkPrep "as") ; -- this is wrong I know
-  SameShape = P.mkA2 (P.mkA "the same shape") (P.mkPrep "as") ; -- this is wrong I know
-  SameSize = P.mkA2 (P.mkA "the same size") (P.mkPrep "as") ; -- this is wrong I know
-  BackOf = P.mkA2 (P.mkA " in back") (P.mkPrep "of") ; -- this is wrong I know
+  SameCol = P.mkA2 (P.mkA "in the same column") (P.mkPrep "as") ;
+  LeftOf = P.mkA2 (P.mkA "to the left") (P.mkPrep "of") ;
+  RightOf = P.mkA2 (P.mkA "to the right") (P.mkPrep "of") ;
+  Smaller = P.mkA2 (P.mkA "smaller") (P.mkPrep "than") ;
+  FrontOf = P.mkA2 (P.mkA "in front") (P.mkPrep "of") ;
+  Larger = P.mkA2 (P.mkA "larger") (P.mkPrep "than") ;
+  SameRow = P.mkA2 (P.mkA "in the same row") (P.mkPrep "as") ;
+  SameShape = P.mkA2 (P.mkA "of the same shape") (P.mkPrep "as") ;
+  SameSize = P.mkA2 (P.mkA "of the same size") (P.mkPrep "as") ;
+  BackOf = P.mkA2 (P.mkA "in back") (P.mkPrep "of") ;
   
 
 oper

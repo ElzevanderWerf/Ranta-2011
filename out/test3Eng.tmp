@@ -4,11 +4,11 @@ there is an element x1 such that there is an element x2 such that for all x3 , x
 
 there is an element x1 such that if for all x1 , a is in front of itself , then if b is a prime , then x2 is even
 
-if x1 is the same shape as x2 , x2 is left of a or for all x1 , x1 is small , then there is an element x2 such that for all x3 , x1 is a pet
+if x1 is of the same shape as x2 , x2 is to the left of a or for all x1 , x1 is small , then there is an element x2 such that for all x3 , x1 is a pet
 
 it is not the case that there is an element x1 such that if a is large , then x1 is small
 
-all these hold : \item if for all x1 , a is a person , then for all x2 , x3 is in back of a \item there is an element x2 such that there is an element x3 such that b is right of c
+all these hold : \item if for all x1 , a is a person , then for all x2 , x3 is in back of a \item there is an element x2 such that there is an element x3 such that b is to the right of c
 
 x1 is a tetrahedron and for all x1 , a is large
 
@@ -16,13 +16,13 @@ all these hold : \item x1 is large or a is smaller than itself \item a is medium
 
 for all x1 , x1 is a dodecahedron and a is not a pet
 
-a is large and for all x1 , x1 is a pet or x2 is the same size as x1
+a is large and for all x1 , x1 is a pet or x2 is of the same size as x1
 
 it is not the case that there is an element x1 such that a is small and x2 is larger than a
 
 it is not the case that at least one of these holds : \item if x1 is in back of a , then x2 is large , b is a person \item x3 is in back of c
 
-x1 is not the same size as a and for all x1 , there is an element x2 such that b is larger than x1
+x1 is not of the same size as a and for all x1 , there is an element x2 such that b is larger than x1
 
 for all x1 , at least one of these holds : \item if a is a student , then b is even \item x2 is small and a is in back of c
 
@@ -40,11 +40,11 @@ there is an element x1 such that for all x1 , x2 is even
 
 there is an element x1 such that for all x1 , for all x2 , a is large
 
-there is an element x1 such that at least one of these holds : \item if a is the same size as itself , then x1 is a student \item b is even
+there is an element x1 such that at least one of these holds : \item if a is of the same size as itself , then x1 is a student \item b is even
 
 for all x1 , for all x1 , a is in the same row as b
 
-a is the same size as x1 or for all x1 , x1 is medium
+a is of the same size as x1 or for all x1 , x1 is medium
 
 it is not the case that for all x1 , a is in the same column as x1 and b is a pet
 
@@ -52,17 +52,17 @@ for all x1 , there is an element x1 such that a is medium and x2 is not small
 
 for all x1 , there is an element x2 such that there is an element x1 such that a is small
 
-for all x1 , for all x2 , x3 is the same shape as a and there is an element x1 such that b is a person or x4 is left of a
+for all x1 , for all x2 , x3 is of the same shape as a and there is an element x1 such that b is a person or x4 is to the left of a
 
 it is not the case that for all x1 , for all x2 , x3 is a person
 
-it is not the case that it is not the case that if x1 is left of itself , then x2 is a person
+it is not the case that it is not the case that if x1 is to the left of itself , then x2 is a person
 
 x1 is a tetrahedron or all these hold : \item a is small or x1 is in back of itself \item b is in back of itself
 
 at least one of these holds : \item for all x1 , a is small , b is large and x1 is small \item x2 is in the same row as b
 
-if a is a student , then at least one of these holds : \item x1 is in front of a and the same size as a \item x1 is a prime and a is a cube
+if a is a student , then at least one of these holds : \item x1 is in front of a and of the same size as a \item x1 is a prime and a is a cube
 
 if a is in back of x1 , then x2 is small , x2 is smaller than x3 or x3 is small
 
@@ -70,7 +70,7 @@ it is not the case that there is an element x1 such that there is an element x2 
 
 it is not the case that there is an element x1 such that x2 is larger than x3 or x3 is large
 
-there is an element x1 such that x1 is even and a is medium and x2 is the same shape as a
+there is an element x1 such that x1 is even and a is medium and x2 is of the same shape as a
 
 it is not the case that x1 is in the same column as itself , x1 is in back of a or x2 is not small
 
@@ -78,9 +78,9 @@ it is not the case that there is an element x1 such that a is not medium
 
 there is an element x1 such that for all x2 , a is a student or there is an element x2 such that if a is larger than itself , then x2 is a dodecahedron
 
-all these hold : \item x1 is large or a is the same shape as x1 \item there is an element x2 such that x3 is a pet or for all x3 , x1 is the same size as x3
+all these hold : \item x1 is large or a is of the same shape as x1 \item there is an element x2 such that x3 is a pet or for all x3 , x1 is of the same size as x3
 
-if if a is the same shape as x1 or x1 is large , then if x1 is medium , then x1 is a cube , then for all x2 , a is a tetrahedron
+if if a is of the same shape as x1 or x1 is large , then if x1 is medium , then x1 is a cube , then for all x2 , a is a tetrahedron
 
 for all x1 , it is not the case that a is in the same column as x2 or x1 is in the same column as x3
 
@@ -88,7 +88,7 @@ there is an element x1 such that a is not a prime or it is not the case that x1 
 
 if a is not a dodecahedron and there is an element x1 such that b is large , then for all x2 , c is large or x2 is small
 
-there is an element x1 such that if a is large or x1 is small , then if a is left of x2 , then x1 is a cube
+there is an element x1 such that if a is large or x1 is small , then if a is to the left of x2 , then x1 is a cube
 
 x1 is a student , for all x2 , x3 is in front of x4 and for all x4 , a is medium
 
@@ -98,11 +98,11 @@ there is an element x1 such that if there is an element x2 such that x2 is small
 
 if a is large , then there is an element x1 such that a is a dodecahedron and a is a pet
 
-if there is an element x1 such that x2 is left of a and x1 is small , then for all x1 , if b is adjacent to x2 , then x3 is right of x1
+if there is an element x1 such that x2 is to the left of a and x1 is small , then for all x1 , if b is adjacent to x2 , then x3 is to the right of x1
 
-there is an element x1 such that a is larger than b or c is the same size as x2 , c is not large and for all x2 , x3 is smaller than c
+there is an element x1 such that a is larger than b or c is of the same size as x2 , c is not large and for all x2 , x3 is smaller than c
 
-for all x1 , at least one of these holds : \item if x2 is right of a , then a is a tetrahedron \item for all x3 , x1 is a student
+for all x1 , at least one of these holds : \item if x2 is to the right of a , then a is a tetrahedron \item for all x3 , x1 is a student
 
 there is an element x1 such that it is not the case that for all x1 , a is small
 
@@ -114,7 +114,7 @@ for all x1 , if a is smaller than itself , then b is even or for all x1 , x1 is 
 
 for all x1 , for all x1 , x2 is medium or a is adjacent to itself
 
-for all x1 , at least one of these holds : \item x1 is in the same column as x2 and a is even \item x1 is the same size as x3 and even
+for all x1 , at least one of these holds : \item x1 is in the same column as x2 and a is even \item x1 is of the same size as x3 and even
 
 it is not the case that there is an element x1 such that for all x2 , x2 is larger than a
 
@@ -122,19 +122,19 @@ if there is an element x1 such that a is a student , then at least one of these 
 
 for all x1 , for all x1 , x1 is not small
 
-there is an element x1 such that for all x1 , x2 is the same size as itself or for all x1 , x2 is small
+there is an element x1 such that for all x1 , x2 is of the same size as itself or for all x1 , x2 is small
 
 if there is an element x1 such that for all x1 , a is a prime , then it is not the case that b is even and x2 is adjacent to x3
 
 x1 is not smaller than a
 
-if a is the same size as x1 , then all these hold : \item a is small or a is a person \item a is a cube
+if a is of the same size as x1 , then all these hold : \item a is small or a is a person \item a is a cube
 
 there is a tetrahedron x1 such that if a is a student , then b is even
 
 for all x1 , all these hold : \item x2 is medium or a is a dodecahedron , b is a cube \item a is in the same column as x3
 
-there is an element x1 such that x1 is left of a
+there is an element x1 such that x1 is to the left of a
 
 all these hold : \item there is an element x1 such that a is smaller than x2 \item if a is even , then x3 is a dodecahedron or b is a cube
 
@@ -150,15 +150,15 @@ for all x1 , it is not the case that there is an element x2 such that a is a cub
 
 there is an element x1 such that there is an element x1 such that a is a cube or x1 is a cube
 
-for all x1 , at least one of these holds : \item a is small and x2 is a tetrahedron \item b is the same size as x2
+for all x1 , at least one of these holds : \item a is small and x2 is a tetrahedron \item b is of the same size as x2
 
-for all x1 , for all x2 , x3 is left of a or for all x3 , b is a student
+for all x1 , for all x2 , x3 is to the left of a or for all x3 , b is a student
 
 there is an element x1 such that x1 is not large and for all x2 , x3 is a person
 
-a is not large , x1 is not left of x2 and it is not the case that if b is in the same row as x1 , then x2 is medium
+a is not large , x1 is not to the left of x2 and it is not the case that if b is in the same row as x1 , then x2 is medium
 
-if a is right of x1 , x2 is even and b is large , then there is an element x1 such that x1 is large or c is right of x2
+if a is to the right of x1 , x2 is even and b is large , then there is an element x1 such that x1 is large or c is to the right of x2
 
 if there is an element x1 such that a is not a prime , then b is large
 
@@ -170,19 +170,19 @@ for all x1 , x1 is not adjacent to x2 or all these hold : \item a is a cube or a
 
 there is an element x1 such that a is in the same column as itself
 
-if if a is not even , then x1 is not the same shape as a , then for all x1 , x1 is right of x2
+if if a is not even , then x1 is not of the same shape as a , then for all x1 , x1 is to the right of x2
 
-for all x1 , there is an element x1 such that x1 is left of x2
+for all x1 , there is an element x1 such that x1 is to the left of x2
 
-there is an element x1 such that there is an element x1 such that x1 is a student , x1 is a pet , x2 is even and x2 is the same size as x3
+there is an element x1 such that there is an element x1 such that x1 is a student , x1 is a pet , x2 is even and x2 is of the same size as x3
 
-it is not the case that at least one of these holds : \item x1 is not the same shape as x1 \item if a is larger than b , then c is a prime
+it is not the case that at least one of these holds : \item x1 is not of the same shape as x1 \item if a is larger than b , then c is a prime
 
 if it is not the case that there is an element x1 such that x1 is in the same row as a , then there is an element x2 such that there is an element x3 such that x3 is a cube
 
 if x1 is a student , a is a prime and x2 is even , then x1 is a person
 
-it is not the case that for all x1 , a is medium , a is right of itself and x2 is small
+it is not the case that for all x1 , a is medium , a is to the right of itself and x2 is small
 
 it is not the case that if a is adjacent to itself and x1 is a pet , then there is an element x1 such that a is large
 
@@ -192,7 +192,7 @@ all these hold : \item there is an element x1 such that a is a dodecahedron or t
 
 all these hold : \item for all x1 , a is large or x1 is medium \item there is an element x2 such that b is a person or a is not a dodecahedron
 
-for all x1 , all these hold : \item a is adjacent to itself or b is a student \item x2 is left of a or x1 is a cube
+for all x1 , all these hold : \item a is adjacent to itself or b is a student \item x2 is to the left of a or x1 is a cube
 
 there is an element x1 such that if a is larger than itself and b is even , then a is a dodecahedron or x2 is small
 
@@ -200,7 +200,7 @@ if there is an element x1 such that a or b is even , then there is an element x1
 
 for all x1 , for all x2 , a is larger than itself or x2 is a prime
 
-if a is left of itself , then there is an element x1 such that there is an element x1 such that x1 is left of itself
+if a is to the left of itself , then there is an element x1 such that there is an element x1 such that x1 is to the left of itself
 
 for all x1 , x2 is a person or x2 is a pet , x3 is large and there is an element x1 such that x1 is a person
 
@@ -216,13 +216,13 @@ there is an element x1 such that if a is small , then x1 is in the same column a
 
 for all x1 , at least one of these holds : \item a is a pet and a is in back of x1 \item b is small and x1 is large
 
-for all x1 , x2 is right of a and it is not the case that if a is a tetrahedron , then x1 is a dodecahedron
+for all x1 , x2 is to the right of a and it is not the case that if a is a tetrahedron , then x1 is a dodecahedron
 
-at least one of these holds : \item a is left of x1 , a is even \item if b is small , then x2 is even and x1 is large
+at least one of these holds : \item a is to the left of x1 , a is even \item if b is small , then x2 is even and x1 is large
 
 for all x1 , x1 is a dodecahedron and a is a person or for all x1 , x2 is adjacent to b or x3 is a cube
 
-for all x1 , if a is even , then a is a person and there is an element x1 such that x1 is large and the same size as a
+for all x1 , if a is even , then a is a person and there is an element x1 such that x1 is large and of the same size as a
 
 if it is not the case that there is an element x1 such that x1 is even , then there is an element x1 such that for all x1 , a is a person
 
@@ -248,7 +248,7 @@ x1 is not in front of x2
 
 if there is an element x1 such that x2 is even or x3 is a person , then all these hold : \item x3 is a dodecahedron or a is small \item there is an element x3 such that a is a tetrahedron
 
-at least one of these holds : \item a is medium , b is large and for all x1 , x2 is left of c \item x2 is not the same size as x1
+at least one of these holds : \item a is medium , b is large and for all x1 , x2 is to the left of c \item x2 is not of the same size as x1
 
 x1 is even or in front of x2 , a is adjacent to x1 , x2 is a cube and there is an element x2 such that a is even
 
@@ -256,7 +256,7 @@ if it is not the case that for all x1 , a is in the same column as x2 , then for
 
 at least one of these holds : \item there is an element x1 such that if a is a dodecahedron , then x2 is a tetrahedron \item if x1 is adjacent to x3 , then if a is a person , then x3 is smaller than a
 
-if if there is an element x1 such that x1 is the same shape as itself , then x1 is not smaller than a , then there is an element x2 such that if b is adjacent to x3 , then x2 is a cube
+if if there is an element x1 such that x1 is of the same shape as itself , then x1 is not smaller than a , then there is an element x2 such that if b is adjacent to x3 , then x2 is a cube
 
 it is not the case that there is an element x1 such that if x1 is even , then a is large
 
@@ -280,7 +280,7 @@ at least one of these holds : \item there is an element x1 such that x1 is large
 
 for all x1 , for all x1 , a is in back of x1 and b is larger than c
 
-for all x1 , it is not the case that a is the same size as b and x1 is a cube
+for all x1 , it is not the case that a is of the same size as b and x1 is a cube
 
 at least one of these holds : \item if there is an element x1 such that x2 is a prime , then x3 is small or a is smaller than x3 \item for all x3 , b is a person and c is small
 
@@ -296,11 +296,11 @@ for all x1 , x2 is a cube or x2 is a student and there is an element x3 such tha
 
 for all x1 , a is medium and x1 is small or for all x2 , a is not in front of x1
 
-it is not the case that if if a is the same size as b , then a is large , then x1 is larger than b or x2 is left of c
+it is not the case that if if a is of the same size as b , then a is large , then x1 is larger than b or x2 is to the left of c
 
 it is not the case that for all x1 , for all x1 , a is adjacent to itself
 
-if all these hold : \item there is an element x1 such that a is even \item x2 is large or a is the same size as b , then a is a cube
+if all these hold : \item there is an element x1 such that a is even \item x2 is large or a is of the same size as b , then a is a cube
 
 for all x1 , at least one of these holds : \item there is an element x2 such that a is a prime \item if x2 is a dodecahedron , then b is in the same column as itself
 
@@ -312,25 +312,25 @@ there is an element x1 such that if x2 is small , then there is an element x3 su
 
 for all x1 , x2 is smaller than x1 , x3 is large and a is not even
 
-it is not the case that x1 is the same size as itself or x1 is in back of a and there is an element x1 such that b is adjacent to x2 or x2 is medium
+it is not the case that x1 is of the same size as itself or x1 is in back of a and there is an element x1 such that b is adjacent to x2 or x2 is medium
 
 there is an element x1 such that x1 is not a student and for all x1 , there is an element x2 such that x2 is in the same row as a
 
-there is an element x1 such that for all x2 , x1 is large and a is the same shape as x3
+there is an element x1 such that for all x2 , x1 is large and a is of the same shape as x3
 
-if all these hold : \item if x1 is a person , then a is in the same column as b \item for all x2 , x1 is right of a , then for all x2 , for all x2 , x2 is small
+if all these hold : \item if x1 is a person , then a is in the same column as b \item for all x2 , x1 is to the right of a , then for all x2 , for all x2 , x2 is small
 
-it is not the case that at least one of these holds : \item x1 is the same size as a and x2 is smaller than a \item for all x2 , x2 is in front of b
+it is not the case that at least one of these holds : \item x1 is of the same size as a and x2 is smaller than a \item for all x2 , x2 is in front of b
 
 it is not the case that if a is in front of itself and b is in back of c , then if x1 is a tetrahedron , then x2 is medium
 
-if a is a cube , then if there is an element x1 such that x2 is the same shape as b , then b is a pet or a is medium
+if a is a cube , then if there is an element x1 such that x2 is of the same shape as b , then b is a pet or a is medium
 
-at least one of these holds : \item for all x1 , x1 is not even \item for all x1 , x1 is the same shape as a and x2 is not in front of a
+at least one of these holds : \item for all x1 , x1 is not even \item for all x1 , x1 is of the same shape as a and x2 is not in front of a
 
 x1 is a cube , x1 is in back of x2 and there is an element x1 such that x2 is a student
 
-there is an element x1 such that if x1 is not the same size as x2 , then a is even
+there is an element x1 such that if x1 is not of the same size as x2 , then a is even
 
 all these hold : \item x1 is a prime , x1 is a person , if x1 is a person , then x1 is large \item it is not the case that for all x1 , a is large
 
@@ -340,19 +340,19 @@ it is not the case that if x1 is not small , then for all x2 , a is smaller than
 
 there is an element x1 such that x2 is not a pet or for all x1 , a is even
 
-for all x1 , if if a is large , then x1 is a person , then if x1 is the same size as b , then a is small
+for all x1 , if if a is large , then x1 is a person , then if x1 is of the same size as b , then a is small
 
 for all x1 , it is not the case that a is a prime and x2 is large
 
 it is not the case that for all x1 , if a is large , then x2 is small
 
-at least one of these holds : \item if if x1 is medium , then x2 is in the same column as a , then for all x1 , x1 is in back of x3 \item x2 is the same size as x4
+at least one of these holds : \item if if x1 is medium , then x2 is in the same column as a , then for all x1 , x1 is in back of x3 \item x2 is of the same size as x4
 
-all these hold : \item for all x1 , x2 is large , there is an element x1 such that a is a person \item x3 is a prime or x2 is the same size as b
+all these hold : \item for all x1 , x2 is large , there is an element x1 such that a is a person \item x3 is a prime or x2 is of the same size as b
 
-it is not the case that all these hold : \item x1 is a dodecahedron or x2 is left of a \item there is an element x2 such that a is in the same row as x3
+it is not the case that all these hold : \item x1 is a dodecahedron or x2 is to the left of a \item there is an element x2 such that a is in the same row as x3
 
-it is not the case that there is an element x1 such that x2 is a dodecahedron or it is not the case that there is an element x2 such that a is right of x2
+it is not the case that there is an element x1 such that x2 is a dodecahedron or it is not the case that there is an element x2 such that a is to the right of x2
 
 if if x1 is adjacent to a or x1 is a pet , then b is large and small , then x2 is adjacent to itself
 
@@ -364,19 +364,19 @@ if if there is an element x1 such that a is a prime , then for all x1 , x1 is in
 
 if a is not large , then all these hold : \item if b is in the same row as itself , then x1 is even \item there is an element x2 such that x1 is a pet
 
-for all x1 , if a is in the same row as itself or x2 is small , then b is a prime or x1 is the same shape as x2
+for all x1 , if a is in the same row as itself or x2 is small , then b is a prime or x1 is of the same shape as x2
 
 it is not the case that if x1 is not small , then there is an element x2 such that x2 is large
 
-all these hold : \item if there is an element x1 such that x2 is even , then for all x2 , a is large \item a is the same shape as b
+all these hold : \item if there is an element x1 such that x2 is even , then for all x2 , a is large \item a is of the same shape as b
 
 if x1 is not large or for all x2 , x2 is small , then at least one of these holds : \item there is an element x1 such that x2 is in the same row as x3 \item x4 is a cube and a is a cube
 
 for all x1 , it is not the case that there is an element x2 such that a is in back of b
 
-if it is not the case that a is a pet and b is left of a , then c is not larger than x1
+if it is not the case that a is a pet and b is to the left of a , then c is not larger than x1
 
-at least one of these holds : \item if there is an element x1 such that x2 is in front of itself , then x3 is small \item for all x2 , if x3 is a pet , then a is left of itself
+at least one of these holds : \item if there is an element x1 such that x2 is in front of itself , then x3 is small \item for all x2 , if x3 is a pet , then a is to the left of itself
 
 it is not the case that there is an element x1 such that x1 is adjacent to a and medium
 
@@ -390,17 +390,17 @@ if at least one of these holds : \item there is an element x1 such that x2 is a 
 
 all these hold : \item x1 is not a dodecahedron \item if a is a tetrahedron , then b is a cube or there is an element x1 such that a is a pet
 
-if there is an element x1 such that x2 is left of x3 and a is even , then it is not the case that b is not a person
+if there is an element x1 such that x2 is to the left of x3 and a is even , then it is not the case that b is not a person
 
 for all x1 , at least one of these holds : \item x2 is a cube and a is medium \item a is a pet and a is in the same column as x2
 
 at least one of these holds : \item if for all x1 , x1 is a cube , then x1 is adjacent to itself and x2 is small \item x3 is small
 
-a is the same size as x1 and there is an element x1 such that x1 is not small
+a is of the same size as x1 and there is an element x1 such that x1 is not small
 
 a is not a dodecahedron , b is not large and x1 is not even
 
-for all x1 , x2 is smaller than itself and a is the same shape as x1 and it is not the case that x2 is large and b is in the same row as x1
+for all x1 , x2 is smaller than itself and a is of the same shape as x1 and it is not the case that x2 is large and b is in the same row as x1
 
 x1 is in front of a and for all x2 , x1 is in front of itself
 
@@ -410,7 +410,7 @@ for all x1 , there is an element x2 such that x1 is a dodecahedron and a is in t
 
 all these hold : \item there is an element x1 such that x2 is a person , x1 is a prime or a is a tetrahedron \item for all x2 , a is a cube and a is in the same row as b
 
-for all x1 , at least one of these holds : \item a is in back of b , b is a person \item if c is the same size as x2 , then x2 is a person
+for all x1 , at least one of these holds : \item a is in back of b , b is a person \item if c is of the same size as x2 , then x2 is a person
 
 all these hold : \item there is an element x1 such that x2 is in back of x1 or x2 is not large \item x2 is in the same column as a
 
@@ -432,7 +432,7 @@ there is an element x1 such that it is not the case that for all x2 , a is small
 
 it is not the case that there is an element x1 such that a is in the same row as b , x2 is even and x1 is a pet
 
-it is not the case that for all x1 , a is large and b is right of x1
+it is not the case that for all x1 , a is large and b is to the right of x1
 
 for all x1 , for all x2 , x2 is small or x3 is in the same column as x1
 
@@ -448,17 +448,17 @@ there is an element x1 such that if there is an element x2 such that x1 is adjac
 
 a is in the same column as x1 or all these hold : \item for all x2 , x2 is adjacent to x3 \item x2 is a tetrahedron or x1 is smaller than b
 
-a is not even , x1 is right of x2 , a is a tetrahedron or x1 is medium
+a is not even , x1 is to the right of x2 , a is a tetrahedron or x1 is medium
 
 for all x1 , at least one of these holds : \item a is a student and a is large \item if a is large , then a is in the same row as x2
 
-if for all x1 , a is a prime , a is small or b is left of c , then for all x2 , for all x1 , b is a prime
+if for all x1 , a is a prime , a is small or b is to the left of c , then for all x2 , for all x1 , b is a prime
 
-there is an element x1 such that a is even , a is not left of a and for all x1 , x2 is a pet and x2 is in back of x3
+there is an element x1 such that a is even , a is not to the left of a and for all x1 , x2 is a pet and x2 is in back of x3
 
-for all x1 , a is adjacent to x1 and a is a tetrahedron and for all x2 , if b is left of c , then x3 is a prime
+for all x1 , a is adjacent to x1 and a is a tetrahedron and for all x2 , if b is to the left of c , then x3 is a prime
 
-for all x1 , x2 is the same shape as a
+for all x1 , x2 is of the same shape as a
 
 if for all x1 , x2 is larger than a and a is a dodecahedron , then for all x1 , if x2 is medium , then x3 is a cube
 
@@ -478,7 +478,7 @@ if it is not the case that x1 is a pet and x2 is small , then for all x2 , x3 is
 
 for all x1 , a is large and it is not the case that x1 is a student and x1 is small
 
-if for all x1 , a is the same shape as itself and x1 is even , then all these hold : \item a is a tetrahedron \item if x1 is left of itself , then a is a pet
+if for all x1 , a is of the same shape as itself and x1 is even , then all these hold : \item a is a tetrahedron \item if x1 is to the left of itself , then a is a pet
 
 it is not the case that it is not the case that if a is a pet , then a is large
 
@@ -504,7 +504,7 @@ it is not the case that for all x1 , x1 is not medium
 
 it is not the case that for all x1 , if x1 is smaller than a , then b is a prime
 
-if a is in front of x1 and b is not in back of x2 , then if c is the same shape as x3 , then there is an element x3 such that x1 is in front of a
+if a is in front of x1 and b is not in back of x2 , then if c is of the same shape as x3 , then there is an element x3 such that x1 is in front of a
 
 it is not the case that if there is an element x1 such that x1 is in the same row as x2 , then a is small
 
@@ -520,11 +520,11 @@ if if there is an element x1 such that a is a pet , then there is an element x2 
 
 if x1 is medium , a is in back of x1 or b is not a prime , then a is not a tetrahedron or there is an element x1 such that a is a student
 
-if a is a person , then x1 is the same size as b
+if a is a person , then x1 is of the same size as b
 
 if x1 is large , then it is not the case that a is smaller than b and c is even
 
-it is not the case that it is not the case that x1 is in the same row as a or x2 is the same shape as x3
+it is not the case that it is not the case that x1 is in the same row as a or x2 is of the same shape as x3
 
 for all x1 , for all x1 , x1 is a prime and x1 is small
 
@@ -532,11 +532,11 @@ there is an element x1 such that all these hold : \item x1 is smaller than a or 
 
 it is not the case that a is large or even
 
-if if there is an element x1 such that x2 is adjacent to a , then x2 is not a tetrahedron , then for all x3 , a is a pet or b is the same shape as c
+if if there is an element x1 such that x2 is adjacent to a , then x2 is not a tetrahedron , then for all x3 , a is a pet or b is of the same shape as c
 
 if there is an element x1 such that a is a cube or b is in the same row as x2 , then it is not the case that a is adjacent to x2 and x2 is a dodecahedron
 
-there is an element x1 such that a is right of b and b is even or it is not the case that x2 is not in back of b
+there is an element x1 such that a is to the right of b and b is even or it is not the case that x2 is not in back of b
 
 for all x1 , for all x2 , a is a student
 
@@ -546,41 +546,41 @@ it is not the case that it is not the case that if x1 is even , then x2 is small
 
 it is not the case that if a is a person and a is a student , then a is small and b is a pet
 
-there is an element x1 such that x2 is a prime or x1 is right of a or b is the same shape as a
+there is an element x1 such that x2 is a prime or x1 is to the right of a or b is of the same shape as a
 
 it is not the case that all these hold : \item if x1 is large , then a is in the same row as b , c is in back of x2 \item x1 is large
 
-it is not the case that x1 is not right of a
+it is not the case that x1 is not to the right of a
 
-if a is the same size as b , then b is not a tetrahedron and for all x1 , a is small
+if a is of the same size as b , then b is not a tetrahedron and for all x1 , a is small
 
 for all x1 , for all x1 , a is a prime and x1 is even
 
-if x1 is even , then there is an element x1 such that x1 is left of itself or a is the same size as x1
+if x1 is even , then there is an element x1 such that x1 is to the left of itself or a is of the same size as x1
 
 there is an element x1 such that for all x1 , a is a student or x2 is in the same column as itself
 
 it is not the case that there is an element x1 such that x1 is large or there is an element x1 such that a is even
 
-for all x1 , if x2 is right of a , then a is a tetrahedron or x1 is a dodecahedron
+for all x1 , if x2 is to the right of a , then a is a tetrahedron or x1 is a dodecahedron
 
 it is not the case that it is not the case that a is not in the same column as x1
 
-there is an element x1 such that it is not the case that for all x1 , a is left of x2
+there is an element x1 such that it is not the case that for all x1 , a is to the left of x2
 
-there is an element x1 such that a is right of b
+there is an element x1 such that a is to the right of b
 
 for all x1 , there is an element x1 such that if a is smaller than x1 , then a is in front of x1
 
-for all x1 , for all x2 , x3 is left of a or x1 is medium
+for all x1 , for all x2 , x3 is to the left of a or x1 is medium
 
 for all x1 , there is an element x2 such that x2 is even or x1 is not smaller than a
 
 for all x1 , x1 is large and for all x2 , a is medium
 
-at least one of these holds : \item x1 is not small and a is in the same column as itself \item for all x1 , a is in front of x2 or x3 is the same size as x1
+at least one of these holds : \item x1 is not small and a is in the same column as itself \item for all x1 , a is in front of x2 or x3 is of the same size as x1
 
-for all x1 , all these hold : \item a is not right of a \item b is small or x2 is a student
+for all x1 , all these hold : \item a is not to the right of a \item b is small or x2 is a student
 
 a is smaller than itself or x1 is in the same column as itself
 
@@ -606,9 +606,9 @@ it is not the case that a is in the same column as x1 and x1 is large or b is sm
 
 there is an element x1 such that it is not the case that for all x2 , a is a prime
 
-for all x1 , x1 is right of a and even or for all x2 , x3 is large or x1 is left of x4
+for all x1 , x1 is to the right of a and even or for all x2 , x3 is large or x1 is to the left of x4
 
-x1 is not the same size as a or for all x1 , b is not large
+x1 is not of the same size as a or for all x1 , b is not large
 
 if for all x1 , if a is a cube , then x2 is larger than itself , then it is not the case that if x2 is larger than x1 , then b is a prime
 
@@ -616,9 +616,9 @@ for all x1 , a is not in back of b
 
 at least one of these holds : \item if for all x1 , x1 is a dodecahedron , then there is an element x2 such that a is medium \item there is an element x2 such that x1 is not a dodecahedron
 
-all these hold : \item a is not a student \item if x1 is a dodecahedron , then b is adjacent to x1 or there is an element x1 such that there is an element x2 such that a is right of c
+all these hold : \item a is not a student \item if x1 is a dodecahedron , then b is adjacent to x1 or there is an element x1 such that there is an element x2 such that a is to the right of c
 
-it is not the case that all these hold : \item a is medium or small \item if x1 is smaller than x2 , then a is left of itself
+it is not the case that all these hold : \item a is medium or small \item if x1 is smaller than x2 , then a is to the left of itself
 
 for all x1 , it is not the case that a is a dodecahedron or x1 is small
 
@@ -634,7 +634,7 @@ all these hold : \item if x1 is medium , then a is a prime , there is an element
 
 if there is an element x1 such that if x2 is a tetrahedron , then a is a pet , then if a is not a cube , then a is larger than x2 or b is a prime
 
-for all x1 , x1 is smaller than a and for all x2 , x3 is right of x4
+for all x1 , x1 is smaller than a and for all x2 , x3 is to the right of x4
 
 if x1 is medium and for all x2 , a is a prime , then x1 is a person or there is an element x1 such that b is a prime
 
@@ -644,49 +644,49 @@ for all x1 , if for all x2 , x2 is large , then for all x3 , a is even
 
 it is not the case that all these hold : \item if x1 is a person , then a is even \item b is a prime
 
-for all x1 , x2 is not large , x3 is medium or there is an element x1 such that x3 is right of x4
+for all x1 , x2 is not large , x3 is medium or there is an element x1 such that x3 is to the right of x4
 
-it is not the case that for all x1 , x1 is left of a or a is small
+it is not the case that for all x1 , x1 is to the left of a or a is small
 
 it is not the case that x1 is in front of a and x1 is a tetrahedron or there is an element x2 such that if a is adjacent to b , then a is medium
 
 all these hold : \item x1 is large , a is not larger than x2 \item b is small or a is a dodecahedron
 
-for all x1 , if a is not large , then x2 is small and x3 is the same shape as b
+for all x1 , if a is not large , then x2 is small and x3 is of the same shape as b
 
 there is an element x1 such that a or b is medium and x2 is not a dodecahedron
 
 if for all x1 , x1 is a cube or a is larger than itself , then there is an element x1 such that a is a pet and x1 is a prime
 
-at least one of these holds : \item for all x1 , x2 is the same size as x1 or a is a prime \item a is large , a is medium and there is an element x3 such that a is a tetrahedron
+at least one of these holds : \item for all x1 , x2 is of the same size as x1 or a is a prime \item a is large , a is medium and there is an element x3 such that a is a tetrahedron
 
 there is an element x1 such that all these hold : \item x1 is in the same row as itself , x2 is even \item x1 is medium or a is a cube
 
 x1 is a person or for all x2 , x1 is even
 
-it is not the case that it is not the case that a is not left of x1
+it is not the case that it is not the case that a is not to the left of x1
 
 if if x1 is not a cube , then a is a tetrahedron , then b is a pet and there is an element x1 such that x2 is medium
 
 for all x1 , a is a person and x2 is a pet or there is an element x1 such that if x3 is in back of a , then a is in back of x4
 
-for all x1 , x1 is not the same shape as a or x1 is not a student
+for all x1 , x1 is not of the same shape as a or x1 is not a student
 
-there is an element x1 such that all these hold : \item a is left of x1 or b is a student \item x1 is not a cube
+there is an element x1 such that all these hold : \item a is to the left of x1 or b is a student \item x1 is not a cube
 
 for all x1 , for all x2 , a is not in the same row as b
 
-if x1 is the same size as x2 , then x2 is a cube
+if x1 is of the same size as x2 , then x2 is a cube
 
 for all x1 , there is an element x1 such that a is large , x1 is in back of x2 or b is in the same column as c
 
 it is not the case that x1 is not a cube or for all x1 , x2 is a tetrahedron
 
-it is not the case that for all x1 , a is the same shape as x2 or a is not small
+it is not the case that for all x1 , a is of the same shape as x2 or a is not small
 
 for all x1 , there is an element x2 such that x1 is a person
 
-it is not the case that it is not the case that for all x1 , x1 is left of x2
+it is not the case that it is not the case that for all x1 , x1 is to the left of x2
 
 there is an element x1 such that for all x1 , x1 is even or even
 
@@ -708,9 +708,9 @@ it is not the case that a is not a student and for all x1 , b is a student
 
 for all x1 , for all x1 , there is an element x1 such that a is small
 
-at least one of these holds : \item a is medium , if x1 is a student , then x1 is left of b \item for all x1 , x2 is small
+at least one of these holds : \item a is medium , if x1 is a student , then x1 is to the left of b \item for all x1 , x2 is small
 
-for all x1 , for all x2 , x1 is medium and a is right of x3
+for all x1 , for all x2 , x1 is medium and a is to the right of x3
 
 a is smaller than x1 and at least one of these holds : \item if x2 is a pet , then b is adjacent to x1 \item for all x3 , x2 is medium
 
@@ -720,13 +720,13 @@ if there is an element x1 such that x1 is a pet or a is a person , then x1 is no
 
 there is an element x1 such that for all x2 , x1 is a person
 
-at least one of these holds : \item a is even , x1 is a dodecahedron , if x1 is the same shape as itself , then x2 is a cube \item x1 is a student
+at least one of these holds : \item a is even , x1 is a dodecahedron , if x1 is of the same shape as itself , then x2 is a cube \item x1 is a student
 
 if a is small , then at least one of these holds : \item for all x1 , a is a dodecahedron \item if x1 is a tetrahedron , then x2 is adjacent to a
 
 for all x1 , at least one of these holds : \item if a is in back of x1 , then x2 is a pet \item b is small
 
-if it is not the case that if a is the same size as x1 , then x1 is a person , then all these hold : \item for all x1 , x2 is a tetrahedron \item if a is large , then a is even
+if it is not the case that if a is of the same size as x1 , then x1 is a person , then all these hold : \item for all x1 , x2 is a tetrahedron \item if a is large , then a is even
 
 there is an element x1 such that a is in front of itself , a is medium and x2 is medium
 
@@ -734,11 +734,11 @@ all these hold : \item if for all x1 , x1 is small , then a is large and x1 is s
 
 it is not the case that for all x1 , for all x1 , a is smaller than x2
 
-for all x1 , a is large or it is not the case that b is not the same size as b
+for all x1 , a is large or it is not the case that b is not of the same size as b
 
 it is not the case that for all x1 , there is an element x2 such that a is a person
 
-a is even or it is not the case that if x1 is the same shape as itself , then x1 is a dodecahedron
+a is even or it is not the case that if x1 is of the same shape as itself , then x1 is a dodecahedron
 
 there is an element x1 such that if a is not smaller than a , then x2 is not a prime
 
@@ -750,7 +750,7 @@ it is not the case that for all x1 , a is a pet or b is not smaller than c
 
 a is not a cube and there is an element x1 such that for all x1 , x2 is small
 
-x1 is in the same column as a , a is small , a is not smaller than a and x2 is left of a
+x1 is in the same column as a , a is small , a is not smaller than a and x2 is to the left of a
 
 if there is an element x1 such that for all x2 , x2 is large , then a is larger than x2
 
@@ -760,15 +760,15 @@ for all x1 , all these hold : \item a is not a person \item if x1 is medium , th
 
 there is an element x1 such that for all x1 , x2 is in the same row as a
 
-for all x1 , if if x2 is in back of a , then b is the same shape as x2 , then for all x3 , b is in back of c
+for all x1 , if if x2 is in back of a , then b is of the same shape as x2 , then for all x3 , b is in back of c
 
-for all x1 , x2 is large , a is a tetrahedron and b is left of a
+for all x1 , x2 is large , a is a tetrahedron and b is to the left of a
 
 for all x1 , a and x1 are even , a is larger than x2 or b is large
 
-at least one of these holds : \item if a is not a person , then x1 is left of b \item x2 is the same size as x1
+at least one of these holds : \item if a is not a person , then x1 is to the left of b \item x2 is of the same size as x1
 
-it is not the case that there is an element x1 such that x2 is right of itself or all these hold : \item a is larger than x1 \item if x2 is large , then a is a tetrahedron
+it is not the case that there is an element x1 such that x2 is to the right of itself or all these hold : \item a is larger than x1 \item if x2 is large , then a is a tetrahedron
 
 for all x1 , a is adjacent to x2
 
@@ -776,13 +776,13 @@ for all x1 , for all x1 , there is an element x2 such that a is a dodecahedron
 
 for all x1 , there is an element x1 such that a is a person or a is a cube
 
-there is an element x1 such that if x2 is a person , then x3 is small or a is left of itself
+there is an element x1 such that if x2 is a person , then x3 is small or a is to the left of itself
 
 if it is not the case that x1 is not large , then a is a prime
 
-all these hold : \item it is not the case that a is not the same size as x1 \item b is a pet , x1 is a tetrahedron , x2 is small or x1 is a person
+all these hold : \item it is not the case that a is not of the same size as x1 \item b is a pet , x1 is a tetrahedron , x2 is small or x1 is a person
 
-if a is a tetrahedron and a is not large , then x1 is not small and there is an element x2 such that b is right of x3
+if a is a tetrahedron and a is not large , then x1 is not small and there is an element x2 such that b is to the right of x3
 
 it is not the case that it is not the case that x1 is smaller than itself and a is a person
 
@@ -796,11 +796,11 @@ there is an element x1 such that for all x1 , a is not a student
 
 there is an element x1 such that there is an element x2 such that x3 is a cube
 
-for all x1 , if x2 is a cube , then a is small or for all x1 , x2 is the same size as a
+for all x1 , if x2 is a cube , then a is small or for all x1 , x2 is of the same size as a
 
 if there is an element x1 such that if a is large , then x1 is a tetrahedron , then if if b is in the same row as a , then b is in the same row as itself , then for all x2 , b is a cube
 
-there is an element x1 such that it is not the case that if a is a tetrahedron , then b is right of c
+there is an element x1 such that it is not the case that if a is a tetrahedron , then b is to the right of c
 
 for all x1 , it is not the case that for all x1 , a is medium
 
@@ -808,15 +808,15 @@ for all x1 , it is not the case that if x1 is in the same column as a , then x1 
 
 x1 is a dodecahedron , a is in back of b , b is in the same row as x1 or c is a pet
 
-if for all x1 , x2 is medium , then a is a prime and there is an element x3 such that b is right of a
+if for all x1 , x2 is medium , then a is a prime and there is an element x3 such that b is to the right of a
 
-if there is an element x1 such that a is right of x1 or b is small , then for all x2 , a is not a dodecahedron
+if there is an element x1 such that a is to the right of x1 or b is small , then for all x2 , a is not a dodecahedron
 
-all these hold : \item x1 is medium , a is the same shape as itself or a is a cube \item there is an element x1 such that x2 is a pet and x3 is left of itself
+all these hold : \item x1 is medium , a is of the same shape as itself or a is a cube \item there is an element x1 such that x2 is a pet and x3 is to the left of itself
 
-there is an element x1 such that for all x2 , a is the same size as itself and a is the same size as b
+there is an element x1 such that for all x2 , a is of the same size as itself and a is of the same size as b
 
-it is not the case that it is not the case that if a is left of itself , then x1 is right of b
+it is not the case that it is not the case that if a is to the left of itself , then x1 is to the right of b
 
 if if x1 is not small , then a is large , then x2 is medium
 
@@ -824,7 +824,7 @@ it is not the case that for all x1 , for all x2 , a is a tetrahedron
 
 there is an element x1 such that it is not the case that if x1 is a tetrahedron , then a is small
 
-it is not the case that at least one of these holds : \item x1 is the same shape as x2 and a is a student \item a is small
+it is not the case that at least one of these holds : \item x1 is of the same shape as x2 and a is a student \item a is small
 
 for all x1 , it is not the case that a is in front of x1 and a is adjacent to itself
 
@@ -840,21 +840,21 @@ at least one of these holds : \item if there is an element x1 such that a is a t
 
 there is an element x1 such that for all x2 , x2 is not large
 
-if there is an element x1 such that if a is in front of x1 , then a is left of b , then if x2 is not medium , then x3 is larger than itself
+if there is an element x1 such that if a is in front of x1 , then a is to the left of b , then if x2 is not medium , then x3 is larger than itself
 
 if x1 is a cube , then for all x1 , x1 is even
 
 there is an element x1 such that at least one of these holds : \item if x2 is a pet , then x2 is even , a is medium \item b is a dodecahedron
 
-for all cubes x1 , a is a prime or it is not the case that x2 is the same size as b and c is adjacent to a
+for all cubes x1 , a is a prime or it is not the case that x2 is of the same size as b and c is adjacent to a
 
-for all x1 , x1 is right of itself
+for all x1 , x1 is to the right of itself
 
 it is not the case that it is not the case that for all x1 , x2 is a dodecahedron
 
 it is not the case that there is an element x1 such that x2 is adjacent to itself or x1 is small
 
-at least one of these holds : \item a is small \item if if a is in back of x1 , then x2 is a prime , then x2 is left of b and b is small
+at least one of these holds : \item a is small \item if if a is in back of x1 , then x2 is a prime , then x2 is to the left of b and b is small
 
 there is an element x1 such that there is an element x1 such that a is a dodecahedron or b is a cube
 
@@ -866,7 +866,7 @@ there is an element x1 such that it is not the case that there is an element x2 
 
 it is not the case that there is an element x1 such that a is smaller than b and x2 is large
 
-it is not the case that if if a is large , then a is medium , then x1 is right of x2 or x3 is a prime
+it is not the case that if if a is large , then a is medium , then x1 is to the right of x2 or x3 is a prime
 
 it is not the case that for all x1 , there is an element x2 such that a is a tetrahedron
 
@@ -878,15 +878,15 @@ at least one of these holds : \item a is larger than itself , a is small and the
 
 if a is a tetrahedron , then x1 is not a cube
 
-a is left of x1 or for all x2 , x1 is not a person
+a is to the left of x1 or for all x2 , x1 is not a person
 
 for all x1 , if a is a prime and x1 is large , then for all x1 , x2 is a prime
 
 for all x1 , a is not medium or there is an element x1 such that a is smaller than b
 
-a is a person and it is not the case that a is not right of x1
+a is a person and it is not the case that a is not to the right of x1
 
-for all x1 , x1 is not large and at least one of these holds : \item if x1 is right of a , then a is a prime \item there is an element x1 such that b is large
+for all x1 , x1 is not large and at least one of these holds : \item if x1 is to the right of a , then a is a prime \item there is an element x1 such that b is large
 
 x1 is not a student and it is not the case that x1 is large or x1 is in front of itself
 
@@ -896,19 +896,19 @@ if it is not the case that for all x1 , a is a student , then there is an elemen
 
 there is an element x1 such that x2 is adjacent to itself
 
-it is not the case that at least one of these holds : \item x1 is the same shape as x2 and a is a prime \item a is right of x1
+it is not the case that at least one of these holds : \item x1 is of the same shape as x2 and a is a prime \item a is to the right of x1
 
 if a is not medium and a is even , then it is not the case that there is an element x1 such that x1 is large
 
 all these hold : \item it is not the case that if x1 is a pet , then x1 is a pet \item for all x1 , x1 is a student or x2 is not in the same row as a
 
-all these hold : \item there is an element x1 such that a is larger than x2 \item if there is an element x1 such that b is in front of x2 , then c is left of itself and c is a dodecahedron
+all these hold : \item there is an element x1 such that a is larger than x2 \item if there is an element x1 such that b is in front of x2 , then c is to the left of itself and c is a dodecahedron
 
 it is not the case that there is an element x1 such that there is an element x2 such that x2 is a tetrahedron
 
 there is an element x1 such that for all x1 , a is large and x1 is a dodecahedron
 
-a is not right of x1 and a is medium
+a is not to the right of x1 and a is medium
 
 at least one of these holds : \item a is a tetrahedron , for all x1 , a is medium \item x1 is larger than x2 and b is a student
 
@@ -926,7 +926,7 @@ all these hold : \item it is not the case that x1 is a pet and a is a dodecahedr
 
 it is not the case that it is not the case that if x1 is a cube , then x2 is small
 
-at least one of these holds : \item it is not the case that if x1 is adjacent to a , then x2 is right of a \item if there is an element x1 such that a is the same shape as x2 , then x3 is not a tetrahedron
+at least one of these holds : \item it is not the case that if x1 is adjacent to a , then x2 is to the right of a \item if there is an element x1 such that a is of the same shape as x2 , then x3 is not a tetrahedron
 
 for all x1 , for all x1 , a is medium and x2 is a pet
 
@@ -936,7 +936,7 @@ there is an element x1 such that for all x1 , a is in front of itself , x1 is in
 
 for all x1 , for all x2 , a is large or x2 is a cube
 
-it is not the case that a is not the same shape as b or b is not a pet
+it is not the case that a is not of the same shape as b or b is not a pet
 
 at least one of these holds : \item there is an element x1 such that a is a pet , x2 is a person and x1 is large \item there is an element x3 such that for all x3 , x3 is a person
 
@@ -948,13 +948,13 @@ it is not the case that it is not the case that there is an element x1 such that
 
 for all x1 , x1 is not a cube or all these hold : \item a is a dodecahedron or b is a tetrahedron \item there is an element x2 such that x3 is in the same column as x4
 
-there is an element x1 such that x1 is not the same shape as a
+there is an element x1 such that x1 is not of the same shape as a
 
-at least one of these holds : \item x1 is not the same size as x1 and x1 is not a student \item it is not the case that for all x1 , a is in the same column as b
+at least one of these holds : \item x1 is not of the same size as x1 and x1 is not a student \item it is not the case that for all x1 , a is in the same column as b
 
 all these hold : \item x1 is small , x2 is in back of x3 or a is adjacent to b \item it is not the case that there is an element x1 such that b is medium
 
-there is an element x1 such that x2 is not right of x1 or there is an element x2 such that a is medium and x2 is in back of b
+there is an element x1 such that x2 is not to the right of x1 or there is an element x2 such that a is medium and x2 is in back of b
 
 a is not a student or x1 is in front of b
 
@@ -962,9 +962,9 @@ if it is not the case that a is a person and a is a student , then it is not the
 
 it is not the case that if a is adjacent to x1 , then b is a dodecahedron and c is adjacent to x2
 
-if it is not the case that a is the same shape as x1 or a is a cube , then there is an element x2 such that x3 is a person or there is an element x4 such that a is a student
+if it is not the case that a is of the same shape as x1 or a is a cube , then there is an element x2 such that x3 is a person or there is an element x4 such that a is a student
 
-all these hold : \item x1 is a person or for all x2 , x3 is the same size as a \item it is not the case that for all x1 , x1 is small
+all these hold : \item x1 is a person or for all x2 , x3 is of the same size as a \item it is not the case that for all x1 , x1 is small
 
 it is not the case that for all x1 , a is medium and there is an element x2 such that x2 is large
 
@@ -972,43 +972,43 @@ it is not the case that x1 is a tetrahedron or a is large or it is not the case 
 
 it is not the case that for all x1 , a is smaller than x2 or x1 is even
 
-for all x1 , there is an element x1 such that x2 is not left of x1
+for all x1 , there is an element x1 such that x2 is not to the left of x1
 
 all these hold : \item if for all x1 , x1 is small , then there is an element x2 such that x3 is a pet \item there is an element x4 such that a is even
 
-if there is an element x1 such that x1 is in front of a , then x1 is the same size as a
+if there is an element x1 such that x1 is in front of a , then x1 is of the same size as a
 
 it is not the case that a is not smaller than x1
 
-for all x1 , all these hold : \item a is the same shape as itself or b is large \item c is a student or b is a tetrahedron
+for all x1 , all these hold : \item a is of the same shape as itself or b is large \item c is a student or b is a tetrahedron
 
 if there is an element x1 such that x1 is even and a is not a dodecahedron , then x1 is a prime
 
-if for all x1 , for all x2 , a is large , then all these hold : \item x1 is a dodecahedron or x3 is the same size as x4 \item for all x2 , a is medium
+if for all x1 , for all x2 , a is large , then all these hold : \item x1 is a dodecahedron or x3 is of the same size as x4 \item for all x2 , a is medium
 
 for all x1 , a is large and x1 is not a person
 
-all these hold : \item if for all x1 , x1 is smaller than a , then x2 is right of itself \item for all x1 , for all x2 , b is a cube
+all these hold : \item if for all x1 , x1 is smaller than a , then x2 is to the right of itself \item for all x1 , for all x2 , b is a cube
 
 a is in back of b , x1 is in the same row as a , a is a dodecahedron and there is an element x2 such that b is medium and x2 is a tetrahedron
 
-for all x1 , a is left of x1 or for all x2 , there is an element x3 such that x3 is a cube
+for all x1 , a is to the left of x1 or for all x2 , there is an element x3 such that x3 is a cube
 
 at least one of these holds : \item there is an element x1 such that a is in the same column as x2 , a is large \item if there is an element x3 such that a is a person , then a is not medium
 
 it is not the case that there is an element x1 such that x2 is a dodecahedron and x3 is in back of x4
 
-a is left of x1 , a is a cube , x2 is the same size as itself and it is not the case that there is an element x1 such that x2 is a cube
+a is to the left of x1 , a is a cube , x2 is of the same size as itself and it is not the case that there is an element x1 such that x2 is a cube
 
 there is an element x1 such that for all x2 , x3 is in the same column as x1 or x3 is not even
 
-all these hold : \item x1 is not larger than a or there is an element x2 such that x3 is a person \item a is not even or for all x2 , x3 is left of a
+all these hold : \item x1 is not larger than a or there is an element x2 such that x3 is a person \item a is not even or for all x2 , x3 is to the left of a
 
-all these hold : \item if a is not right of a , then there is an element x1 such that a is medium , x1 is not a person \item x1 is not adjacent to x2
+all these hold : \item if a is not to the right of a , then there is an element x1 such that a is medium , x1 is not a person \item x1 is not adjacent to x2
 
 at least one of these holds : \item if if a is in back of x1 , then b is smaller than x1 , then if b is large , then x2 is a dodecahedron \item it is not the case that for all x3 , x2 is even
 
-it is not the case that all these hold : \item x1 is in back of itself , a is in the same row as x2 \item x1 is in the same row as x2 or a is right of itself
+it is not the case that all these hold : \item x1 is in back of itself , a is in the same row as x2 \item x1 is in the same row as x2 or a is to the right of itself
 
 it is not the case that if a is even or x1 is a student , then there is an element x1 such that x2 is medium
 
@@ -1016,7 +1016,7 @@ for all x1 , at least one of these holds : \item x1 is a pet \item if a is large
 
 it is not the case that if a is a person and x1 is in the same column as a , then if b is a dodecahedron , then x1 is larger than x2
 
-all these hold : \item if a is large , then for all x1 , a is the same size as itself \item b is the same shape as x2
+all these hold : \item if a is large , then for all x1 , a is of the same size as itself \item b is of the same shape as x2
 
 if for all x1 , for all x2 , x3 is small , then there is an element x3 such that if a is a tetrahedron , then a is a prime
 
@@ -1026,7 +1026,7 @@ if if for all x1 , a is a dodecahedron , then there is an element x1 such that b
 
 at least one of these holds : \item x1 is a prime \item if a is large , then a is not a student
 
-there is an element x1 such that a is right of x2
+there is an element x1 such that a is to the right of x2
 
 it is not the case that for all x1 , there is an element x2 such that a is medium
 
@@ -1034,7 +1034,7 @@ at least one of these holds : \item if for all x1 , x2 is a person , then if a i
 
 it is not the case that it is not the case that for all x1 , a is a prime
 
-there is an element x1 such that if for all x2 , a is right of x1 , then for all x3 , b is large
+there is an element x1 such that if for all x2 , a is to the right of x1 , then for all x3 , b is large
 
 there is an element x1 such that for all x2 , for all x2 , x3 is a dodecahedron
 
@@ -1048,31 +1048,31 @@ for all x1 , for all x1 , a is small or x1 is not in front of x2
 
 if for all x1 , x2 is large or a is in the same column as x1 , then for all x3 , b is not large
 
-it is not the case that x1 is the same shape as x2 , a is medium and a is even
+it is not the case that x1 is of the same shape as x2 , a is medium and a is even
 
-if there is an element x1 such that x2 is medium or there is an element x2 such that a is smaller than itself , then for all x3 , x1 is the same shape as b and medium
+if there is an element x1 such that x2 is medium or there is an element x2 such that a is smaller than itself , then for all x3 , x1 is of the same shape as b and medium
 
-if if x1 is not a cube , then there is an element x2 such that x3 is even , then there is an element x4 such that there is an element x4 such that a is right of x5
+if if x1 is not a cube , then there is an element x2 such that x3 is even , then there is an element x4 such that there is an element x4 such that a is to the right of x5
 
 there is an element x1 such that there is an element x2 such that for all x2 , a is large
 
 there is an element x1 such that for all x1 , x2 is medium or a is a person
 
-for all x1 , x2 is left of a
+for all x1 , x2 is to the left of a
 
 all these hold : \item it is not the case that a is a student and x1 is in front of x2 \item if there is an element x1 such that a is small , then there is an element x2 such that a is larger than b
 
-a is not large , there is an element x1 such that a is even or for all x1 , x1 is the same size as itself
+a is not large , there is an element x1 such that a is even or for all x1 , x1 is of the same size as itself
 
 if it is not the case that for all x1 , x2 is large , then if a is small and a is a prime , then x3 is not a cube
 
-for all x1 , for all x1 , x2 is even and a is left of x3
+for all x1 , for all x1 , x2 is even and a is to the left of x3
 
-for all x1 , if if a is medium , then b is a dodecahedron , then x2 is not the same shape as b
+for all x1 , if if a is medium , then b is a dodecahedron , then x2 is not of the same shape as b
 
 it is not the case that a is in the same row as x1 or for all x1 , b is even
 
-it is not the case that if for all x1 , a is the same size as b , then a is larger than itself
+it is not the case that if for all x1 , a is of the same size as b , then a is larger than itself
 
 there is an element x1 such that it is not the case that for all x2 , a is in the same row as itself
 
@@ -1086,13 +1086,13 @@ it is not the case that x1 is a tetrahedron and there is an element x2 such that
 
 it is not the case that a is in the same column as b , b is medium or for all x1 , x1 is even
 
-if a is a prime , then at least one of these holds : \item x1 is medium \item if x2 is a pet , then x2 is left of b
+if a is a prime , then at least one of these holds : \item x1 is medium \item if x2 is a pet , then x2 is to the left of b
 
-if a is the same shape as x1 or for all x2 , b is smaller than a , then there is an element x3 such that c is smaller than x4 and x4 is not medium
+if a is of the same shape as x1 or for all x2 , b is smaller than a , then there is an element x3 such that c is smaller than x4 and x4 is not medium
 
 x1 is a pet and for all pets x1 , x2 is adjacent to itself
 
-for all x1 , there is an element x2 such that a is left of x2 or for all x1 , x2 is a person
+for all x1 , there is an element x2 such that a is to the left of x2 or for all x1 , x2 is a person
 
 there is an element x1 such that a is not medium and a is larger than x1
 
@@ -1108,23 +1108,23 @@ x1 is a dodecahedron or it is not the case that x2 is not a student
 
 at least one of these holds : \item for all x1 , there is an element x2 such that a is a person \item for all x2 , x2 is even , b is smaller than x1 and x3 is in front of a
 
-for all x1 , for all x2 , a is the same size as x1 and a is a dodecahedron
+for all x1 , for all x2 , a is of the same size as x1 and a is a dodecahedron
 
 it is not the case that it is not the case that x1 is smaller than a or b is even
 
-all these hold : \item for all x1 , x2 is not left of x3 \item if a is not medium , then b is not the same size as a
+all these hold : \item for all x1 , x2 is not to the left of x3 \item if a is not medium , then b is not of the same size as a
 
-if a is a student , then there is an element x1 such that x2 is right of x3 or x3 is right of a
+if a is a student , then there is an element x1 such that x2 is to the right of x3 or x3 is to the right of a
 
-x1 is large or it is not the case that if x1 is left of a , then x2 is a pet
+x1 is large or it is not the case that if x1 is to the left of a , then x2 is a pet
 
-x1 is a pet or there is an element x1 such that x2 is left of x3 and x4 is adjacent to a
+x1 is a pet or there is an element x1 such that x2 is to the left of x3 and x4 is adjacent to a
 
 for all x1 , for all x1 , for all x1 , x2 is adjacent to itself
 
 it is not the case that there is an element x1 such that a is not a prime
 
-at least one of these holds : \item x1 is a cube \item if x2 is a tetrahedron and x3 is even , then if a is left of b , then x1 is right of x2
+at least one of these holds : \item x1 is a cube \item if x2 is a tetrahedron and x3 is even , then if a is to the left of b , then x1 is to the right of x2
 
 at least one of these holds : \item a is smaller than x1 \item if there is an element x2 such that x2 is larger than b , then c is medium or x1 is a dodecahedron
 
@@ -1132,7 +1132,7 @@ there is an element x1 such that at least one of these holds : \item if a is in 
 
 for all x1 , it is not the case that for all x2 , x2 is large
 
-for all x1 , there is an element x1 such that x1 is large or x2 is the same size as x3
+for all x1 , there is an element x1 such that x1 is large or x2 is of the same size as x3
 
 for all x1 , x2 is not smaller than a
 
@@ -1144,11 +1144,11 @@ there is an element x1 such that a is small or b is smaller than x1 and for all 
 
 it is not the case that if x1 is a prime or x1 is a student , then a is smaller than x1 and x1 is a student
 
-at least one of these holds : \item if a is in back of x1 , then a is right of b , x2 is not a tetrahedron \item for all x3 , for all x2 , a is a person
+at least one of these holds : \item if a is in back of x1 , then a is to the right of b , x2 is not a tetrahedron \item for all x3 , for all x2 , a is a person
 
 it is not the case that it is not the case that for all x1 , x1 is in the same row as a
 
-it is not the case that x1 is right of a , x1 is right of b and x1 is a person
+it is not the case that x1 is to the right of a , x1 is to the right of b and x1 is a person
 
 there is an element x1 such that if for all x2 , x2 is a pet , then for all x3 , a is a person
 
@@ -1158,7 +1158,7 @@ for all x1 , at least one of these holds : \item if a is a student , then b is i
 
 there is an element x1 such that for all x1 , there is an element x1 such that x2 is even
 
-there is an element x1 such that a is not small , x2 is not larger than x2 and there is an element x2 such that a is the same size as x1
+there is an element x1 such that a is not small , x2 is not larger than x2 and there is an element x2 such that a is of the same size as x1
 
 it is not the case that if x1 is even and a is a person , then there is an element x1 such that x1 is a tetrahedron
 
@@ -1168,11 +1168,11 @@ if for all x1 , a is in the same row as x2 or b is smaller than itself , then x1
 
 for all x1 , a is large and a is a person and b is a person
 
-at least one of these holds : \item there is an element x1 such that x2 is not medium \item if x2 is not left of x2 , then a is a pet
+at least one of these holds : \item there is an element x1 such that x2 is not medium \item if x2 is not to the left of x2 , then a is a pet
 
 for all x1 , if for all x1 , x1 is large , then x1 is small and x2 is large
 
-for all x1 , if if a is larger than b , then x1 is the same size as itself , then x2 is not a dodecahedron
+for all x1 , if if a is larger than b , then x1 is of the same size as itself , then x2 is not a dodecahedron
 
 for all x1 , a is a student and x2 is even or b is adjacent to x1
 
@@ -1186,13 +1186,13 @@ there is an element x1 such that all these hold : \item x1 is not in front of x1
 
 for all x1 , x1 is a dodecahedron or a is small and for all x1 , a is a prime or x1 is larger than a
 
-if there is an element x1 such that if a is a dodecahedron , then a is medium , then for all x2 , a is left of itself or a is left of x2
+if there is an element x1 such that if a is a dodecahedron , then a is medium , then for all x2 , a is to the left of itself or a is to the left of x2
 
 there is an element x1 such that for all x1 , x1 is a pet and a is not medium
 
-it is not the case that for all x1 , x2 is the same shape as a or there is an element x3 such that a is adjacent to x2
+it is not the case that for all x1 , x2 is of the same shape as a or there is an element x3 such that a is adjacent to x2
 
-at least one of these holds : \item a is not a tetrahedron and there is an element x1 such that x1 is the same size as a \item for all x2 , if a is a cube , then x2 is in back of b
+at least one of these holds : \item a is not a tetrahedron and there is an element x1 such that x1 is of the same size as a \item for all x2 , if a is a cube , then x2 is in back of b
 
 it is not the case that all these hold : \item x1 is a person or a is larger than b \item there is an element x2 such that b is even
 
@@ -1204,7 +1204,7 @@ there is an element x1 such that x2 is not medium and x2 is a pet
 
 it is not the case that for all x1 , a is a tetrahedron and there is an element x1 such that a is in front of b
 
-it is not the case that if a is not large , then x1 is not the same shape as x1
+it is not the case that if a is not large , then x1 is not of the same shape as x1
 
 it is not the case that it is not the case that for all x1 , a is a student
 
@@ -1212,7 +1212,7 @@ there is an element x1 such that all these hold : \item a is in front of b or x1
 
 it is not the case that there is an element x1 such that a is even and a is a dodecahedron
 
-there is an element x1 such that it is not the case that if a is a prime , then x2 is right of x1
+there is an element x1 such that it is not the case that if a is a prime , then x2 is to the right of x1
 
 it is not the case that it is not the case that there is an element x1 such that a is adjacent to x2
 
@@ -1236,7 +1236,7 @@ it is not the case that for all x1 , a is a pet or a is in back of x2
 
 all these hold : \item it is not the case that for all x1 , x2 is in back of a \item b is even or for all x3 , x3 is in front of x1
 
-x1 is right of itself or there is an element x1 such that a is a pet
+x1 is to the right of itself or there is an element x1 such that a is a pet
 
 there is an element x1 such that a is even and x1 is medium or there is an element x1 such that x2 is in front of a or b is a person
 
@@ -1248,13 +1248,13 @@ for all x1 , there is an element x1 such that x2 is a student and x2 is in the s
 
 there is an element x1 such that a is in back of x1
 
-x1 is the same shape as x2
+x1 is of the same shape as x2
 
 there is an element x1 such that it is not the case that x2 is not small
 
 for all x1 , a is larger than x2
 
-all these hold : \item x1 is left of a , x2 is smaller than b or a is even \item there is an element x3 such that x3 is a student
+all these hold : \item x1 is to the left of a , x2 is smaller than b or a is even \item there is an element x3 such that x3 is a student
 
 if there is an element x1 such that a is in front of x2 and x3 is large , then a is in the same row as b
 
@@ -1264,23 +1264,23 @@ if there is an element x1 such that x1 is not medium , then if a is adjacent to 
 
 a is a tetrahedron and at least one of these holds : \item x1 is not in back of a \item if a is small , then a is a student
 
-x1 is small and it is not the case that if x1 is the same size as a , then a is a prime
+x1 is small and it is not the case that if x1 is of the same size as a , then a is a prime
 
-for all x1 , if a is even , then b is a person and it is not the case that for all x2 , a is the same shape as c
+for all x1 , if a is even , then b is a person and it is not the case that for all x2 , a is of the same shape as c
 
 for all x1 , there is an element x1 such that if x2 is large , then a is a pet
 
 at least one of these holds : \item x1 is a prime and for all x1 , a is small \item all these hold : \item if b is even , then x1 is a pet \item there is an element x2 such that a is small
 
-there is an element x1 such that for all x2 , x1 is right of a or x1 is in the same column as b
+there is an element x1 such that for all x2 , x1 is to the right of a or x1 is in the same column as b
 
 it is not the case that if a is a prime and x1 is large , then there is an element x2 such that b is a prime
 
 there is an element x1 such that at least one of these holds : \item x1 is not a person \item x1 is a person and x2 is large
 
-there is an element x1 such that all these hold : \item x1 is a person or a is a prime \item x1 is the same size as a or x2 is small
+there is an element x1 such that all these hold : \item x1 is a person or a is a prime \item x1 is of the same size as a or x2 is small
 
-it is not the case that if x1 is left of itself , then x2 is in the same column as a and it is not the case that there is an element x2 such that b is large
+it is not the case that if x1 is to the left of itself , then x2 is in the same column as a and it is not the case that there is an element x2 such that b is large
 
 for all x1 , if x2 is not small , then if x3 is a pet , then x1 is a dodecahedron
 
@@ -1310,11 +1310,11 @@ for all x1 , there is an element x1 such that x1 is not a student
 
 for all x1 , it is not the case that for all x1 , a is a student
 
-at least one of these holds : \item if there is an element x1 such that a is in back of b , then there is an element x1 such that x1 is left of x2 \item x3 is adjacent to x2
+at least one of these holds : \item if there is an element x1 such that a is in back of b , then there is an element x1 such that x1 is to the left of x2 \item x3 is adjacent to x2
 
-for all x1 , at least one of these holds : \item a is large , a is left of x2 \item if x3 is in the same row as itself , then b is in front of a
+for all x1 , at least one of these holds : \item a is large , a is to the left of x2 \item if x3 is in the same row as itself , then b is in front of a
 
-all these hold : \item there is an element x1 such that x2 is large or x2 is a dodecahedron \item if x2 is not the same shape as a , then there is an element x2 such that x2 is even
+all these hold : \item there is an element x1 such that x2 is large or x2 is a dodecahedron \item if x2 is not of the same shape as a , then there is an element x2 such that x2 is even
 
 a is even and it is not the case that x1 is not a student
 
@@ -1324,7 +1324,7 @@ x1 is a prime or all these hold : \item x1 is in the same row as itself or a is 
 
 for all x1 , for all x2 , for all x3 , a is even
 
-it is not the case that it is not the case that for all x1 , a is right of x1
+it is not the case that it is not the case that for all x1 , a is to the right of x1
 
 there is an element x1 such that for all x2 , x3 is not a prime
 
@@ -1340,19 +1340,19 @@ for all x1 , there is an element x2 such that there is an element x3 such that a
 
 if for all x1 , a is not a student , then all these hold : \item for all x2 , b is small \item if x1 is a student , then a is even
 
-for all x1 , it is not the case that a is even or x1 is the same size as b
+for all x1 , it is not the case that a is even or x1 is of the same size as b
 
-it is not the case that x1 is medium or x2 is a person , a is medium , x3 is a dodecahedron and for all x3 , a is right of x4
+it is not the case that x1 is medium or x2 is a person , a is medium , x3 is a dodecahedron and for all x3 , a is to the right of x4
 
 for all x1 , it is not the case that if a is even , then b is larger than c
 
 for all x1 , for all x1 , there is an element x2 such that x1 is small
 
-for all x1 , if there is an element x1 such that x1 is right of itself , then a is small
+for all x1 , if there is an element x1 such that x1 is to the right of itself , then a is small
 
-for all x1 , a is left of itself , x1 is a dodecahedron and there is an element x1 such that x1 is large
+for all x1 , a is to the left of itself , x1 is a dodecahedron and there is an element x1 such that x1 is large
 
-at least one of these holds : \item x1 is the same shape as itself and x2 is even , a is a cube \item there is an element x2 such that a is a student and x2 is a pet
+at least one of these holds : \item x1 is of the same shape as itself and x2 is even , a is a cube \item there is an element x2 such that a is a student and x2 is a pet
 
 there is an element x1 such that for all x2 , x3 is adjacent to a , x2 is a prime and b is a student
 
@@ -1366,15 +1366,15 @@ for all x1 , if x1 is in the same row as a or a is a dodecahedron , then b is la
 
 if there is an element x1 such that x1 is large , then there is an element x2 such that a is not a prime
 
-for all x1 , there is an element x1 such that x1 is not right of a
+for all x1 , there is an element x1 such that x1 is not to the right of a
 
 there is an element x1 such that if x2 is a tetrahedron and x1 is a pet , then for all x1 , a is a dodecahedron
 
-x1 is not the same shape as a
+x1 is not of the same shape as a
 
-all these hold : \item if a is in back of x1 or x2 is a cube , then x2 is left of itself \item x2 is a prime
+all these hold : \item if a is in back of x1 or x2 is a cube , then x2 is to the left of itself \item x2 is a prime
 
-if there is an element x1 such that a is the same size as x2 and x1 is in the same row as a , then for all x3 , x2 is not adjacent to x2
+if there is an element x1 such that a is of the same size as x2 and x1 is in the same row as a , then for all x3 , x2 is not adjacent to x2
 
 for all x1 , a is a cube or a is in the same row as x1 or for all x2 , for all x1 , x2 is small
 
@@ -1386,13 +1386,13 @@ it is not the case that for all x1 , x2 or a is small
 
 if there is an element x1 such that a is small , then all these hold : \item b is small or a is a person \item if c is large , then b is small
 
-for all x1 , it is not the case that a is not the same shape as b
+for all x1 , it is not the case that a is not of the same shape as b
 
 there is an element x1 such that there is an element x1 such that x1 is medium and a is a pet
 
 all these hold : \item for all x1 , a is even , a is large or x1 is small \item x2 is in back of a
 
-if a is in the same column as itself , then a is a dodecahedron , b is right of x1 and c is even
+if a is in the same column as itself , then a is a dodecahedron , b is to the right of x1 and c is even
 
 there is an element x1 such that there is an element x2 such that there is an element x1 such that x2 is small
 
@@ -1400,7 +1400,7 @@ at least one of these holds : \item there is an element x1 such that a is medium
 
 it is not the case that there is an element x1 such that if a is large , then b is in the same column as itself
 
-all these hold : \item a is large \item if a is not adjacent to a , then a is not the same shape as x1
+all these hold : \item a is large \item if a is not adjacent to a , then a is not of the same shape as x1
 
 x1 is even or a is in the same row as b
 
@@ -1416,13 +1416,13 @@ it is not the case that it is not the case that a is small and b is larger than 
 
 there is an element x1 such that there is an element x2 such that x1 is in the same row as a
 
-for all x1 , for all x1 , for all x1 , x1 is the same size as x2
+for all x1 , for all x1 , for all x1 , x1 is of the same size as x2
 
-for all x1 , all these hold : \item if x1 is right of a , then a is small \item for all x2 , a is in front of x1
+for all x1 , all these hold : \item if x1 is to the right of a , then a is small \item for all x2 , a is in front of x1
 
 there is an element x1 such that it is not the case that x1 is not a student
 
-for all x1 , for all x1 , for all x1 , a is the same size as x2
+for all x1 , for all x1 , for all x1 , a is of the same size as x2
 
 if there is an element x1 such that for all x1 , a is even , then x1 is in the same row as b
 
@@ -1434,7 +1434,7 @@ a is a dodecahedron and x1 is medium
 
 for all x1 , if x2 is a cube , then x3 is medium or all these hold : \item for all x3 , a is even \item if a is a dodecahedron , then b is in front of itself
 
-for all x1 , there is an element x2 such that a is large and a is not the same size as x3
+for all x1 , there is an element x2 such that a is large and a is not of the same size as x3
 
 if x1 is medium , then for all x2 , a is a pet , b is even or b is in front of x3
 
@@ -1452,7 +1452,7 @@ if there is an element x1 such that a is in the same column as x2 and x3 is a pe
 
 if there is an element x1 such that x1 is a cube and for all x2 , x2 is a tetrahedron , then for all x3 , there is an element x2 such that a is smaller than x3
 
-for all x1 , for all x1 , x2 is the same size as a or a is left of x2
+for all x1 , for all x1 , x2 is of the same size as a or a is to the left of x2
 
 a is a student or it is not the case that x1 is in the same row as x2 or x3 is medium
 
@@ -1460,9 +1460,9 @@ there is an element x1 such that there is an element x1 such that if a is small 
 
 there is an element x1 such that for all x2 , x3 is a person or there is an element x1 such that there is an element x2 such that x3 is medium
 
-all these hold : \item a is left of b , if a is a dodecahedron , then x1 is left of x2 \item if x3 is a prime , then x4 is a person
+all these hold : \item a is to the left of b , if a is a dodecahedron , then x1 is to the left of x2 \item if x3 is a prime , then x4 is a person
 
-if x1 is in the same row as itself , then for all x1 , x2 is even or x1 is left of itself
+if x1 is in the same row as itself , then for all x1 , x2 is even or x1 is to the left of itself
 
 if at least one of these holds : \item a is a tetrahedron and b is in the same row as itself \item for all x1 , c is a pet , then it is not the case that if x1 is small , then a is a cube
 
@@ -1470,9 +1470,9 @@ if there is an element x1 such that x2 is not in back of a , then there is an el
 
 for all x1 , it is not the case that if a is even , then x2 is in back of b
 
-there is an element x1 such that all these hold : \item if a is right of b , then a is a student \item there is an element x2 such that b is a dodecahedron
+there is an element x1 such that all these hold : \item if a is to the right of b , then a is a student \item there is an element x2 such that b is a dodecahedron
 
-all these hold : \item if if x1 is large , then x2 is the same size as a , then a is not the same size as a \item for all x1 , there is an element x2 such that b is a dodecahedron
+all these hold : \item if if x1 is large , then x2 is of the same size as a , then a is not of the same size as a \item for all x1 , there is an element x2 such that b is a dodecahedron
 
 all these hold : \item x1 is even or a is a cube , x1 is large , b is a prime \item x2 is medium
 
@@ -1480,33 +1480,33 @@ there is an element x1 such that if there is an element x1 such that a is medium
 
 there is an element x1 such that a is in front of x1 and b is a person and there is an element x2 such that x2 is adjacent to c or in the same column as d
 
-for all x1 , there is an element x1 such that x1 is medium or left of a
+for all x1 , there is an element x1 such that x1 is medium or to the left of a
 
 it is not the case that there is an element x1 such that if x2 is even , then x2 is medium
 
 there is an element x1 such that there is an element x1 such that there is an element x2 such that a is medium
 
-x1 is the same shape as a
+x1 is of the same shape as a
 
 if if if x1 is even , then x1 is a dodecahedron , then x2 is a cube or x3 is medium , then a is adjacent to x3
 
-for all x1 , x1 is not the same size as x1 and for all x2 , if a is in the same row as x2 , then a is a tetrahedron
+for all x1 , x1 is not of the same size as x1 and for all x2 , if a is in the same row as x2 , then a is a tetrahedron
 
 it is not the case that there is an element x1 such that a is not a prime
 
-there is an element x1 such that if x1 is not right of x1 , then a is right of x2 or x1 is a prime
+there is an element x1 such that if x1 is not to the right of x1 , then a is to the right of x2 or x1 is a prime
 
 there is an element x1 such that there is an element x2 such that a is in the same column as x1 or medium
 
 for all x1 , x2 is not larger than x1
 
-a is the same shape as x1
+a is of the same shape as x1
 
 for all x1 , for all x2 , there is an element x1 such that a is even
 
-x1 is the same size as x2
+x1 is of the same size as x2
 
-a is left of x1 and it is not the case that b is not small
+a is to the left of x1 and it is not the case that b is not small
 
 it is not the case that it is not the case that x1 is not in front of x1
 
@@ -1526,9 +1526,9 @@ it is not the case that x1 is not a dodecahedron and a is smaller than x2
 
 for all x1 , there is an element x1 such that there is an element x2 such that a is even
 
-if if if x1 is left of x2 , then a is even , then b is large and x1 is a cube , then b is medium
+if if if x1 is to the left of x2 , then a is even , then b is large and x1 is a cube , then b is medium
 
-x1 is the same shape as a and at least one of these holds : \item if x1 is a cube , then x2 is left of x3 \item x4 is left of b
+x1 is of the same shape as a and at least one of these holds : \item if x1 is a cube , then x2 is to the left of x3 \item x4 is to the left of b
 
 for all x1 , a is even , x1 is a person and b is medium
 
@@ -1536,7 +1536,7 @@ if it is not the case that a is not a tetrahedron , then there is an element x1 
 
 there is an element x1 such that all these hold : \item if x2 is a dodecahedron , then x2 is a cube \item a is a prime or b is a prime
 
-it is not the case that for all x1 , if x1 is even , then x1 is left of itself
+it is not the case that for all x1 , if x1 is even , then x1 is to the left of itself
 
 for all x1 , it is not the case that if a is a cube , then b is small
 
@@ -1556,13 +1556,13 @@ all these hold : \item there is an element x1 such that if a is a cube , then b 
 
 all these hold : \item if a is a cube or x1 is large , then a is not in the same row as x2 \item b is in the same row as x3
 
-there is an element x1 such that x1 is not a person and a is not right of b
+there is an element x1 such that x1 is not a person and a is not to the right of b
 
-there is an element x1 such that for all x1 , a is small , there is an element x2 such that b is a prime or b is not the same shape as x1
+there is an element x1 such that for all x1 , a is small , there is an element x2 such that b is a prime or b is not of the same shape as x1
 
 if a is a prime , then it is not the case that a is smaller than x1 and x2 is a tetrahedron
 
-if if a is not left of b , then for all x1 , a is a prime , then a is a cube
+if if a is not to the left of b , then for all x1 , a is a prime , then a is a cube
 
 there is an element x1 such that for all tetrahedrons x1 , x2 is even
 
@@ -1570,29 +1570,29 @@ it is not the case that there is an element x1 such that a is medium and x1 is n
 
 there is an element x1 such that for all x1 , x1 is a prime or a is a person
 
-it is not the case that if a is the same shape as b , then x1 is a dodecahedron and for all x2 , for all x3 , x1 is medium
+it is not the case that if a is of the same shape as b , then x1 is a dodecahedron and for all x2 , for all x3 , x1 is medium
 
 it is not the case that there is an element x1 such that a is adjacent to x2 , a is a cube or a is a prime
 
-for all x1 , all these hold : \item there is an element x2 such that a is even \item b is a tetrahedron or x3 is right of x2
+for all x1 , all these hold : \item there is an element x2 such that a is even \item b is a tetrahedron or x3 is to the right of x2
 
 at least one of these holds : \item if x1 or a is large , then x2 is a person or x1 is a prime \item for all x3 , x3 is not medium
 
 it is not the case that there is an element x1 such that x1 is in front of itself or a is in the same row as itself
 
-there is an element x1 such that x2 is a tetrahedron or a is a cube and for all x2 , x3 is left of x1 or x3 is the same size as itself
+there is an element x1 such that x2 is a tetrahedron or a is a cube and for all x2 , x3 is to the left of x1 or x3 is of the same size as itself
 
 there is an element x1 such that x2 is not small or for all x2 , for all x2 , x3 is even
 
 if there is an element x1 such that if a is even , then x2 is smaller than b , then it is not the case that x3 is a student and x3 is small
 
-there is an element x1 such that at least one of these holds : \item there is an element x2 such that x1 is left of a \item b is in the same row as x3 and x1 is a pet
+there is an element x1 such that at least one of these holds : \item there is an element x2 such that x1 is to the left of a \item b is in the same row as x3 and x1 is a pet
 
 for all x1 , for all x1 , x1 is larger than a
 
-it is not the case that there is an element x1 such that x1 is the same shape as x2 or it is not the case that x1 is larger than x2 and x2 is left of a
+it is not the case that there is an element x1 such that x1 is of the same shape as x2 or it is not the case that x1 is larger than x2 and x2 is to the left of a
 
-if x1 is the same size as a , then at least one of these holds : \item x1 is in front of x2 and a is small \item x2 is a pet
+if x1 is of the same size as a , then at least one of these holds : \item x1 is in front of x2 and a is small \item x2 is a pet
 
 there is an element x1 such that x1 is large or x2 is a person
 
@@ -1600,21 +1600,21 @@ if it is not the case that for all x1 , a is even , then if if b is a person , t
 
 all these hold : \item if if x1 is a tetrahedron , then x1 is in front of itself , then there is an element x1 such that a is in the same column as b \item for all x1 , there is an element x1 such that b is a cube
 
-if if if x1 is adjacent to itself , then a is right of itself , then a is a dodecahedron , then for all x2 , x2 is medium and b is a dodecahedron
+if if if x1 is adjacent to itself , then a is to the right of itself , then a is a dodecahedron , then for all x2 , x2 is medium and b is a dodecahedron
 
 it is not the case that there is an element x1 such that there is an element x1 such that a is a student
 
-it is not the case that if there is an element x1 such that a is medium , then for all x1 , b is the same shape as itself
+it is not the case that if there is an element x1 such that a is medium , then for all x1 , b is of the same shape as itself
 
-for all x1 , a is not in the same row as x1 and it is not the case that b is left of x1 or in front of c
+for all x1 , a is not in the same row as x1 and it is not the case that b is to the left of x1 or in front of c
 
-for all x1 , there is an element x2 such that x1 is a pet and a is not the same size as x3
+for all x1 , there is an element x2 such that x1 is a pet and a is not of the same size as x3
 
-it is not the case that there is an element x1 such that x2 is adjacent to a , b is not right of a and c is not even
+it is not the case that there is an element x1 such that x2 is adjacent to a , b is not to the right of a and c is not even
 
-if a is a tetrahedron and there is an element x1 such that a is adjacent to x2 , then there is an element x1 such that for all x1 , a is left of x2
+if a is a tetrahedron and there is an element x1 such that a is adjacent to x2 , then there is an element x1 such that for all x1 , a is to the left of x2
 
-a is a pet and b is the same shape as x1
+a is a pet and b is of the same shape as x1
 
 at least one of these holds : \item for all x1 , x2 is not small \item if a is not a person , then for all x1 , b is a pet
 
@@ -1624,7 +1624,7 @@ at least one of these holds : \item x1 is large \item if there is an element x1 
 
 at least one of these holds : \item for all x1 , for all x1 , x2 is a student \item there is an element x3 such that a is a prime , x2 is a tetrahedron and a is even
 
-if there is an element x1 such that x1 is a pet , then x1 is left of itself , a is in the same column as x1 or x2 is left of b
+if there is an element x1 such that x1 is a pet , then x1 is to the left of itself , a is in the same column as x1 or x2 is to the left of b
 
 there is an element x1 such that x2 is medium or a is even or there is an element x3 such that a is a tetrahedron and a is a cube
 
@@ -1638,11 +1638,11 @@ for all x1 , there is an element x2 such that for all x3 , a is a cube
 
 it is not the case that if if a is medium , then a is small , then x1 is even and b is medium
 
-for all x1 , x2 is right of itself
+for all x1 , x2 is to the right of itself
 
 it is not the case that at least one of these holds : \item a is larger than b \item if a is larger than c , then x1 is a person
 
-it is not the case that all these hold : \item for all x1 , x2 is left of itself \item if x2 is a dodecahedron , then a is the same size as x3
+it is not the case that all these hold : \item for all x1 , x2 is to the left of itself \item if x2 is a dodecahedron , then a is of the same size as x3
 
 for all x1 , for all x2 , for all x2 , x3 is a prime
 
@@ -1650,15 +1650,15 @@ there is an element x1 such that it is not the case that there is an element x1 
 
 it is not the case that for all x1 , a is a student or a is in the same row as b
 
-it is not the case that a is the same size as x1 and b is a cube
+it is not the case that a is of the same size as x1 and b is a cube
 
-for all x1 , at least one of these holds : \item a is smaller than x1 and x2 is a person \item b is the same size as c
+for all x1 , at least one of these holds : \item a is smaller than x1 and x2 is a person \item b is of the same size as c
 
-it is not the case that for all x1 , x1 is a pet or x2 is the same size as x1
+it is not the case that for all x1 , x1 is a pet or x2 is of the same size as x1
 
 for all x1 , for all x1 , x1 is medium and x1 is in the same column as itself
 
-all these hold : \item if there is an element x1 such that a is large , then x2 is even and the same shape as a \item there is an element x2 such that b is not medium
+all these hold : \item if there is an element x1 such that a is large , then x2 is even and of the same shape as a \item there is an element x2 such that b is not medium
 
 there is an element x1 such that a is in front of x1
 
@@ -1666,7 +1666,7 @@ if it is not the case that if x1 is medium , then a is a person , then it is not
 
 a is not adjacent to b or there is an element x1 such that there is an element x1 such that x2 is larger than itself
 
-there is an element x1 such that there is an element x1 such that there is an element x1 such that a is left of b
+there is an element x1 such that there is an element x1 such that there is an element x1 such that a is to the left of b
 
 there is an element x1 such that for all x2 , x2 is a tetrahedron
 
@@ -1676,13 +1676,13 @@ there is an element x1 such that for all x1 , a is larger than itself
 
 for all x1 , for all x2 , x3 is large or x2 is small
 
-if there is an element x1 such that if a is even , then b is a person , then x1 is right of b
+if there is an element x1 such that if a is even , then b is a person , then x1 is to the right of b
 
 a is a tetrahedron and there is an element x1 such that there is an element x2 such that a is medium
 
 for all x1 , for all x2 , x3 is a person
 
-if there is an element x1 such that if x2 is a tetrahedron , then x3 is a cube , then at least one of these holds : \item for all x3 , x3 is a cube \item x1 is a cube and a is the same size as itself
+if there is an element x1 such that if x2 is a tetrahedron , then x3 is a cube , then at least one of these holds : \item for all x3 , x3 is a cube \item x1 is a cube and a is of the same size as itself
 
 there is an element x1 such that for all x1 , a is in front of b or a is a person
 
@@ -1690,19 +1690,19 @@ for all x1 , all these hold : \item x2 is a cube or a is large \item there is an
 
 for all x1 , there is an element x1 such that a is small and there is an element x1 such that b is a cube
 
-it is not the case that all these hold : \item if x1 is a cube , then x1 is a prime \item for all x1 , a is right of x2
+it is not the case that all these hold : \item if x1 is a cube , then x1 is a prime \item for all x1 , a is to the right of x2
 
 all these hold : \item if if x1 is a pet , then a is a tetrahedron , then a is in the same column as itself and a is in back of itself \item there is an element x2 such that b is medium
 
-if all these hold : \item x1 is not the same size as x1 \item x1 is a cube or a is small , then there is an element x1 such that x2 is not the same size as a
+if all these hold : \item x1 is not of the same size as x1 \item x1 is a cube or a is small , then there is an element x1 such that x2 is not of the same size as a
 
 there is an element x1 such that it is not the case that there is an element x2 such that x3 is in the same column as a
 
-it is not the case that all these hold : \item a is in back of itself or x1 is in front of b \item x2 is not the same shape as a
+it is not the case that all these hold : \item a is in back of itself or x1 is in front of b \item x2 is not of the same shape as a
 
 there is an element x1 such that there is an element x1 such that x2 is a pet and x3 is a student
 
-all these hold : \item if a is a pet or x1 is in back of x2 , then if a is even , then x1 is medium \item x1 is not the same shape as b
+all these hold : \item if a is a pet or x1 is in back of x2 , then if a is even , then x1 is medium \item x1 is not of the same shape as b
 
 it is not the case that for all x1 , a is a dodecahedron and there is an element x1 such that x1 is a person
 
@@ -1714,29 +1714,29 @@ it is not the case that if for all x1 , x2 is larger than x3 , then for all x1 ,
 
 for all x1 , for all x2 , for all x3 , a is a cube
 
-for all x1 , a is right of itself
+for all x1 , a is to the right of itself
 
 for all x1 , if x1 is not even , then a is not large
 
-it is not the case that all these hold : \item x1 is the same size as a , b is the same size as x1 \item if x2 is the same size as x3 , then b is a tetrahedron
+it is not the case that all these hold : \item x1 is of the same size as a , b is of the same size as x1 \item if x2 is of the same size as x3 , then b is a tetrahedron
 
 it is not the case that it is not the case that if a is in front of x1 , then x1 is a person
 
 all these hold : \item x1 is small , a is a person or for all x1 , x2 is even \item for all x2 , b is a pet
 
-for all x1 , for all x2 , if x2 is the same size as a , then x2 is a person
+for all x1 , for all x2 , if x2 is of the same size as a , then x2 is a person
 
-for all x1 , x2 is a pet and there is an element x2 such that x3 is left of x1
+for all x1 , x2 is a pet and there is an element x2 such that x3 is to the left of x1
 
-all these hold : \item for all x1 , a is right of x1 , x2 is the same size as itself or x1 is small \item for all x3 , there is an element x3 such that a is smaller than b
+all these hold : \item for all x1 , a is to the right of x1 , x2 is of the same size as itself or x1 is small \item for all x3 , there is an element x3 such that a is smaller than b
 
 for all x1 , if x1 is in the same column as a , then x2 is large or a is small
 
-if if there is an element x1 such that x1 is even , then if x1 is a person , then a is even , then for all x1 , if x2 is left of b , then b is small
+if if there is an element x1 such that x1 is even , then if x1 is a person , then a is even , then for all x1 , if x2 is to the left of b , then b is small
 
 for all x1 , there is an element x1 such that x2 is a cube and there is an element x3 such that for all x1 , x4 is even
 
-it is not the case that all these hold : \item x1 is right of x2 \item a is the same size as itself or a is small
+it is not the case that all these hold : \item x1 is to the right of x2 \item a is of the same size as itself or a is small
 
 all these hold : \item x1 is medium \item if x2 is medium , then x1 is not large
 
@@ -1744,7 +1744,7 @@ it is not the case that at least one of these holds : \item for all x1 , x2 is m
 
 it is not the case that if there is an element x1 such that a is in the same column as b , then c is not small
 
-there is an element x1 such that at least one of these holds : \item x1 is even and a is the same size as itself \item a is not in the same column as x2
+there is an element x1 such that at least one of these holds : \item x1 is even and a is of the same size as itself \item a is not in the same column as x2
 
 there is an element x1 such that there is an element x2 such that x2 is a pet , a is not in front of x2 or x2 is even and large
 
@@ -1752,13 +1752,13 @@ at least one of these holds : \item if if a is a student , then x1 is a tetrahed
 
 it is not the case that it is not the case that for all x1 , x2 is medium
 
-x1 is the same size as itself
+x1 is of the same size as itself
 
 all these hold : \item a is even \item if for all x1 , x2 is smaller than b , then x2 is a pet or x1 is in the same column as b
 
 for all x1 , at least one of these holds : \item if a is adjacent to x2 , then x1 is a dodecahedron , b is smaller than a \item x2 is in front of x1
 
-a is the same shape as x1
+a is of the same shape as x1
 
 if there is an element x1 such that a is not larger than a , then for all x1 , x2 is adjacent to x3
 
@@ -1766,31 +1766,31 @@ for all x1 , x1 is in the same column as itself
 
 there is an element x1 such that for all x1 , there is an element x2 such that x1 is a student
 
-if for all x1 , there is an element x1 such that x2 is left of a , then there is an element x1 such that x3 is in back of itself , a is in front of x2 and x2 is large
+if for all x1 , there is an element x1 such that x2 is to the left of a , then there is an element x1 such that x3 is in back of itself , a is in front of x2 and x2 is large
 
 x1 is a tetrahedron , x2 is larger than x3 , a is even or x3 is a student
 
 it is not the case that at least one of these holds : \item a is large , x1 is small \item if x2 is medium , then x2 is in back of x1
 
-at least one of these holds : \item x1 is a tetrahedron and a is right of b \item x2 is adjacent to b and x2 is large
+at least one of these holds : \item x1 is a tetrahedron and a is to the right of b \item x2 is adjacent to b and x2 is large
 
-if there is an element x1 such that if a is even , then b is large , then a is the same shape as x1 and x2 is even
+if there is an element x1 such that if a is even , then b is large , then a is of the same shape as x1 and x2 is even
 
-it is not the case that if x1 is small and a is a person , then if x2 is a pet , then a is right of itself
+it is not the case that if x1 is small and a is a person , then if x2 is a pet , then a is to the right of itself
 
-for all x1 , x1 is right of x2
+for all x1 , x1 is to the right of x2
 
 for all x1 , at least one of these holds : \item for all x1 , x2 is in front of a \item if b is in the same column as a , then x2 is a pet
 
 a is a cube or there is a dodecahedron x1 such that b is a prime
 
-at least one of these holds : \item a is not left of a , x1 is right of a and b is left of itself \item x2 is even
+at least one of these holds : \item a is not to the left of a , x1 is to the right of a and b is to the left of itself \item x2 is even
 
-it is not the case that at least one of these holds : \item x1 is a tetrahedron and a is larger than x1 \item x2 is even and b is right of a
+it is not the case that at least one of these holds : \item x1 is a tetrahedron and a is larger than x1 \item x2 is even and b is to the right of a
 
 there is an element x1 such that there is an element x2 such that x3 is not a pet
 
-all these hold : \item x1 is small \item if if a is a person , then b is left of x2 , then x2 is not adjacent to a
+all these hold : \item x1 is small \item if if a is a person , then b is to the left of x2 , then x2 is not adjacent to a
 
 a is not a student or x1 is not small
 
@@ -1798,7 +1798,7 @@ there is an element x1 such that it is not the case that there is an element x2 
 
 for all x1 , x2 is not medium or it is not the case that a is not in front of x2
 
-there is an element x1 such that a is a person or a is right of x2
+there is an element x1 such that a is a person or a is to the right of x2
 
 at least one of these holds : \item it is not the case that there is an element x1 such that a is a person \item if b is in back of c or x1 is medium , then b is large or b is a person
 
@@ -1810,9 +1810,9 @@ if there is an element x1 such that x1 is not a dodecahedron , then at least one
 
 there is an element x1 such that x1 is medium or x1 is a pet and for all x1 , if x2 is in the same column as a , then b is a cube
 
-there is an element x1 such that it is not the case that for all x1 , a is the same size as itself
+there is an element x1 such that it is not the case that for all x1 , a is of the same size as itself
 
-there is an element x1 such that for all x2 , x2 is not the same shape as a
+there is an element x1 such that for all x2 , x2 is not of the same shape as a
 
 if it is not the case that there is an element x1 such that a is in the same column as b , then x1 is in front of itself or there is an element x1 such that x1 is even
 
@@ -1822,11 +1822,11 @@ for all x1 , it is not the case that there is an element x2 such that x2 is a pe
 
 there is an element x1 such that for all x1 , for all x2 , x2 is medium
 
-at least one of these holds : \item it is not the case that there is an element x1 such that x2 is larger than x1 \item if if a is a pet , then a is a cube , then x2 is not the same size as a
+at least one of these holds : \item it is not the case that there is an element x1 such that x2 is larger than x1 \item if if a is a pet , then a is a cube , then x2 is not of the same size as a
 
 there is an element x1 such that for all x2 , a is in front of itself , a is small and x3 is small
 
-there is an element x1 such that a is right of x2 and for all x2 , x2 is adjacent to x3
+there is an element x1 such that a is to the right of x2 and for all x2 , x2 is adjacent to x3
 
 there is an element x1 such that all these hold : \item if x1 is a cube , then x2 is small \item if a is even , then b is medium
 
@@ -1834,15 +1834,15 @@ all these hold : \item x1 is a cube , if a is small , then x1 is large \item if 
 
 a is large or there is an element x1 such that there is an element x2 such that x2 is a cube
 
-all these hold : \item if a is right of itself , then a is adjacent to x1 , x1 is a prime \item a is right of b
+all these hold : \item if a is to the right of itself , then a is adjacent to x1 , x1 is a prime \item a is to the right of b
 
-x1 is left of itself or x2 is even
+x1 is to the left of itself or x2 is even
 
 there is an element x1 such that it is not the case that a is not a student
 
-at least one of these holds : \item it is not the case that if a is large , then x1 is right of x2 , x1 is larger than x3 and x4 is a student \item a is a pet
+at least one of these holds : \item it is not the case that if a is large , then x1 is to the right of x2 , x1 is larger than x3 and x4 is a student \item a is a pet
 
-there is an element x1 such that all these hold : \item for all x2 , a is left of itself \item a is small or b is smaller than itself
+there is an element x1 such that all these hold : \item for all x2 , a is to the left of itself \item a is small or b is smaller than itself
 
 there is an element x1 such that there is an element x1 such that x1 is in the same column as a or x1 is a student
 
@@ -1852,13 +1852,13 @@ for all x1 , there is an element x2 such that there is an element x1 such that a
 
 all these hold : \item x1 is not in back of x1 , a is a prime or b is in the same column as itself \item c is not a tetrahedron
 
-if there is an element x1 such that there is an element x1 such that x2 is a student , then at least one of these holds : \item x3 is a dodecahedron \item x1 is in front of a and x3 is the same size as itself
+if there is an element x1 such that there is an element x1 such that x2 is a student , then at least one of these holds : \item x3 is a dodecahedron \item x1 is in front of a and x3 is of the same size as itself
 
 it is not the case that for all x1 , a is a tetrahedron or for all x2 , b is a prime
 
 it is not the case that there is an element x1 such that x2 is even or for all x1 , a is large
 
-all these hold : \item x1 is not the same size as x1 \item for all x2 , a is small or for all x3 , b is a tetrahedron
+all these hold : \item x1 is not of the same size as x1 \item for all x2 , a is small or for all x3 , b is a tetrahedron
 
 it is not the case that a is not in the same row as b
 
@@ -1868,39 +1868,39 @@ there is an element x1 such that for all x1 , there is an element x2 such that a
 
 for all x1 , a is adjacent to b , x1 is a pet and for all x1 , b is in the same row as c
 
-for all x1 , if a is large and x2 is right of itself , then x3 is adjacent to x4
+for all x1 , if a is large and x2 is to the right of itself , then x3 is adjacent to x4
 
 there is an element x1 such that a is in the same column as b or in the same row as c or there is an element x1 such that b is not in the same column as d
 
 if x1 is not a person or x2 is a tetrahedron , then at least one of these holds : \item if x3 is medium , then a is in front of b \item for all x3 , c is larger than itself
 
-there is an element x1 such that a is the same size as b and c is a pet and there is an element x1 such that there is an element x2 such that x2 is right of itself
+there is an element x1 such that a is of the same size as b and c is a pet and there is an element x1 such that there is an element x2 such that x2 is to the right of itself
 
 it is not the case that if a is not small , then x1 is a dodecahedron
 
-there is an element x1 such that a is larger than b or x1 is not right of c
+there is an element x1 such that a is larger than b or x1 is not to the right of c
 
 for all x1 , for all x1 , for all x1 , x2 is a pet
 
 it is not the case that at least one of these holds : \item x1 is a student and a is even \item if x1 is a cube , then x1 is medium
 
-for all x1 , for all x1 , x1 is the same size as x2 and a is even
+for all x1 , for all x1 , x1 is of the same size as x2 and a is even
 
-there is an element x1 such that if if x1 is a student , then a is medium , then b is not right of x1
+there is an element x1 such that if if x1 is a student , then a is medium , then b is not to the right of x1
 
 it is not the case that a is not medium or for all x1 , x1 is a pet
 
-if there is an element x1 such that for all x2 , x1 is the same shape as x2 , then a is small and in front of b or x1 is large
+if there is an element x1 such that for all x2 , x1 is of the same shape as x2 , then a is small and in front of b or x1 is large
 
-a is large , for all x1 , b is a student and x1 is the same size as a
+a is large , for all x1 , b is a student and x1 is of the same size as a
 
 if it is not the case that there is an element x1 such that a is large , then for all x1 , b is small and c is large
 
-all these hold : \item for all x1 , there is an element x1 such that a is a tetrahedron \item if x1 is a prime , then b is left of c and x2 is small
+all these hold : \item for all x1 , there is an element x1 such that a is a tetrahedron \item if x1 is a prime , then b is to the left of c and x2 is small
 
-at least one of these holds : \item if for all x1 , x1 is the same size as a , then a is smaller than b \item there is an element x2 such that x1 is even or b is in back of x3
+at least one of these holds : \item if for all x1 , x1 is of the same size as a , then a is smaller than b \item there is an element x2 such that x1 is even or b is in back of x3
 
-it is not the case that all these hold : \item x1 is a tetrahedron or a is medium \item there is an element x1 such that b is right of c
+it is not the case that all these hold : \item x1 is a tetrahedron or a is medium \item there is an element x1 such that b is to the right of c
 
 at least one of these holds : \item it is not the case that a is large and x1 is a person \item if x1 is in back of b , then for all x2 , c is even
 
@@ -1910,17 +1910,17 @@ there is an element x1 such that if a is in back of b or smaller than c , then c
 
 it is not the case that it is not the case that if x1 is in the same row as x2 , then a is smaller than b
 
-for all x1 , x1 is medium and for all x2 , x3 is left of x4
+for all x1 , x1 is medium and for all x2 , x3 is to the left of x4
 
 for all x1 , it is not the case that x2 is adjacent to a and large
 
-for all x1 , there is an element x2 such that x2 is medium or for all x2 , x1 is the same shape as x3 or a is a prime
+for all x1 , there is an element x2 such that x2 is medium or for all x2 , x1 is of the same shape as x3 or a is a prime
 
-at least one of these holds : \item for all x1 , a is small and x2 is large \item there is an element x1 such that x1 is right of a or b is medium
+at least one of these holds : \item for all x1 , a is small and x2 is large \item there is an element x1 such that x1 is to the right of a or b is medium
 
 there is an element x1 such that if a is a prime , then a is larger than x2 and there is an element x1 such that x2 is a pet
 
-if there is an element x1 such that x2 is right of x3 or x4 is a prime , then a is in front of b , b is medium or x2 is even
+if there is an element x1 such that x2 is to the right of x3 or x4 is a prime , then a is in front of b , b is medium or x2 is even
 
 if a is a cube , then it is not the case that a is not medium
 
@@ -1936,7 +1936,7 @@ there is an element x1 such that if for all x1 , x2 is a dodecahedron , then for
 
 at least one of these holds : \item for all x1 , x2 is large and x3 is a student \item if for all x4 , x5 is a dodecahedron , then if x2 is a prime , then a is a dodecahedron
 
-it is not the case that for all x1 , x2 is right of x1 and a is a cube
+it is not the case that for all x1 , x2 is to the right of x1 and a is a cube
 
 if a is not a student or there is an element x1 such that x1 is a prime , then b is not a person or for all x2 , x3 is a dodecahedron
 
@@ -1954,13 +1954,13 @@ all these hold : \item there is an element x1 such that there is an element x2 s
 
 for all x1 , there is an element x2 such that there is an element x2 such that x1 is even
 
-for all x1 , at least one of these holds : \item a is left of itself , a is left of x2 \item if b is left of a , then a is a pet
+for all x1 , at least one of these holds : \item a is to the left of itself , a is to the left of x2 \item if b is to the left of a , then a is a pet
 
 for all x1 , a is not small or x1 is smaller than x2
 
 it is not the case that it is not the case that a is a cube or x1 is a tetrahedron
 
-if all these hold : \item there is an element x1 such that a is the same shape as b \item x2 is a cube or x3 is adjacent to x2 , then there is an element x4 such that x2 is not a tetrahedron
+if all these hold : \item there is an element x1 such that a is of the same shape as b \item x2 is a cube or x3 is adjacent to x2 , then there is an element x4 such that x2 is not a tetrahedron
 
 if for all x1 , x1 is in back of a , then if for all x2 , x1 is a dodecahedron , then if b is medium , then x3 is a prime
 
@@ -1982,19 +1982,19 @@ there is an element x1 such that there is an element x1 such that there is an el
 
 there is an element x1 such that a is medium , b is a student or for all x1 , c is small
 
-for all x1 , for all x1 , a is not left of x2
+for all x1 , for all x1 , a is not to the left of x2
 
 all these hold : \item if for all x1 , x2 is large , then if x3 is adjacent to x2 , then x3 is a dodecahedron \item there is an element x4 such that a is not in front of a
 
-for all x1 , a is large or a is a tetrahedron and it is not the case that for all x2 , a is the same shape as x3
+for all x1 , a is large or a is a tetrahedron and it is not the case that for all x2 , a is of the same shape as x3
 
 there is an element x1 such that x1 is larger than a
 
-if if a is even or b is a dodecahedron , then there is an element x1 such that x2 is the same size as x3 , then there is an element x3 such that if x1 is medium , then c is even
+if if a is even or b is a dodecahedron , then there is an element x1 such that x2 is of the same size as x3 , then there is an element x3 such that if x1 is medium , then c is even
 
 all these hold : \item if x1 is in front of x2 or x3 is even , then there is an element x3 such that a is small , there is an element x1 such that x3 is large \item a is not small
 
-if all these hold : \item x1 is a cube \item a is large or b is left of x2 , then there is an element x1 such that x1 is in the same row as itself or x2 is small
+if all these hold : \item x1 is a cube \item a is large or b is to the left of x2 , then there is an element x1 such that x1 is in the same row as itself or x2 is small
 
 it is not the case that if a is a pet , then there is an element x1 such that x2 is adjacent to itself
 
