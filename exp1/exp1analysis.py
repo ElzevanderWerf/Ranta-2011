@@ -34,19 +34,17 @@ df.to_csv(r'exp1results.csv', sep=',')
 
 
 # ANALYSIS
-# 1. Inter-rater reliability analyses for questions 1, 3 and 4 (correctness, 
-# clarity and fluency), using Spearman correlation coefficient.
-participants = range(1, len(df.columns) - 1)
+# # 1. Inter-rater reliability analyses for questions 1, 3 and 4 (correctness, 
+# # clarity and fluency), using Spearman correlation coefficient.
+# participants = range(1, len(df.columns) - 1)
+# #   Question 1
+# q1responses = [list(df[df["Question"]==1][p]) for p in participants]
+# #   Question 2
+# q2responses = [list(df[df["Question"]==2][p]) for p in participants]
+# #   Question 3
+# q3responses = [list(df[df["Question"]==3][p]) for p in participants]
 
-#   Question 1
-q1responses = [list(df[df["Question"]==1][p]) for p in participants]
-
-
-#   Question 2
-q2responses = [list(df[df["Question"]==2][p]) for p in participants]
-
-
-#   Question 3
-q3responses = [list(df[df["Question"]==3][p]) for p in participants]
-
-# TODO Spearman because scale is ordinal? Otherwise, Pearson
+# Averages
+# 1. Age
+# 2. Clarity
+# 3. Fluency

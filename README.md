@@ -112,7 +112,7 @@ There are x? responses to the following set of questions:
     - "What is your gender?" (multiple-choice between "Male", "Female", and "Prefer not to say")
     - "How old are you?" (multiple-choice)
     - "How would you rate your knowledge of and familiarity with first-order logic?" (5-point Likert scale)
-    - For each of the test items in exp1items.csv, the following questions:
+    - For each of the test items in `exp1items.csv`, the following questions:
         1. "Is the translation correct?" (multiple-choice between "Yes" and "No")
         2. "If your answer to the previous question was "no", explain why the translation is incorrect." (open question)
         3. "Is the translation clear?" (5-point Likert scale)
