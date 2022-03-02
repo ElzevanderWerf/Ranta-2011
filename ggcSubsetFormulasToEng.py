@@ -10,5 +10,5 @@ ggc_df = pd.read_csv("out/ggc-formulas-to-eng.csv",
 subset = r.sample(range(len(ggc_df)), 1000)
 subset_df = ggc_df.loc[subset, :]
 
-csv = subset_df.to_csv(r'out/exp1-ggc-to-eng.csv', sep=',')
+csv = subset_df.to_csv(r'exp1/exp1-ggc-to-eng.csv', sep=',')
 

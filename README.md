@@ -104,6 +104,7 @@ I designed a random generation function myself, which generates formulas that ar
 
 		>python makecsv.py out/test3GGC.tmp out/test3Eng.tmp out/exp1-rg-to-eng.csv
 2. The Python script in `ggcSubsetFormulasToEng.py` writes a random sample of 1000 formulas and translations from `ggc-formulas-to-eng.csv` to the file `exp1-ggc-to-eng.csv`.
+3. In the Python script `x.py`, the GGC symbols in `exp1-rg-to-eng.csv` and `exp1-ggc-to-eng.csv` are replaced by the common FOL symbols
 
 #### EXPERIMENT 1 ANALYSIS
 **(Files in folder exp1)**
