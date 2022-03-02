@@ -10,6 +10,9 @@ csv = sys.argv[1]
 df = pd.read_csv(csv, header=0, error_bad_lines=False)
         
 def replace_symbols(s):
+    """
+    Replaces the GGC symbols in input string s with common FOL symbols
+    """
     dct = {126:172,
        38:8743,
        124:8744,
