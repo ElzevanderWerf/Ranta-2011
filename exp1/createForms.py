@@ -1,5 +1,5 @@
-"""Write 20 JavaScript functions that generate different forms in Google Forms,
-and writes them to the folder `forms`. The .gs files can be run from 
+"""Write 20 Google Apps Script functions that generate different forms in 
+Google Forms, results in folder `scripts`. The .gs files can be run from 
 script.google.com."""
 
 import pandas as pd
