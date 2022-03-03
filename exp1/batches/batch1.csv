@@ -1,0 +1,26 @@
+,Formula,Translation
+0,"∃ y ( Cube ( y ) ∧ ∀ x ( Tet ( x ) → FrontOf ( y , x ) ) )",some cube is in front of every tetrahedron
+1,∃ w Large ( w ),there is an element w such that w is large
+2,"∃ z ( LeftOf ( z , b ) ∧ BackOf ( z , c ) )",there is an element z such that z is left of b and in back of c
+3,"∀ y ( Cube ( y ) → ( FrontOf ( y , e ) ∨ BackOf ( y , e ) ) )",every cube is in front of e or in back of e
+4,"¬ ( FrontOf ( d , b ) ∨ FrontOf ( d , c ) ) ∧ ¬ FrontOf ( c , c ) ∧ ¬ FrontOf ( c , b )","it is not the case that d is in front of b or in front of c , c is not in front of c and c is not in front of b"
+5,"∀ x ∀ y ( ( Dodec ( y ) ∧ Cube ( x ) ∧ FrontOf ( y , x ) ) → Smaller ( x , y ) )","for all x , for all y , if y is a dodecahedron , x is a cube and y is in front of x , then x is smaller than y"
+6,"∀ x ( ∀ y ( Dodec ( y ) → LeftOf ( e , y ) ) → ¬ Dodec ( e ) )","for all x , if e is left of every dodecahedron , then e is not a dodecahedron"
+7,"∃ x ( Larger ( a , x ) ∧ Cube ( x ) ) → ∀ y ( Tet ( y ) → Larger ( y , a ) )","if there is an element x such that a is larger than x and x is a cube , then every tetrahedron is larger than a"
+8,"( Smaller ( e , c ) ∨ SameSize ( e , c ) ) ∧ ( Smaller ( d , c ) ∨ SameSize ( d , c ) )",e and d are smaller than c or the same size as c
+9,"¬ ∀ z ∀ x ( Tet ( z ) → ( Tet ( x ) → SameCol ( z , x ) ) )","it is not the case that for all z , for all x , if z is a tetrahedron , then if x is a tetrahedron , then z is in the same column as x"
+10,( ( Prime ( x1 ) ∧ Medium ( x1 ) ) ∨ ¬ Dodec ( x2 ) ) ∧ ¬ ∀ x1 Small ( a ),"at least one of these holds : \item x1 is a prime and x1 is medium \item x2 is not a dodecahedron and it is not the case that for all x1 , a is small"
+11,"∃ x1 ∃ x2 ∀ x3 FrontOf ( x2 , x2 )","there is an element x1 such that there is an element x2 such that for all x3 , x2 is in front of itself"
+12,"∃ x1 ( ∀ x1 FrontOf ( a , a ) → ( Prime ( b ) → Even ( x2 ) ) )","there is an element x1 such that if for all x1 , a is in front of itself , then if b is a prime , then x2 is even"
+13,"( ( SameShape ( x1 , x2 ) ∨ LeftOf ( x2 , a ) ) ∨ ∀ x1 Small ( x1 ) ) → ∃ x2 ∀ x3 Pet ( x1 )","if x1 is of the same shape as x2 , x2 is to the left of a or for all x1 , x1 is small , then there is an element x2 such that for all x3 , x1 is a pet"
+14,¬ ∃ x1 ( Large ( a ) → Small ( x1 ) ),"it is not the case that there is an element x1 such that if a is large , then x1 is small"
+15,"( ∀ x1 Person ( a ) → ∀ x2 BackOf ( x3 , a ) ) ∧ ∃ x2 ∃ x3 RightOf ( b , c )","all these hold : \item if for all x1 , a is a person , then for all x2 , x3 is in back of a \item there is an element x2 such that there is an element x3 such that b is to the right of c"
+16,Tet ( x1 ) ∧ ∀ x1 Large ( a ),"x1 is a tetrahedron and for all x1 , a is large"
+17,"( ( Large ( x1 ) ∨ Smaller ( a , a ) ) ∧ ( Medium ( a ) ∨ Even ( x1 ) ) ) ∨ ∀ x2 SameCol ( b , b )","all these hold : \item x1 is large or a is smaller than itself \item a is medium or x1 is even or for all x2 , b is in the same column as itself"
+18,∀ x1 ( Dodec ( x1 ) ∧ ¬ Pet ( a ) ),"for all x1 , x1 is a dodecahedron and a is not a pet"
+19,"Large ( a ) ∧ ∀ x1 ( Pet ( x1 ) ∨ SameSize ( x2 , x1 ) )","a is large and for all x1 , x1 is a pet or x2 is of the same size as x1"
+20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
+21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"
+22,"∃ x1 ∀ x2 Larger ( x1 , a ) ∧ ∀ x2 ¬ Pet ( x3 )","there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet"
+23,"∃ x1 ( ( ( SameShape ( x1 , a ) ∧ Tet ( x1 ) ) → Adjoins ( x1 , a ) )","for all x1 , if x1 is of the same shape as a, then x1 is adjacent to a"
+24,"∃ x1 Cube ( x1 ) ( Person ( a ) → Adjoins ( x1 , a ) )",there is a cube such that a is a person or x1 is adjacent to a

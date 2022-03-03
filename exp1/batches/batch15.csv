@@ -1,0 +1,26 @@
+,Formula,Translation
+0,"∃ x ∃ y ¬ ( ( Tet ( x ) ∧ Tet ( y ) ) → SameCol ( y , x ) )","there is an element x such that there is an element y such that it is not the case that if x is a tetrahedron and y is a tetrahedron , then y is in the same column as x"
+1,"∀ x ∀ y ( BackOf ( x , y ) → ¬ Smaller ( x , y ) )","for all x , for all y , if x is in back of y , then x is not smaller than y"
+2,"Smaller ( c , a ) ∧ Smaller ( c , e ) ∧ ¬ Large ( a ) ∧ ¬ Large ( e )","c is smaller than a , c is smaller than e , a is not large and e is not large"
+3,Cube ( c ) ∨ Cube ( e ) ∨ Cube ( a ),"c is a cube , e is a cube or a is a cube"
+4,"∀ x ∃ z ( Cube ( x ) → ( RightOf ( z , x ) ∧ Tet ( z ) ∧ SameSize ( z , x ) ) )","for all x , there is an element z such that if x is a cube , then z is right of x , z is a tetrahedron and z is the same size as x"
+5,"∃ x ∀ y ( Tet ( y ) → BackOf ( y , x ) )",there is an element x such that every tetrahedron is in back of x
+6,"∀ y ( ( Large ( y ) ∧ Cube ( y ) ) → ∃ z FrontOf ( y , z ) )","for all y , if y is large and y is a cube , then there is an element z such that y is in front of z"
+7,"∀ x ( LeftOf ( x , a ) → ¬ ∀ y ( LeftOf ( y , b ) → Larger ( x , y ) ) )","for all x , if x is left of a , then it is not the case that for all y , if y is left of b , then x is larger than y"
+8,"¬ ∀ w Adjoins ( a , w )","it is not the case that for all w , a is adjacent to w"
+9,"¬ ( FrontOf ( d , c ) ∨ FrontOf ( d , b ) ∨ FrontOf ( c , c ) ∨ FrontOf ( c , b ) )","it is not the case that d is in front of c , d is in front of b , c is in front of itself or c is in front of b"
+10,"∀ x1 ( ∀ x1 BackOf ( a , x1 ) ∧ Larger ( b , c ) )","for all x1 , for all x1 , a is in back of x1 and b is larger than c"
+11,"∀ x1 ¬ ( SameSize ( a , b ) ∧ Cube ( x1 ) )","for all x1 , it is not the case that a is of the same size as b and x1 is a cube"
+12,"( ∃ x1 Prime ( x2 ) → ( Small ( x3 ) ∨ Smaller ( a , x3 ) ) ) ∨ ∀ x3 ( Person ( b ) ∧ Small ( c ) )","at least one of these holds : \item if there is an element x1 such that x2 is a prime , then x3 is small or a is smaller than x3 \item for all x3 , b is a person and c is small"
+13,∃ x1 ( ( Student ( a ) ∧ Person ( b ) ) ∧ ( Cube ( x1 ) ∧ Medium ( a ) ) ),"there is an element x1 such that a is a student , b is a person , x1 is a cube and a is medium"
+14,"∀ x1 ( ∃ x2 BackOf ( a , x2 ) → ( Large ( x3 ) ∨ Small ( a ) ) )","for all x1 , if there is an element x2 such that a is in back of x2 , then x3 is large or a is small"
+15,"¬ ( ¬ Even ( x1 ) → ( Small ( x2 ) ∧ SameRow ( a , x1 ) ) )","it is not the case that if x1 is not even , then x2 is small and a is in the same row as x1"
+16,¬ ¬ ∀ x1 Large ( a ),"it is not the case that it is not the case that for all x1 , a is large"
+17,∀ x1 ( Cube ( x2 ) ∨ Student ( x2 ) ) ∧ ∃ x3 ¬ Person ( x2 ),"for all x1 , x2 is a cube or x2 is a student and there is an element x3 such that x2 is not a person"
+18,"∀ x1 ( Medium ( a ) ∧ Small ( x1 ) ) ∨ ∀ x2 ¬ FrontOf ( a , x1 )","for all x1 , a is medium and x1 is small or for all x2 , a is not in front of x1"
+19,"¬ ( ( SameSize ( a , b ) → Large ( a ) ) → ( Larger ( x1 , b ) ∨ LeftOf ( x2 , c ) ) )","it is not the case that if if a is of the same size as b , then a is large , then x1 is larger than b or x2 is to the left of c"
+20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
+21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"
+22,"∃ x1 ∀ x2 Larger ( x1 , a ) ∧ ∀ x2 ¬ Pet ( x3 )","there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet"
+23,"∃ x1 ( ( ( SameShape ( x1 , a ) ∧ Tet ( x1 ) ) → Adjoins ( x1 , a ) )","for all x1 , if x1 is of the same shape as a, then x1 is adjacent to a"
+24,"∃ x1 Cube ( x1 ) ( Person ( a ) → Adjoins ( x1 , a ) )",there is a cube such that a is a person or x1 is adjacent to a

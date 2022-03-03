@@ -1,0 +1,26 @@
+,Formula,Translation
+0,"∀ x ∀ y ( Dodec ( x ) → ∃ y ( Cube ( y ) ∧ SameSize ( x , y ) ) )","for all x , for all y , if x is a dodecahedron , then x is the same size as some cube"
+1,"∀ w ( ( Small ( w ) ∧ Cube ( w ) ) → RightOf ( w , a ) )","for all w , if w is small and w is a cube , then w is right of a"
+2,"∀ x ( Dodec ( x ) → ∀ y ¬ ( Cube ( y ) ∧ Smaller ( x , y ) ) )","for all dodecahedrons x , for all y , it is not the case that y is a cube and x is smaller than y"
+3,"∀ x ∀ y ( ( Small ( y ) ∧ Large ( x ) ) → FrontOf ( y , x ) )","for all x , for all y , if y is small and x is large , then y is in front of x"
+4,"∀ x ∀ y ( ( Cube ( x ) ∧ BackOf ( y , x ) ) → ( Small ( x ) ∧ Cube ( x ) ) )","for all x , for all y , if x is a cube and y is in back of x , then x is small and x is a cube"
+5,¬ ∀ u ( ¬ Dodec ( u ) ∨ ¬ Small ( u ) ),"it is not the case that for all u , u is not a dodecahedron or u is not small"
+6,"¬ ( Large ( e ) ∧ ¬ BackOf ( e , a ) )",it is not the case that e is large and e is not in back of a
+7,"∃ x ∃ z ( Cube ( x ) ∧ Larger ( x , z ) ∧ Tet ( z ) )","there is an element x such that there is an element z such that x is a cube , x is larger than z and z is a tetrahedron"
+8,"∀ x ¬ ( LeftOf ( x , a ) ∧ ∃ y ( Smaller ( x , y ) ∧ LeftOf ( y , b ) ) )","for all x , it is not the case that x is left of a and there is an element y such that x is smaller than y and y is left of b"
+9,"∀ x ( ( Dodec ( x ) ∧ ¬ ∃ y LeftOf ( x , y ) ) → ∃ z RightOf ( x , z ) )","for all x , if x is a dodecahedron and it is not the case that there is an element y such that x is left of y , then there is an element z such that x is right of z"
+10,¬ ∃ x1 ( Even ( x1 ) → Large ( a ) ),"it is not the case that there is an element x1 such that if x1 is even , then a is large"
+11,¬ ∀ x1 ( Medium ( a ) → Tet ( a ) ),"it is not the case that for all x1 , if a is medium , then a is a tetrahedron"
+12,( ∀ x1 Cube ( x2 ) → ¬ Cube ( a ) ) ∨ ∀ x1 ∃ x1 Even ( b ),"at least one of these holds : \item if for all x1 , x2 is a cube , then a is not a cube \item for all x1 , there is an element x1 such that b is even"
+13,¬ ( ∀ x1 Tet ( x1 ) → ( Small ( x1 ) ∨ Medium ( x2 ) ) ),"it is not the case that if for all x1 , x1 is a tetrahedron , then x1 is small or x2 is medium"
+14,"∀ x1 Adjoins ( x1 , a )","for all x1 , x1 is adjacent to a"
+15,"( Pet ( x1 ) ∨ SameRow ( a , a ) ) → ∀ x2 ( Even ( b ) ∧ Pet ( x2 ) )","if x1 is a pet or a is in the same row as itself , then for all x2 , b is even and x2 is a pet"
+16,¬ ( Student ( a ) ∧ Small ( a ) ) ∨ ∀ x1 Medium ( a ),"it is not the case that a is a student and a is small or for all x1 , a is medium"
+17,"( Adjoins ( x1 , a ) → ¬ Dodec ( b ) ) → ( ( SameRow ( c , a ) ∧ Medium ( x2 ) ) ∧ Small ( c ) )","if if x1 is adjacent to a , then b is not a dodecahedron , then c is in the same row as a , x2 is medium and c is small"
+18,"∀ x1 ∀ x1 ¬ Adjoins ( x1 , x2 )","for all x1 , for all x1 , x1 is not adjacent to x2"
+19,"∃ x1 Large ( x1 ) ∨ ( ∃ x1 Prime ( a ) ∧ ( Adjoins ( x1 , a ) ∧ Adjoins ( x1 , a ) ) )","at least one of these holds : \item there is an element x1 such that x1 is large \item there is an element x1 such that a is a prime , x1 is adjacent to a and x1 is adjacent to a"
+20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
+21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"
+22,"∃ x1 ∀ x2 Larger ( x1 , a ) ∧ ∀ x2 ¬ Pet ( x3 )","there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet"
+23,"∃ x1 ( ( ( SameShape ( x1 , a ) ∧ Tet ( x1 ) ) → Adjoins ( x1 , a ) )","for all x1 , if x1 is of the same shape as a, then x1 is adjacent to a"
+24,"∃ x1 Cube ( x1 ) ( Person ( a ) → Adjoins ( x1 , a ) )",there is a cube such that a is a person or x1 is adjacent to a

@@ -1,0 +1,26 @@
+,Formula,Translation
+0,"∃ x ( ( Dodec ( x ) ∧ ∀ y ( Dodec ( y ) → LeftOf ( e , x ) ) ) → ¬ Dodec ( e ) )","there is an element x such that if x is a dodecahedron and for all dodecahedrons y , e is left of x , then e is not a dodecahedron"
+1,Medium ( c ) → ( ¬ Cube ( e ) ∧ ¬ Cube ( d ) ∧ ¬ Cube ( f ) ),"if c is medium , then e is not a cube , d is not a cube and f is not a cube"
+2,"∀ x ( ( Dodec ( x ) ∧ ¬ ∃ w RightOf ( w , x ) ) → Small ( x ) )","for all x , if x is a dodecahedron and it is not the case that there is an element w such that w is right of x , then x is small"
+3,"∀ y ∀ x ( ( Dodec ( y ) ∧ Cube ( x ) ∧ LeftOf ( y , x ) ) → Large ( y ) )","for all y , for all x , if y is a dodecahedron , x is a cube and y is left of x , then y is large"
+4,∀ u ( Cube ( u ) → ¬ Medium ( u ) ),"for all cubes u , u is not medium"
+5,"¬ ∃ y ∃ x ( Dodec ( y ) ∧ BackOf ( x , y ) )",it is not the case that there is an element y such that there is an element x such that y is a dodecahedron and x is in back of y
+6,"SameShape ( d , b ) → SameSize ( d , b )","if d is the same shape as b , then d is the same size as b"
+7,"¬ ∃ y ( Cube ( y ) ∧ ∃ x RightOf ( y , x ) )",it is not the case that there is a cube y such that there is an element x such that y is right of x
+8,"∀ x ∀ y ¬ ( Tet ( x ) ∧ Cube ( y ) ∧ SameSize ( y , x ) )","for all x , for all y , it is not the case that x is a tetrahedron , y is a cube and y is the same size as x"
+9,"∀ y ( ( Dodec ( y ) ∧ ∃ x ( Cube ( x ) ∧ LeftOf ( y , x ) ) ) → Large ( y ) )","for all y , if y is a dodecahedron and y is left of some cube , then y is large"
+10,"Tet ( x1 ) ∨ ( ( Small ( a ) ∨ BackOf ( x1 , x1 ) ) ∧ BackOf ( b , b ) )",x1 is a tetrahedron or all these hold : \item a is small or x1 is in back of itself \item b is in back of itself
+11,"∀ x1 Small ( a ) ∨ ( ( Large ( b ) ∧ Small ( x1 ) ) ∨ SameRow ( x2 , b ) )","at least one of these holds : \item for all x1 , a is small , b is large and x1 is small \item x2 is in the same row as b"
+12,"Student ( a ) → ( ( FrontOf ( x1 , a ) ∧ SameSize ( x1 , a ) ) ∨ ( Prime ( x1 ) ∧ Cube ( a ) ) )","if a is a student , then at least one of these holds : \item x1 is in front of a and of the same size as a \item x1 is a prime and a is a cube"
+13,"BackOf ( a , x1 ) → ( ( Small ( x2 ) ∨ Smaller ( x2 , x3 ) ) ∨ Small ( x3 ) )","if a is in back of x1 , then x2 is small , x2 is smaller than x3 or x3 is small"
+14,"¬ ∃ x1 ∃ x2 Larger ( x1 , x3 )",it is not the case that there is an element x1 such that there is an element x2 such that x1 is larger than x3
+15,"¬ ∃ x1 Larger ( x2 , x3 ) ∨ Large ( x3 )",it is not the case that there is an element x1 such that x2 is larger than x3 or x3 is large
+16,"∃ x1 ( Even ( x1 ) ∧ Medium ( a ) ) ∧ SameShape ( x2 , a )",there is an element x1 such that x1 is even and a is medium and x2 is of the same shape as a
+17,"¬ ( ( SameCol ( x1 , x1 ) ∨ BackOf ( x1 , a ) ) ∨ ¬ Small ( x2 ) )","it is not the case that x1 is in the same column as itself , x1 is in back of a or x2 is not small"
+18,¬ ∃ x1 ¬ Medium ( a ),it is not the case that there is an element x1 such that a is not medium
+19,"∃ x1 ∀ x2 Student ( a ) ∨ ∃ x2 ( Larger ( a , a ) → Dodec ( x2 ) )","there is an element x1 such that for all x2 , a is a student or there is an element x2 such that if a is larger than itself , then x2 is a dodecahedron"
+20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
+21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"
+22,"∃ x1 ∀ x2 Larger ( x1 , a ) ∧ ∀ x2 ¬ Pet ( x3 )","there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet"
+23,"∃ x1 ( ( ( SameShape ( x1 , a ) ∧ Tet ( x1 ) ) → Adjoins ( x1 , a ) )","for all x1 , if x1 is of the same shape as a, then x1 is adjacent to a"
+24,"∃ x1 Cube ( x1 ) ( Person ( a ) → Adjoins ( x1 , a ) )",there is a cube such that a is a person or x1 is adjacent to a

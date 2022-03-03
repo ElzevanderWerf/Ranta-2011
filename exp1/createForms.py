@@ -1,6 +1,7 @@
 """Write 20 Google Apps Script functions that generate different forms in 
 Google Forms, results in folder `scripts`. The .gs files can be run from 
-script.google.com."""
+script.google.com. The batches of experimental items are written to folder 
+`batches`."""
 
 import pandas as pd
 
@@ -18,7 +19,12 @@ for i in range(numberOfForms):
     ggc_10 = [tuple(ft) for ft in ggc_df.iloc[i*10:i*10+10, 3:5].to_numpy()]
     rg_10 = [tuple(ft) for ft in rg_df.iloc[i*10:i*10+10, 2:4].to_numpy()]
     fillers_5 = [tuple(ft) for ft in fillers_df.iloc[:5, 1:3].to_numpy() ]
-    batches.append(ggc_10+rg_10+fillers_5)
+    batch = ggc_10+rg_10+fillers_5
+    pd.DataFrame(batch, columns = ["Formula", "Translation"]).to_csv(
+        "batches/batch"+ str(i+1) + ".csv", sep=',')
+    
+    batches.append(batch)
+    
 
 # Lists of item variables
 items = ['item'+str(n) for n in range(1, numberOfItems+1)]

@@ -1,0 +1,26 @@
+,Formula,Translation
+0,∃ w ( Dodec ( w ) ∧ ¬ Small ( w ) ),there is a dodecahedron w such that w is not small
+1,"∃ x ∀ y ( Cube ( y ) → BackOf ( x , y ) )",there is an element x such that x is in back of every cube
+2,"∀ x ∀ z ( ( Tet ( x ) ∧ Cube ( z ) ) → ¬ SameSize ( z , x ) )","for all x , for all z , if x is a tetrahedron and z is a cube , then z is not the same size as x"
+3,"∀ x ∀ y ( ( Cube ( y ) ∧ SameSize ( x , y ) ) → ¬ Tet ( x ) )","for all x , for all y , if y is a cube and x is the same size as y , then x is not a tetrahedron"
+4,"∀ u ( Cube ( u ) → ¬ ( SameCol ( a , u ) ∨ SameCol ( b , u ) ) )","for all cubes u , it is not the case that a or b is in the same column as u"
+5,"¬ ∃ x ( ¬ LeftOf ( x , a ) ∧ LeftOf ( x , b ) ) ∧ ¬ ∃ x ( ¬ LeftOf ( x , b ) ∧ LeftOf ( x , a ) )",it is not the case that there is an element x such that x is not left of a and x is left of b and it is not the case that there is an element x such that x is not left of b and x is left of a
+6,"∀ x ( ( LeftOf ( x , b ) → LeftOf ( x , a ) ) ∧ ∀ y ( LeftOf ( y , a ) → LeftOf ( y , b ) ) )","for all x , all these hold : \item if x is left of b , then x is left of a \item for all y , if y is left of a , then y is left of b"
+7,∀ x ( ( Tet ( x ) ∧ Small ( x ) ) ∨ ¬ Tet ( x ) ),"for all x , at least one of these holds : \item x is a tetrahedron and x is small \item x is not a tetrahedron"
+8,"∀ x ∀ y ( ( Cube ( x ) ∧ Cube ( y ) ) → ( ¬ RightOf ( x , y ) ∧ ¬ LeftOf ( y , x ) ) )","for all x , for all y , if x is a cube and y is a cube , then x is not right of y and y is not left of x"
+9,"¬ ( FrontOf ( d , c ) ∨ FrontOf ( c , b ) ∨ FrontOf ( d , b ) ∨ FrontOf ( d , c ) )","it is not the case that d is in front of c , c is in front of b , d is in front of b or d is in front of c"
+10,∃ x1 ∀ x1 ∀ x2 Large ( a ),"there is an element x1 such that for all x1 , for all x2 , a is large"
+11,"∃ x1 ( ( SameSize ( a , a ) → Student ( x1 ) ) ∨ Even ( b ) )","there is an element x1 such that at least one of these holds : \item if a is of the same size as itself , then x1 is a student \item b is even"
+12,"∀ x1 ∀ x1 SameRow ( a , b )","for all x1 , for all x1 , a is in the same row as b"
+13,"SameSize ( a , x1 ) ∨ ∀ x1 Medium ( x1 )","a is of the same size as x1 or for all x1 , x1 is medium"
+14,"¬ ∀ x1 ( SameCol ( a , x1 ) ∧ Pet ( b ) )","it is not the case that for all x1 , a is in the same column as x1 and b is a pet"
+15,∀ x1 ( ∃ x1 Medium ( a ) ∧ ¬ Small ( x2 ) ),"for all x1 , there is an element x1 such that a is medium and x2 is not small"
+16,∀ x1 ∃ x2 ∃ x1 Small ( a ),"for all x1 , there is an element x2 such that there is an element x1 such that a is small"
+17,"∀ x1 ∀ x2 SameShape ( x3 , a ) ∧ ∃ x1 ( Person ( b ) ∨ LeftOf ( x4 , a ) )","for all x1 , for all x2 , x3 is of the same shape as a and there is an element x1 such that b is a person or x4 is to the left of a"
+18,¬ ∀ x1 ∀ x2 Person ( x3 ),"it is not the case that for all x1 , for all x2 , x3 is a person"
+19,"¬ ¬ ( LeftOf ( x1 , x1 ) → Person ( x2 ) )","it is not the case that it is not the case that if x1 is to the left of itself , then x2 is a person"
+20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
+21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"
+22,"∃ x1 ∀ x2 Larger ( x1 , a ) ∧ ∀ x2 ¬ Pet ( x3 )","there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet"
+23,"∃ x1 ( ( ( SameShape ( x1 , a ) ∧ Tet ( x1 ) ) → Adjoins ( x1 , a ) )","for all x1 , if x1 is of the same shape as a, then x1 is adjacent to a"
+24,"∃ x1 Cube ( x1 ) ( Person ( a ) → Adjoins ( x1 , a ) )",there is a cube such that a is a person or x1 is adjacent to a
