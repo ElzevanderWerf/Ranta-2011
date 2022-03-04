@@ -104,8 +104,12 @@ I designed a random generation function myself, which generates formulas that ar
 
 		>python makecsv.py out/test3GGC.tmp out/test3Eng.tmp exp1/exp1-rg-to-eng.csv
 2. The Python script in `ggcSubsetFormulasToEng.py` writes a random sample of 1000 formulas and translations from `ggc-formulas-to-eng.csv` to the file `exp1-ggc-to-eng.csv`.
-3. In the Python script `replaceSymbols.py`, the GGC symbols in `exp1-rg-to-eng.csv` and `exp1-ggc-to-eng.csv` are replaced by the common FOL symbols.
-4. The Python script in `createForms.py` writes 20 different Google Apps Script files, thereby creating 20 different surveys in Google Forms, each with a different set of experimental items from `exp1-ggc-to-eng.csv` and `exp1-rg-to-eng.csv`, and the same set of fillers from `fillers.csv`.
+3. In the Python script `replaceSymbols.py`, the GGC symbols in `exp1-rg-to-eng.csv` and `exp1-ggc-to-eng.csv` are replaced by the common FOL symbols:
+        
+        >python replaceSymbols.py exp1/exp1-rg-to-eng.csv
+        >python replaceSymbols.py exp1/exp1-ggc-to-eng.csv
+        
+4. The Python script in `createForms.py` writes 20 different Google Apps Script files to the folder `scripts`, thereby creating 20 different surveys in Google Forms, each with a different set of experimental items from `exp1-ggc-to-eng.csv` and `exp1-rg-to-eng.csv`, and the same set of fillers from `fillers.csv`.
 
 #### EXPERIMENT 1 ANALYSIS
 **(Files in folder exp1)**
