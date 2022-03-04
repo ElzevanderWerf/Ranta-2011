@@ -1,14 +1,14 @@
 ,Formula,Translation
-0,¬ ∃ v ( Large ( v ) ∧ Dodec ( v ) ),it is not the case that there is an element v such that v is large and v is a dodecahedron
-1,( ¬ Cube ( e ) ∧ ( Large ( b ) ∨ Large ( d ) ) ) ∨ Cube ( e ),at least one of these holds : \item e is not a cube and b or d is large \item e is a cube
-2,"¬ ∃ y ( LeftOf ( y , a ) ∧ ∃ z ( LeftOf ( z , b ) ∧ Smaller ( y , z ) ) )",it is not the case that there is an element y such that y is left of a and there is an element z such that z is left of b and y is smaller than z
-3,( ¬ Large ( a ) ∨ Small ( d ) ) ∧ ( ¬ Small ( d ) ∨ Large ( a ) ),all these hold : \item a is not large or d is small \item d is not small or a is large
-4,"¬ ∃ z FrontOf ( z , b )",it is not the case that there is an element z such that z is in front of b
-5,"¬ ∃ x ( ∃ y ∃ z ( Cube ( y ) ∧ BackOf ( x , y ) ∧ Cube ( z ) ∧ FrontOf ( x , z ) ) ∧ Large ( x ) )","it is not the case that there is an element x such that there is an element y such that there is an element z such that y is a cube , x is in back of y , z is a cube and x is in front of z and x is large"
-6,"∀ v ( ( Cube ( v ) ∧ Small ( v ) ) → RightOf ( v , a ) )","for all v , if v is a cube and v is small , then v is right of a"
-7,"∀ x ∀ y ∀ z ( ( BackOf ( y , x ) ∧ BackOf ( z , y ) ) → ( Larger ( y , x ) ∧ Larger ( z , y ) ) )","for all x , for all y , for all z , if y is in back of x and z is in back of y , then y is larger than x and z is larger than y"
-8,( Tet ( c ) ∧ Tet ( a ) ) → ( Large ( a ) ∨ Large ( c ) ),"if c is a tetrahedron and a is a tetrahedron , then a or c is large"
-9,"∃ x ∃ y ∃ z ¬ ( ( Tet ( x ) ∧ Tet ( y ) ∧ Tet ( z ) ) → ( SameCol ( x , y ) ∧ SameCol ( y , z ) ) )","there is an element x such that there is an element y such that there is an element z such that it is not the case that if x is a tetrahedron , y is a tetrahedron and z is a tetrahedron , then x is in the same column as y and y is in the same column as z"
+0,"∃ x ∃ y ( Cube ( x ) ∧ Large ( x ) ∧ FrontOf ( x , y ) ∧ Small ( y ) ∧ Cube ( y ) )","there is an element x such that there is an element y such that x is a cube , x is large , x is in front of y , y is small and y is a cube"
+1,"∀ x ∃ y ( Cube ( x ) → ( Tet ( y ) ∧ RightOf ( y , x ) ∧ SameSize ( y , x ) ) )","for all x , there is an element y such that if x is a cube , then y is a tetrahedron , y is to the right of x and y is of the same size as x"
+2,"¬ FrontOf ( d , c ) ∧ ¬ FrontOf ( c , b ) ∧ ¬ FrontOf ( d , b ) ∧ ¬ FrontOf ( c , c )","d is not in front of c , c is not in front of b , d is not in front of b and c is not in front of c"
+3,"SameCol ( a , d ) ∧ SameCol ( b , e ) ∧ SameRow ( e , d )","a is in the same column as d , b is in the same column as e and e is in the same row as d"
+4,∀ x ( ( Cube ( x ) ∧ ¬ Medium ( x ) ) ∨ ¬ Cube ( x ) ),"for all x , at least one of these holds : \item x is a cube and x is not medium \item x is not a cube"
+5,∀ w ¬ ( Cube ( w ) ∧ Large ( w ) ),"for all w , it is not the case that w is a cube and w is large"
+6,"∀ z ∀ w ( ( Small ( z ) ∧ Large ( w ) ) → FrontOf ( z , w ) )","for all z , for all w , if z is small and w is large , then z is in front of w"
+7,"∀ x ∀ y ( ( RightOf ( x , y ) ∧ Cube ( x ) ) → ¬ Cube ( y ) )","for all x , for all y , if x is to the right of y and x is a cube , then y is not a cube"
+8,"∀ x ( ∀ y ( LeftOf ( y , b ) → Larger ( x , y ) ) → ¬ LeftOf ( x , a ) )","for all x , if for all y , if y is to the left of b , then x is larger than y , then x is not to the left of a"
+9,"¬ ( BackOf ( c , d ) ∨ BackOf ( b , d ) ) ∧ ¬ ( BackOf ( c , c ) ∨ BackOf ( b , c ) )",it is not the case that c or b is in back of d and it is not the case that c is in back of itself or b is in back of c
 10,¬ ∃ x1 Prime ( x2 ) ∧ ∀ x2 ∀ x3 Small ( x2 ),"it is not the case that there is an element x1 such that x2 is a prime and for all x2 , for all x3 , x2 is small"
 11,¬ ( Large ( a ) ∨ Large ( b ) ) → ( ∃ x1 Cube ( x1 ) ∨ ∀ x2 Even ( x3 ) ),"if it is not the case that a or b is large , then there is an element x1 such that x1 is a cube or for all x2 , x3 is even"
 12,"∃ x1 ( ( Cube ( x1 ) ∨ SameRow ( x1 , a ) ) ∧ ∃ x2 BackOf ( x2 , a ) )",there is an element x1 such that all these hold : \item x1 is a cube or x1 is in the same row as a \item there is an element x2 such that x2 is in back of a

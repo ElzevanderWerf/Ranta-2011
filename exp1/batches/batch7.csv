@@ -1,14 +1,14 @@
 ,Formula,Translation
-0,∃ x ( Cube ( x ) ∧ ( Cube ( x ) → Large ( x ) ) ),"there is a cube x such that if x is a cube , then x is large"
-1,"∀ x ∃ y ( Cube ( x ) → ( Tet ( y ) ∧ LeftOf ( x , y ) ∧ SameRow ( x , y ) ) )","for all x , there is an element y such that if x is a cube , then y is a tetrahedron , x is left of y and x is in the same row as y"
-2,"∀ z ( ( Cube ( z ) → FrontOf ( z , b ) ) ∨ ( Cube ( z ) → BackOf ( z , a ) ) )","for all z , at least one of these holds : \item if z is a cube , then z is in front of b \item if z is a cube , then z is in back of a"
-3,"∃ x ( ( Cube ( x ) ∧ Smaller ( x , a ) ) → ∀ y ( Tet ( y ) → Smaller ( x , y ) ) )","there is an element x such that if x is a cube and x is smaller than a , then x is smaller than every tetrahedron"
-4,"¬ ( FrontOf ( d , c ) ∨ FrontOf ( c , c ) ) ∧ ¬ ( FrontOf ( c , b ) ∨ FrontOf ( d , b ) )",it is not the case that d is in front of c or c is in front of itself and it is not the case that c or d is in front of b
-5,¬ ¬ ( Cube ( a ) ∨ Cube ( c ) ∨ Cube ( e ) ),"it is not the case that it is not the case that a is a cube , c is a cube or e is a cube"
-6,"∀ x ∀ y ∀ z ( ( BackOf ( z , y ) → Larger ( z , y ) ) ∧ ( BackOf ( y , x ) → Larger ( y , x ) ) )","for all x , for all y , for all z , all these hold : \item if z is in back of y , then z is larger than y \item if y is in back of x , then y is larger than x"
-7,"∀ w ( ( Cube ( w ) → RightOf ( w , a ) ) ∧ ( Cube ( w ) → LeftOf ( w , b ) ) )","for all w , all these hold : \item if w is a cube , then w is right of a \item if w is a cube , then w is left of b"
-8,"∀ x ∃ z ∃ y ( ( Dodec ( x ) ∧ ¬ RightOf ( y , x ) ) → LeftOf ( z , x ) )","for all x , there is an element z such that there is an element y such that if x is a dodecahedron and y is not right of x , then z is left of x"
-9,"¬ ∃ y ( Dodec ( y ) ∧ ∃ x BackOf ( x , y ) )",it is not the case that there is a dodecahedron y such that there is an element x such that x is in back of y
+0,"∀ x ( Tet ( x ) → ∀ y ( Cube ( y ) → ¬ SameSize ( x , y ) ) )","for all tetrahedrons x , for all cubes y , x is not of the same size as y"
+1,"∀ y ∃ x ( ( Dodec ( y ) ∧ LeftOf ( x , y ) ) → ¬ Dodec ( x ) )","for all y , there is an element x such that if y is a dodecahedron and x is to the left of y , then x is not a dodecahedron"
+2,"∀ x ( Small ( x ) → ∀ y ( Large ( y ) → FrontOf ( x , y ) ) )","for all x , if x is small , then for all y , if y is large , then x is in front of y"
+3,"¬ ∃ x FrontOf ( x , b )",it is not the case that there is an element x such that x is in front of b
+4,"∀ z ( ( Large ( z ) ∧ Cube ( z ) ) → ∃ w FrontOf ( z , w ) )","for all z , if z is large and z is a cube , then there is an element w such that z is in front of w"
+5,"¬ ∀ y ∀ x ∀ z ( ( Tet ( y ) ∧ Tet ( x ) ∧ Tet ( z ) ) → ( SameCol ( y , x ) ∧ SameCol ( x , z ) ) )","it is not the case that for all y , for all x , for all z , if y is a tetrahedron , x is a tetrahedron and z is a tetrahedron , then y is in the same column as x and x is in the same column as z"
+6,"∀ x ∀ y ( ( Dodec ( x ) ∧ Cube ( y ) ) → ( Larger ( x , y ) ∨ SameSize ( x , y ) ) )","for all x , for all y , if x is a dodecahedron and y is a cube , then x is larger than y or of the same size as y"
+7,"∀ x ( ( Tet ( x ) ∧ ¬ Small ( x ) ) → ∃ y ( Tet ( y ) ∧ FrontOf ( y , x ) ∧ SameCol ( y , x ) ) )","for all x , if x is a tetrahedron and x is not small , then there is an element y such that y is a tetrahedron , y is in front of x and y is in the same column as x"
+8,"∀ u ( ( Dodec ( u ) ∧ ∃ v ( Cube ( v ) ∧ LeftOf ( u , v ) ) ) → Large ( u ) )","for all u , if u is a dodecahedron and u is to the left of some cube , then u is large"
+9,"¬ ∀ z ( Tet ( z ) → ∀ x ( Tet ( x ) → SameCol ( x , z ) ) )",it is not the case that every tetrahedron is in the same column as every tetrahedron
 10,"∃ x1 Student ( a ) → ( ∀ x2 Larger ( a , x1 ) ∨ ( BackOf ( b , a ) → Student ( x2 ) ) )","if there is an element x1 such that a is a student , then at least one of these holds : \item for all x2 , a is larger than x1 \item if b is in back of a , then x2 is a student"
 11,∀ x1 ∀ x1 ¬ Small ( x1 ),"for all x1 , for all x1 , x1 is not small"
 12,"∃ x1 ( ∀ x1 SameSize ( x2 , x2 ) ∨ ∀ x1 Small ( x2 ) )","there is an element x1 such that for all x1 , x2 is of the same size as itself or for all x1 , x2 is small"

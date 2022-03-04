@@ -1,14 +1,14 @@
 ,Formula,Translation
-0,"∃ z ∃ x ( Cube ( x ) ∧ Tet ( z ) ∧ Larger ( x , z ) )","there is an element z such that there is an element x such that x is a cube , z is a tetrahedron and x is larger than z"
-1,"∀ x ∀ y ( BackOf ( x , y ) → Smaller ( y , x ) )","for all x , for all y , if x is in back of y , then y is smaller than x"
-2,"∀ x ∃ z ( ( Dodec ( x ) ∧ ¬ ∃ y RightOf ( y , x ) ) → RightOf ( x , z ) )","for all x , there is an element z such that if x is a dodecahedron and it is not the case that there is an element y such that y is right of x , then x is right of z"
-3,"¬ ∀ y ∀ x ( ( Cube ( x ) ∧ Tet ( y ) ) → Smaller ( x , y ) )","it is not the case that for all y , for all x , if x is a cube and y is a tetrahedron , then x is smaller than y"
-4,"∃ x ¬ ( ( Large ( x ) ∧ Cube ( x ) ) → ¬ LeftOf ( x , b ) )","there is an element x such that it is not the case that if x is large and x is a cube , then x is not left of b"
-5,∃ y ¬ ( Large ( y ) ∧ Dodec ( y ) ),there is an element y such that it is not the case that y is large and y is a dodecahedron
-6,"∀ x ( ( LeftOf ( x , a ) → LeftOf ( x , b ) ) ∧ ( ¬ LeftOf ( x , a ) → ¬ LeftOf ( x , b ) ) )","for all x , all these hold : \item if x is left of a , then x is left of b \item if x is not left of a , then x is not left of b"
-7,¬ ∃ w ( Tet ( w ) ∧ Large ( w ) ),it is not the case that some tetrahedron is large
-8,∃ x ∀ x ( Tet ( x ) → Small ( x ) ),there is an element x such that every tetrahedron is small
-9,"∀ z ( SameCol ( a , z ) ∨ SameCol ( b , z ) ∨ SameCol ( c , z ) )","for all z , a , b or c is in the same column as z"
+0,"∀ x ∀ y ( Cube ( x ) → ∀ y ( ( Dodec ( y ) ∧ BackOf ( x , y ) ) → Smaller ( x , y ) ) )","for all x , for all y , if x is a cube , then for all y , if y is a dodecahedron and x is in back of y , then x is smaller than y"
+1,"∀ x ¬ ( Cube ( x ) ∧ ∃ y ( Cube ( y ) ∧ ¬ SameCol ( x , y ) ) )","for all x , it is not the case that x is a cube and there is a cube y such that x is not in the same column as y"
+2,"∃ x ( RightOf ( b , x ) ∧ ∃ x ( LeftOf ( x , b ) ∧ Large ( x ) ∧ Cube ( x ) ) )","there is an element x such that b is to the right of x and there is an element x such that x is to the left of b , x is large and x is a cube"
+3,"SameSize ( e , d ) ∧ SameSize ( d , e )",e is of the same size as d and d is of the same size as e
+4,"∀ x ∀ y ( Cube ( x ) → ( Tet ( y ) → LeftOf ( x , y ) ) )","for all x , for all y , if x is a cube , then if y is a tetrahedron , then x is to the left of y"
+5,"∀ x ∀ y ( ( Cube ( x ) ∧ Cube ( y ) ) → ( ¬ RightOf ( x , y ) ∧ ¬ LeftOf ( x , y ) ) )","for all x , for all y , if x is a cube and y is a cube , then x is not to the right of y and x is not to the left of y"
+6,"∀ x ∀ y ∀ z ( ( Cube ( y ) ∧ Cube ( z ) ∧ FrontOf ( x , y ) ∧ FrontOf ( z , x ) ) → ¬ Large ( x ) )","for all x , for all y , for all z , if y is a cube , z is a cube , x is in front of y and z is in front of x , then x is not large"
+7,"¬ SameShape ( d , b ) ∨ SameSize ( d , b )",d is not of the same shape as b or d is of the same size as b
+8,∃ x ( Cube ( x ) ∧ ∃ y Tet ( y ) ∧ ¬ ∃ z Dodec ( z ) ),"there is an element x such that x is a cube , there is an element y such that y is a tetrahedron and it is not the case that there is an element z such that z is a dodecahedron"
+9,∃ w ( Dodec ( w ) ∧ ¬ Large ( w ) ∧ ¬ Small ( w ) ),"there is an element w such that w is a dodecahedron , w is not large and w is not small"
 10,"( ¬ Adjoins ( a , x1 ) → ∀ x2 Small ( x1 ) ) ∨ ∃ x3 Large ( a )","at least one of these holds : \item if a is not adjacent to x1 , then for all x2 , x1 is small \item there is an element x3 such that a is large"
 11,"( ∃ x1 Prime ( a ) → ∀ x1 FrontOf ( x1 , a ) ) → Smaller ( a , x1 )","if if there is an element x1 such that a is a prime , then for all x1 , x1 is in front of a , then a is smaller than x1"
 12,"¬ Large ( a ) → ( ( SameRow ( b , b ) → Even ( x1 ) ) ∧ ∃ x2 Pet ( x1 ) )","if a is not large , then all these hold : \item if b is in the same row as itself , then x1 is even \item there is an element x2 such that x1 is a pet"

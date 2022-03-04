@@ -1,14 +1,14 @@
 ,Formula,Translation
-0,"∃ y ( Cube ( y ) ∧ ∀ x ( Tet ( x ) → FrontOf ( y , x ) ) )",some cube is in front of every tetrahedron
-1,∃ w Large ( w ),there is an element w such that w is large
-2,"∃ z ( LeftOf ( z , b ) ∧ BackOf ( z , c ) )",there is an element z such that z is left of b and in back of c
-3,"∀ y ( Cube ( y ) → ( FrontOf ( y , e ) ∨ BackOf ( y , e ) ) )",every cube is in front of e or in back of e
-4,"¬ ( FrontOf ( d , b ) ∨ FrontOf ( d , c ) ) ∧ ¬ FrontOf ( c , c ) ∧ ¬ FrontOf ( c , b )","it is not the case that d is in front of b or in front of c , c is not in front of c and c is not in front of b"
-5,"∀ x ∀ y ( ( Dodec ( y ) ∧ Cube ( x ) ∧ FrontOf ( y , x ) ) → Smaller ( x , y ) )","for all x , for all y , if y is a dodecahedron , x is a cube and y is in front of x , then x is smaller than y"
-6,"∀ x ( ∀ y ( Dodec ( y ) → LeftOf ( e , y ) ) → ¬ Dodec ( e ) )","for all x , if e is left of every dodecahedron , then e is not a dodecahedron"
-7,"∃ x ( Larger ( a , x ) ∧ Cube ( x ) ) → ∀ y ( Tet ( y ) → Larger ( y , a ) )","if there is an element x such that a is larger than x and x is a cube , then every tetrahedron is larger than a"
-8,"( Smaller ( e , c ) ∨ SameSize ( e , c ) ) ∧ ( Smaller ( d , c ) ∨ SameSize ( d , c ) )",e and d are smaller than c or the same size as c
-9,"¬ ∀ z ∀ x ( Tet ( z ) → ( Tet ( x ) → SameCol ( z , x ) ) )","it is not the case that for all z , for all x , if z is a tetrahedron , then if x is a tetrahedron , then z is in the same column as x"
+0,"∀ z ( ( Cube ( z ) ∧ ∃ u FrontOf ( u , z ) ) → Small ( z ) )","for all z , if z is a cube and there is an element u such that u is in front of z , then z is small"
+1,"∀ v ( ( Dodec ( v ) ∧ ¬ ∃ w RightOf ( w , v ) ) → Small ( v ) )","for all v , if v is a dodecahedron and it is not the case that there is an element w such that w is to the right of v , then v is small"
+2,¬ Cube ( a ) → ( Cube ( c ) ∨ ( ¬ Cube ( c ) → Cube ( e ) ) ),"if a is not a cube , then at least one of these holds : \item c is a cube \item if c is not a cube , then e is a cube"
+3,"∀ x ( ∀ y ( Dodec ( x ) ∧ ¬ RightOf ( y , x ) ) → Small ( x ) )","for all x , if for all y , x is a dodecahedron and y is not to the right of x , then x is small"
+4,"¬ ∃ y ( ¬ Tet ( y ) ∧ ¬ ∃ x FrontOf ( x , y ) )",it is not the case that there is an element y such that y is not a tetrahedron and it is not the case that there is an element x such that x is in front of y
+5,"¬ ∃ x ( ¬ ∃ y FrontOf ( y , x ) ∧ ¬ Tet ( x ) )",it is not the case that there is an element x such that it is not the case that there is an element y such that y is in front of x and x is not a tetrahedron
+6,"∀ x ( ( Dodec ( x ) ∧ ¬ ∃ y RightOf ( x , y ) ) → ∃ z LeftOf ( x , z ) )","for all x , if x is a dodecahedron and it is not the case that there is an element y such that x is to the right of y , then there is an element z such that x is to the left of z"
+7,"∀ y ∀ x ( ( Dodec ( y ) ∧ Tet ( x ) ) → FrontOf ( x , y ) )","for all y , for all x , if y is a dodecahedron and x is a tetrahedron , then x is in front of y"
+8,"∀ y ∀ z ( ( Cube ( y ) ∧ Dodec ( z ) ∧ BackOf ( y , z ) ) → Smaller ( y , z ) )","for all y , for all z , if y is a cube , z is a dodecahedron and y is in back of z , then y is smaller than z"
+9,"¬ ( Cube ( a ) ∧ Cube ( d ) ) ∨ LeftOf ( a , d ) ∨ LeftOf ( d , a )","it is not the case that a is a cube and d is a cube , a is to the left of d or d is to the left of a"
 10,( ( Prime ( x1 ) ∧ Medium ( x1 ) ) ∨ ¬ Dodec ( x2 ) ) ∧ ¬ ∀ x1 Small ( a ),"at least one of these holds : \item x1 is a prime and x1 is medium \item x2 is not a dodecahedron and it is not the case that for all x1 , a is small"
 11,"∃ x1 ∃ x2 ∀ x3 FrontOf ( x2 , x2 )","there is an element x1 such that there is an element x2 such that for all x3 , x2 is in front of itself"
 12,"∃ x1 ( ∀ x1 FrontOf ( a , a ) → ( Prime ( b ) → Even ( x2 ) ) )","there is an element x1 such that if for all x1 , a is in front of itself , then if b is a prime , then x2 is even"

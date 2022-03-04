@@ -1,14 +1,14 @@
 ,Formula,Translation
-0,"∀ x ( LeftOf ( x , a ) → ∀ y ( Smaller ( x , y ) → ¬ LeftOf ( y , b ) ) )","for all x , if x is left of a , then for all y , if x is smaller than y , then y is not left of b"
-1,"∀ x ( ∃ y ( Cube ( x ) ∧ BackOf ( x , y ) ) → Small ( x ) )","for all x , if there is an element y such that x is a cube and x is in back of y , then x is small"
-2,"∃ z ( Large ( z ) ∧ Cube ( z ) ∧ ∀ w ( ( Cube ( w ) ∧ Small ( w ) ) → BackOf ( w , z ) ) )","there is an element z such that z is large , z is a cube and for all w , if w is a cube and w is small , then w is in back of z"
-3,"¬ ∃ x ∃ y ( Cube ( x ) ∧ Cube ( y ) ∧ LeftOf ( x , y ) )","it is not the case that there is an element x such that there is an element y such that x is a cube , y is a cube and x is left of y"
-4,"∀ z ∀ u ( ( Dodec ( z ) ∧ Cube ( u ) ∧ LeftOf ( z , u ) ) → Large ( z ) )","for all z , for all u , if z is a dodecahedron , u is a cube and z is left of u , then z is large"
-5,"¬ ( Tet ( b ) ∨ Tet ( d ) ) → ( LeftOf ( d , b ) ∨ LeftOf ( b , d ) )","if it is not the case that b is a tetrahedron or d is a tetrahedron , then d is left of b or b is left of d"
-6,"∀ x ∀ y ( ( LeftOf ( y , a ) → LeftOf ( y , b ) ) ∧ ( LeftOf ( y , b ) → LeftOf ( y , a ) ) )","for all x , for all y , all these hold : \item if y is left of a , then y is left of b \item if y is left of b , then y is left of a"
-7,"∀ x ( Cube ( x ) ∨ ¬ Smaller ( x , a ) )","for all x , x is a cube or x is not smaller than a"
-8,"¬ ∃ x ∃ y ( FrontOf ( y , x ) ∧ Cube ( x ) ∧ ¬ Small ( x ) )","it is not the case that there is an element x such that there is an element y such that y is in front of x , x is a cube and x is not small"
-9,"∀ y ( Smaller ( y , a ) → Cube ( y ) )","for all y , if y is smaller than a , then y is a cube"
+0,"∀ x ( ¬ ∃ y ( Dodec ( x ) → RightOf ( y , x ) ) → ∃ z RightOf ( x , z ) )","for all x , if it is not the case that there is an element y such that if x is a dodecahedron , then y is to the right of x , then there is an element z such that x is to the right of z"
+1,"¬ ∃ y ∃ x ( Cube ( x ) ∧ Cube ( y ) ∧ RightOf ( y , x ) )","it is not the case that there is an element y such that there is an element x such that x is a cube , y is a cube and y is to the right of x"
+2,"∀ x ∀ y ( ( Cube ( x ) ∧ SameSize ( x , y ) ) → ¬ Tet ( y ) )","for all x , for all y , if x is a cube and x is of the same size as y , then y is not a tetrahedron"
+3,"∃ x ( RightOf ( b , x ) ∧ Cube ( x ) ∧ Large ( x ) )","there is an element x such that b is to the right of x , x is a cube and x is large"
+4,"∀ x ¬ ( Adjoins ( a , x ) ∨ Adjoins ( a , b ) )","for all x , it is not the case that a is adjacent to x or adjacent to b"
+5,"∀ x ( Cube ( x ) → ∃ y ( Tet ( y ) ∧ LeftOf ( x , y ) ∧ SameSize ( y , x ) ) )","for all cubes x , there is an element y such that y is a tetrahedron , x is to the left of y and y is of the same size as x"
+6,"∀ u ∃ x ( Tet ( u ) → BackOf ( u , x ) )","for all u , there is an element x such that if u is a tetrahedron , then u is in back of x"
+7,∀ y ( Dodec ( y ) → ( Large ( y ) ∨ Small ( y ) ∨ Medium ( y ) ) ),"every dodecahedron is large , small or medium"
+8,∀ x ∃ x ( Prime ( x ) ∧ ¬ Even ( x ) ),"for all x , there is a prime x such that x is not even"
+9,"( Larger ( c , e ) ∨ SameSize ( c , e ) ) ∧ ( Larger ( c , d ) ∨ SameSize ( c , d ) )",c is larger than e or of the same size as e and larger than d or of the same size as d
 10,"SameRow ( x1 , x2 ) ∧ ∃ x3 ∀ x1 Even ( x4 )","x1 is in the same row as x2 and there is an element x3 such that for all x1 , x4 is even"
 11,"¬ SameCol ( x1 , x1 )",x1 is not in the same column as x1
 12,( ¬ Prime ( a ) ∨ ¬ Dodec ( x1 ) ) ∧ ∃ x1 ∃ x2 Person ( a ),all these hold : \item a is not a prime or x1 is not a dodecahedron \item there is an element x1 such that there is an element x2 such that a is a person
