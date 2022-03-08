@@ -48,7 +48,7 @@ for form_i in range(numberOfForms):
     script += [r'var withDrawn = form.addPageBreakItem().setTitle("Withdrawn from participation").setHelpText("You are withdrawn from participation. You can close this window and your response will not be recorded.");']
     script += [r'var personalQs = form.addPageBreakItem().setTitle("Personal questions");']
     script += [r'var agreed = informedConsent.createChoice("I confirm this", personalQs);']
-    script += [r'var disagreed = informedConsent.createChoice("I do not confirm this and want to withdraw from participation.", withDrawn);']
+    script += [r'var disagreed = informedConsent.createChoice("I do not confirm this and want to withdraw from participation", withDrawn);']
     script += [r'informedConsent.setChoices([agreed, disagreed]);']
     script += ['']
     

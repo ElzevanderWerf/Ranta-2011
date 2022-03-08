@@ -8,7 +8,7 @@ informedConsent = form.addMultipleChoiceItem().setTitle("I have read the above i
 var withDrawn = form.addPageBreakItem().setTitle("Withdrawn from participation").setHelpText("You are withdrawn from participation. You can close this window and your response will not be recorded.");
 var personalQs = form.addPageBreakItem().setTitle("Personal questions");
 var agreed = informedConsent.createChoice("I confirm this", personalQs);
-var disagreed = informedConsent.createChoice("I do not confirm this and want to withdraw from participation.", withDrawn);
+var disagreed = informedConsent.createChoice("I do not confirm this and want to withdraw from participation", withDrawn);
 informedConsent.setChoices([agreed, disagreed]);
 
 form.addMultipleChoiceItem().setTitle("What is your gender?").setChoiceValues(["Male", "Female", "Prefer not to say"]).setRequired(true);
