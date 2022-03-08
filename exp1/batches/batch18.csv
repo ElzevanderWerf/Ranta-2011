@@ -11,11 +11,11 @@
 9,"¬ RightOf ( c , a ) → ¬ Small ( c )","if c is not to the right of a , then c is not small"
 10,∃ x1 ¬ ¬ Student ( a ),there is an element x1 such that it is not the case that a is not a student
 11,"∀ x1 ∃ x2 ∀ x2 SameCol ( a , x2 )","for all x1 , there is an element x2 such that for all x2 , a is in the same column as x2"
-12,"Large ( a ) ∨ ( ∃ x1 Even ( b ) → ( LeftOf ( b , c ) → Large ( b ) ) )","at least one of these holds : \item a is large \item if there is an element x1 such that b is even , then if b is to the left of c , then b is large"
+12,"Large ( a ) ∨ ( ∃ x1 Even ( b ) → ( LeftOf ( b , c ) → Large ( b ) ) )","at least one of these holds : \n\t• a is large \n\t• if there is an element x1 such that b is even , then if b is to the left of c , then b is large"
 13,"∃ x1 ( Large ( x1 ) ∧ Cube ( a ) ) ∧ ( ( SameSize ( a , a ) ∧ SameRow ( b , b ) ) ∧ ¬ Person ( c ) )","there is an element x1 such that x1 is large and a is a cube , a is of the same size as itself , b is in the same row as itself and c is not a person"
 14,"∃ x1 BackOf ( a , x1 )",there is an element x1 such that a is in back of x1
 15,( ∀ x1 Tet ( x1 ) ∨ ( Person ( a ) ∨ Small ( a ) ) ) → ( ¬ Pet ( a ) ∧ ∃ x1 Pet ( x1 ) ),"if for all x1 , x1 is a tetrahedron , a is a person or a is small , then a is not a pet and there is an element x1 such that x1 is a pet"
-16,"∀ x1 ( ∃ x2 SameShape ( a , x2 ) ∧ ( Pet ( x1 ) ∨ Small ( x1 ) ) )","for all x1 , all these hold : \item there is an element x2 such that a is of the same shape as x2 \item x1 is a pet or x1 is small"
+16,"∀ x1 ( ∃ x2 SameShape ( a , x2 ) ∧ ( Pet ( x1 ) ∨ Small ( x1 ) ) )","for all x1 , all these hold : \n\t• there is an element x2 such that a is of the same shape as x2 \n\t• x1 is a pet or x1 is small"
 17,"∀ x1 Prime ( a ) ∧ ∀ x2 ∃ x3 Smaller ( b , x2 )","for all x1 , a is a prime and for all x2 , there is an element x3 such that b is smaller than x2"
 18,"( ( Large ( a ) ∧ Student ( a ) ) → ( Adjoins ( a , b ) ∧ Dodec ( a ) ) ) → ∀ x1 ∀ x2 Prime ( x2 )","if if a is large and a is a student , then a is adjacent to b and a is a dodecahedron , then for all x1 , for all x2 , x2 is a prime"
 19,"∀ x1 ( ( FrontOf ( a , a ) ∧ Prime ( a ) ) → ∃ x2 FrontOf ( b , x2 ) )","for all x1 , if a is in front of itself and a is a prime , then there is an element x2 such that b is in front of x2"

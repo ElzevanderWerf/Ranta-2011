@@ -3,21 +3,21 @@
 1,"∀ y ( ( Dodec ( y ) ∧ ¬ ∃ z RightOf ( z , y ) ) → Small ( y ) )","for all y , if y is a dodecahedron and it is not the case that there is an element z such that z is to the right of y , then y is small"
 2,"¬ SameCol ( e , d ) ∧ ¬ SameCol ( e , c ) ∧ ¬ SameCol ( e , d )","e is not in the same column as d , e is not in the same column as c and e is not in the same column as d"
 3,"∀ x ∀ y ( ( FrontOf ( x , y ) ∧ Cube ( x ) ) → Small ( x ) )","for all x , for all y , if x is in front of y and x is a cube , then x is small"
-4,"∀ x ( ( Cube ( x ) → RightOf ( x , a ) ) ∧ ( Cube ( x ) → LeftOf ( x , b ) ) )","for all x , all these hold : \item if x is a cube , then x is to the right of a \item if x is a cube , then x is to the left of b"
+4,"∀ x ( ( Cube ( x ) → RightOf ( x , a ) ) ∧ ( Cube ( x ) → LeftOf ( x , b ) ) )","for all x , all these hold : \n\t• if x is a cube , then x is to the right of a \n\t• if x is a cube , then x is to the left of b"
 5,"¬ ( Tet ( b ) ∨ Tet ( d ) ) → ( LeftOf ( d , b ) ∨ LeftOf ( b , d ) )","if it is not the case that b is a tetrahedron or d is a tetrahedron , then d is to the left of b or b is to the left of d"
 6,"∀ x ∀ y ( ( Cube ( x ) ∧ Tet ( y ) ) → RightOf ( y , x ) )","for all x , for all y , if x is a cube and y is a tetrahedron , then y is to the right of x"
 7,"¬ FrontOf ( a , d ) → ¬ Tet ( a )","if a is not in front of d , then a is not a tetrahedron"
 8,¬ ∃ y ( Medium ( y ) ∧ Cube ( y ) ),it is not the case that there is an element y such that y is medium and y is a cube
 9,"¬ ∀ x ∀ y ( ( Tet ( x ) ∧ Tet ( y ) ) → ( SameCol ( x , y ) ∧ SameCol ( y , x ) ) )","it is not the case that for all x , for all y , if x is a tetrahedron and y is a tetrahedron , then x is in the same column as y and y is in the same column as x"
-10,∀ x1 ∃ x1 Dodec ( a ) ∨ ( ¬ Tet ( b ) → ¬ Person ( a ) ),"at least one of these holds : \item for all x1 , there is an element x1 such that a is a dodecahedron \item if b is not a tetrahedron , then a is not a person"
+10,∀ x1 ∃ x1 Dodec ( a ) ∨ ( ¬ Tet ( b ) → ¬ Person ( a ) ),"at least one of these holds : \n\t• for all x1 , there is an element x1 such that a is a dodecahedron \n\t• if b is not a tetrahedron , then a is not a person"
 11,∃ x1 ∀ x2 ∃ x1 Large ( a ),"there is an element x1 such that for all x2 , there is an element x1 such that a is large"
-12,"¬ Dodec ( a ) → ( ∃ x1 SameRow ( x1 , x1 ) ∨ ( Student ( a ) ∧ RightOf ( a , b ) ) )","if a is not a dodecahedron , then at least one of these holds : \item there is an element x1 such that x1 is in the same row as itself \item a is a student and a is to the right of b"
+12,"¬ Dodec ( a ) → ( ∃ x1 SameRow ( x1 , x1 ) ∨ ( Student ( a ) ∧ RightOf ( a , b ) ) )","if a is not a dodecahedron , then at least one of these holds : \n\t• there is an element x1 such that x1 is in the same row as itself \n\t• a is a student and a is to the right of b"
 13,∀ x1 ∃ x1 ( Dodec ( a ) → Cube ( a ) ),"for all x1 , there is an element x1 such that if a is a dodecahedron , then a is a cube"
 14,"∃ x1 ( ( BackOf ( a , x1 ) ∧ Even ( b ) ) → ( LeftOf ( c , x1 ) → Large ( x1 ) ) )","there is an element x1 such that if a is in back of x1 and b is even , then if c is to the left of x1 , then x1 is large"
-15,"∃ x1 ( ( Small ( x1 ) ∨ Large ( a ) ) ∧ ( RightOf ( a , a ) → SameShape ( a , b ) ) )","there is an element x1 such that all these hold : \item x1 is small or a is large \item if a is to the right of itself , then a is of the same shape as b"
-16,"¬ ( ( Small ( a ) ∨ Dodec ( a ) ) ∧ ¬ Adjoins ( a , b ) )",it is not the case that all these hold : \item a is small or a is a dodecahedron \item a is not adjacent to b
+15,"∃ x1 ( ( Small ( x1 ) ∨ Large ( a ) ) ∧ ( RightOf ( a , a ) → SameShape ( a , b ) ) )","there is an element x1 such that all these hold : \n\t• x1 is small or a is large \n\t• if a is to the right of itself , then a is of the same shape as b"
+16,"¬ ( ( Small ( a ) ∨ Dodec ( a ) ) ∧ ¬ Adjoins ( a , b ) )",it is not the case that all these hold : \n\t• a is small or a is a dodecahedron \n\t• a is not adjacent to b
 17,"¬ ∀ x1 Large ( x1 ) → ∀ x1 ( Medium ( x1 ) ∧ BackOf ( a , a ) )","if it is not the case that for all x1 , x1 is large , then for all x1 , x1 is medium and a is in back of itself"
-18,"( ( BackOf ( a , a ) ∨ Large ( b ) ) → ∃ x1 Pet ( x1 ) ) ∧ ∀ x2 Medium ( x2 )","all these hold : \item if a is in back of itself or b is large , then there is an element x1 such that x1 is a pet \item for all x2 , x2 is medium"
+18,"( ( BackOf ( a , a ) ∨ Large ( b ) ) → ∃ x1 Pet ( x1 ) ) ∧ ∀ x2 Medium ( x2 )","all these hold : \n\t• if a is in back of itself or b is large , then there is an element x1 such that x1 is a pet \n\t• for all x2 , x2 is medium"
 19,"¬ ¬ ( Prime ( a ) ∨ RightOf ( a , a ) )",it is not the case that it is not the case that a is a prime or a is to the right of itself
 20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
 21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"

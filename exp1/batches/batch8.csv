@@ -9,16 +9,16 @@
 7,∀ y ( Dodec ( y ) → ( Large ( y ) ∨ Small ( y ) ∨ Medium ( y ) ) ),"every dodecahedron is large , small or medium"
 8,∀ x ∃ x ( Prime ( x ) ∧ ¬ Even ( x ) ),"for all x , there is a prime x such that x is not even"
 9,"( Larger ( c , e ) ∨ SameSize ( c , e ) ) ∧ ( Larger ( c , d ) ∨ SameSize ( c , d ) )",c is larger than e or of the same size as e and larger than d or of the same size as d
-10,"¬ ( ( Small ( a ) → Large ( a ) ) ∨ BackOf ( a , a ) )","it is not the case that at least one of these holds : \item if a is small , then a is large \item a is in back of itself"
+10,"¬ ( ( Small ( a ) → Large ( a ) ) ∨ BackOf ( a , a ) )","it is not the case that at least one of these holds : \n\t• if a is small , then a is large \n\t• a is in back of itself"
 11,Student ( a ) ∨ ( Pet ( a ) ∨ ( Large ( a ) ∨ Student ( b ) ) ),"a is a student , a is a pet , a is large or b is a student"
 12,"LeftOf ( a , b ) ∨ ∀ x1 ¬ LeftOf ( x1 , x1 )","a is to the left of b or for all x1 , x1 is not to the left of x1"
 13,"SameCol ( a , a ) ∨ ¬ ( Large ( a ) ∨ SameRow ( a , a ) )",a is in the same column as itself or it is not the case that a is large or a is in the same row as itself
 14,∀ x1 ( ∃ x2 Cube ( a ) ∧ ¬ Large ( a ) ),"for all x1 , there is an element x2 such that a is a cube and a is not large"
-15,"( ( Even ( a ) → Adjoins ( a , b ) ) ∧ ( Cube ( b ) ∧ Tet ( a ) ) ) ∧ Medium ( c )","all these hold : \item if a is even , then a is adjacent to b , b is a cube , a is a tetrahedron \item c is medium"
-16,"Small ( a ) ∨ ( ¬ Dodec ( b ) ∧ ∀ x1 LeftOf ( x1 , x1 ) )","at least one of these holds : \item a is small \item b is not a dodecahedron and for all x1 , x1 is to the left of itself"
+15,"( ( Even ( a ) → Adjoins ( a , b ) ) ∧ ( Cube ( b ) ∧ Tet ( a ) ) ) ∧ Medium ( c )","all these hold : \n\t• if a is even , then a is adjacent to b , b is a cube , a is a tetrahedron \n\t• c is medium"
+16,"Small ( a ) ∨ ( ¬ Dodec ( b ) ∧ ∀ x1 LeftOf ( x1 , x1 ) )","at least one of these holds : \n\t• a is small \n\t• b is not a dodecahedron and for all x1 , x1 is to the left of itself"
 17,"∀ x1 ∃ x2 ¬ FrontOf ( a , x1 )","for all x1 , there is an element x2 such that a is not in front of x1"
 18,"Large ( a ) → ( BackOf ( b , c ) ∧ ¬ Large ( a ) )","if a is large , then b is in back of c and a is not large"
-19,"∀ x1 ( Medium ( a ) ∨ Even ( x1 ) ) ∧ ( ( Tet ( b ) ∨ Smaller ( a , b ) ) → ∃ x1 Medium ( b ) )","all these hold : \item for all x1 , a is medium or x1 is even \item if b is a tetrahedron or a is smaller than b , then there is an element x1 such that b is medium"
+19,"∀ x1 ( Medium ( a ) ∨ Even ( x1 ) ) ∧ ( ( Tet ( b ) ∨ Smaller ( a , b ) ) → ∃ x1 Medium ( b ) )","all these hold : \n\t• for all x1 , a is medium or x1 is even \n\t• if b is a tetrahedron or a is smaller than b , then there is an element x1 such that b is medium"
 20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
 21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"
 22,"∃ x1 ∀ x2 Larger ( x1 , a ) ∧ ∀ x2 ¬ Pet ( x3 )","there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet"

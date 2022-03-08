@@ -3,22 +3,22 @@
 1,"∀ x ∃ y ( Cube ( x ) → ( Tet ( y ) ∧ RightOf ( y , x ) ∧ SameSize ( y , x ) ) )","for all x , there is an element y such that if x is a cube , then y is a tetrahedron , y is to the right of x and y is of the same size as x"
 2,"¬ FrontOf ( d , c ) ∧ ¬ FrontOf ( c , b ) ∧ ¬ FrontOf ( d , b ) ∧ ¬ FrontOf ( c , c )","d is not in front of c , c is not in front of b , d is not in front of b and c is not in front of c"
 3,"SameCol ( a , d ) ∧ SameCol ( b , e ) ∧ SameRow ( e , d )","a is in the same column as d , b is in the same column as e and e is in the same row as d"
-4,∀ x ( ( Cube ( x ) ∧ ¬ Medium ( x ) ) ∨ ¬ Cube ( x ) ),"for all x , at least one of these holds : \item x is a cube and x is not medium \item x is not a cube"
+4,∀ x ( ( Cube ( x ) ∧ ¬ Medium ( x ) ) ∨ ¬ Cube ( x ) ),"for all x , at least one of these holds : \n\t• x is a cube and x is not medium \n\t• x is not a cube"
 5,∀ w ¬ ( Cube ( w ) ∧ Large ( w ) ),"for all w , it is not the case that w is a cube and w is large"
 6,"∀ z ∀ w ( ( Small ( z ) ∧ Large ( w ) ) → FrontOf ( z , w ) )","for all z , for all w , if z is small and w is large , then z is in front of w"
 7,"∀ x ∀ y ( ( RightOf ( x , y ) ∧ Cube ( x ) ) → ¬ Cube ( y ) )","for all x , for all y , if x is to the right of y and x is a cube , then y is not a cube"
 8,"∀ x ( ∀ y ( LeftOf ( y , b ) → Larger ( x , y ) ) → ¬ LeftOf ( x , a ) )","for all x , if for all y , if y is to the left of b , then x is larger than y , then x is not to the left of a"
 9,"¬ ( BackOf ( c , d ) ∨ BackOf ( b , d ) ) ∧ ¬ ( BackOf ( c , c ) ∨ BackOf ( b , c ) )",it is not the case that c or b is in back of d and it is not the case that c is in back of itself or b is in back of c
-10,"∀ x1 ( ¬ Smaller ( x1 , a ) ∧ ( Large ( b ) → Even ( x1 ) ) )","for all x1 , all these hold : \item x1 is not smaller than a \item if b is large , then x1 is even"
-11,( ∀ x1 Student ( a ) → ¬ Tet ( b ) ) ∧ ∃ x1 ( Large ( c ) ∧ Large ( x1 ) ),"all these hold : \item if for all x1 , a is a student , then b is not a tetrahedron \item there is an element x1 such that c and x1 are large"
+10,"∀ x1 ( ¬ Smaller ( x1 , a ) ∧ ( Large ( b ) → Even ( x1 ) ) )","for all x1 , all these hold : \n\t• x1 is not smaller than a \n\t• if b is large , then x1 is even"
+11,( ∀ x1 Student ( a ) → ¬ Tet ( b ) ) ∧ ∃ x1 ( Large ( c ) ∧ Large ( x1 ) ),"all these hold : \n\t• if for all x1 , a is a student , then b is not a tetrahedron \n\t• there is an element x1 such that c and x1 are large"
 12,"( ∃ x1 Small ( x1 ) → ( Larger ( a , b ) ∨ Adjoins ( b , c ) ) ) → ∃ x2 FrontOf ( b , x2 )","if if there is an element x1 such that x1 is small , then a is larger than b or b is adjacent to c , then there is an element x2 such that b is in front of x2"
-13,"( ¬ Medium ( a ) ∧ ( Dodec ( a ) ∨ FrontOf ( b , c ) ) ) ∧ ( ∃ x1 Cube ( d ) ∨ Large ( b ) )","all these hold : \item a is not medium , a is a dodecahedron or b is in front of c \item there is an element x1 such that d is a cube or b is large"
-14,"¬ Prime ( a ) → ( ( Smaller ( a , a ) ∧ Medium ( b ) ) ∨ ( Large ( b ) ∨ Medium ( c ) ) )","if a is not a prime , then at least one of these holds : \item a is smaller than itself and b is medium , b is large \item c is medium"
+13,"( ¬ Medium ( a ) ∧ ( Dodec ( a ) ∨ FrontOf ( b , c ) ) ) ∧ ( ∃ x1 Cube ( d ) ∨ Large ( b ) )","all these hold : \n\t• a is not medium , a is a dodecahedron or b is in front of c \n\t• there is an element x1 such that d is a cube or b is large"
+14,"¬ Prime ( a ) → ( ( Smaller ( a , a ) ∧ Medium ( b ) ) ∨ ( Large ( b ) ∨ Medium ( c ) ) )","if a is not a prime , then at least one of these holds : \n\t• a is smaller than itself and b is medium , b is large \n\t• c is medium"
 15,"∀ x1 ¬ ( LeftOf ( x1 , x1 ) → Even ( x1 ) )","for all x1 , it is not the case that if x1 is to the left of itself , then x1 is even"
 16,"∃ x1 ¬ SameCol ( x1 , x1 )",there is an element x1 such that x1 is not in the same column as x1
 17,¬ ∃ x1 ∃ x1 Person ( x1 ),it is not the case that there is an element x1 such that there is an element x1 such that x1 is a person
-18,"( LeftOf ( a , a ) ∨ Larger ( b , b ) ) ∧ ¬ ( Prime ( b ) ∧ Medium ( b ) )",all these hold : \item a is to the left of itself or b is larger than itself \item it is not the case that b is a prime and b is medium
-19,"Medium ( a ) ∧ ( RightOf ( a , a ) → ( SameCol ( b , c ) ∨ Medium ( d ) ) )","all these hold : \item a is medium \item if a is to the right of itself , then b is in the same column as c or d is medium"
+18,"( LeftOf ( a , a ) ∨ Larger ( b , b ) ) ∧ ¬ ( Prime ( b ) ∧ Medium ( b ) )",all these hold : \n\t• a is to the left of itself or b is larger than itself \n\t• it is not the case that b is a prime and b is medium
+19,"Medium ( a ) ∧ ( RightOf ( a , a ) → ( SameCol ( b , c ) ∨ Medium ( d ) ) )","all these hold : \n\t• a is medium \n\t• if a is to the right of itself , then b is in the same column as c or d is medium"
 20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
 21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"
 22,"∃ x1 ∀ x2 Larger ( x1 , a ) ∧ ∀ x2 ¬ Pet ( x3 )","there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet"

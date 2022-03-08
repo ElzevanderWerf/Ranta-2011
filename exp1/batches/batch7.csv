@@ -9,13 +9,13 @@
 7,"∀ x ( ( Tet ( x ) ∧ ¬ Small ( x ) ) → ∃ y ( Tet ( y ) ∧ FrontOf ( y , x ) ∧ SameCol ( y , x ) ) )","for all x , if x is a tetrahedron and x is not small , then there is an element y such that y is a tetrahedron , y is in front of x and y is in the same column as x"
 8,"∀ u ( ( Dodec ( u ) ∧ ∃ v ( Cube ( v ) ∧ LeftOf ( u , v ) ) ) → Large ( u ) )","for all u , if u is a dodecahedron and u is to the left of some cube , then u is large"
 9,"¬ ∀ z ( Tet ( z ) → ∀ x ( Tet ( x ) → SameCol ( x , z ) ) )",it is not the case that every tetrahedron is in the same column as every tetrahedron
-10,"( ¬ BackOf ( a , b ) ∨ ( RightOf ( a , b ) ∧ Small ( b ) ) ) ∨ Medium ( a )","at least one of these holds : \item a is not in back of b , a is to the right of b and b is small \item a is medium"
-11,"( SameCol ( a , a ) → ¬ Person ( b ) ) ∧ ¬ Dodec ( b )","all these hold : \item if a is in the same column as itself , then b is not a person \item b is not a dodecahedron"
+10,"( ¬ BackOf ( a , b ) ∨ ( RightOf ( a , b ) ∧ Small ( b ) ) ) ∨ Medium ( a )","at least one of these holds : \n\t• a is not in back of b , a is to the right of b and b is small \n\t• a is medium"
+11,"( SameCol ( a , a ) → ¬ Person ( b ) ) ∧ ¬ Dodec ( b )","all these hold : \n\t• if a is in the same column as itself , then b is not a person \n\t• b is not a dodecahedron"
 12,∀ x1 ( Even ( x1 ) → Dodec ( a ) ),"for all x1 , if x1 is even , then a is a dodecahedron"
-13,¬ Dodec ( a ) ∧ ( ( Even ( b ) → Student ( a ) ) ∨ ( Small ( c ) ∨ Prime ( c ) ) ),"a is not a dodecahedron and at least one of these holds : \item if b is even , then a is a student , c is small \item c is a prime"
+13,¬ Dodec ( a ) ∧ ( ( Even ( b ) → Student ( a ) ) ∨ ( Small ( c ) ∨ Prime ( c ) ) ),"a is not a dodecahedron and at least one of these holds : \n\t• if b is even , then a is a student , c is small \n\t• c is a prime"
 14,∃ x1 ( Cube ( a ) → ∀ x1 Dodec ( x1 ) ),"there is an element x1 such that if a is a cube , then for all x1 , x1 is a dodecahedron"
 15,∀ x1 ∃ x1 ¬ Small ( x1 ),"for all x1 , there is an element x1 such that x1 is not small"
-16,( ¬ Small ( a ) → Large ( a ) ) ∧ ∀ x1 Even ( b ),"all these hold : \item if a is not small , then a is large \item for all x1 , b is even"
+16,( ¬ Small ( a ) → Large ( a ) ) ∧ ∀ x1 Even ( b ),"all these hold : \n\t• if a is not small , then a is large \n\t• for all x1 , b is even"
 17,"¬ ¬ ∃ x1 FrontOf ( a , a )",it is not the case that it is not the case that there is an element x1 such that a is in front of itself
 18,"∀ x1 ( ∀ x1 SameCol ( x1 , a ) ∧ Student ( a ) )","for all x1 , for all x1 , x1 is in the same column as a and a is a student"
 19,¬ ( ∀ x1 Even ( x1 ) ∨ ∀ x1 Even ( x1 ) ),"it is not the case that for all x1 , x1 is even or for all x1 , x1 is even"

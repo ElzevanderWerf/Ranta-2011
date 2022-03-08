@@ -88,14 +88,14 @@ form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡�
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item11 = form.addPageBreakItem().setHelpText("Formula:\n( ¬ BackOf ( a , b ) ∨ ( RightOf ( a , b ) ∧ Small ( b ) ) ) ∨ Medium ( a )\n\nTranslation:\nat least one of these holds : \item a is not in back of b , a is to the right of b and b is small \item a is medium");
+var item11 = form.addPageBreakItem().setHelpText("Formula:\n( ¬ BackOf ( a , b ) ∨ ( RightOf ( a , b ) ∧ Small ( b ) ) ) ∨ Medium ( a )\n\nTranslation:\nat least one of these holds : \n\t• a is not in back of b , a is to the right of b and b is small \n\t• a is medium");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item12 = form.addPageBreakItem().setHelpText("Formula:\n( SameCol ( a , a ) → ¬ Person ( b ) ) ∧ ¬ Dodec ( b )\n\nTranslation:\nall these hold : \item if a is in the same column as itself , then b is not a person \item b is not a dodecahedron");
+var item12 = form.addPageBreakItem().setHelpText("Formula:\n( SameCol ( a , a ) → ¬ Person ( b ) ) ∧ ¬ Dodec ( b )\n\nTranslation:\nall these hold : \n\t• if a is in the same column as itself , then b is not a person \n\t• b is not a dodecahedron");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);
@@ -109,7 +109,7 @@ form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡�
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item14 = form.addPageBreakItem().setHelpText("Formula:\n¬ Dodec ( a ) ∧ ( ( Even ( b ) → Student ( a ) ) ∨ ( Small ( c ) ∨ Prime ( c ) ) )\n\nTranslation:\na is not a dodecahedron and at least one of these holds : \item if b is even , then a is a student , c is small \item c is a prime");
+var item14 = form.addPageBreakItem().setHelpText("Formula:\n¬ Dodec ( a ) ∧ ( ( Even ( b ) → Student ( a ) ) ∨ ( Small ( c ) ∨ Prime ( c ) ) )\n\nTranslation:\na is not a dodecahedron and at least one of these holds : \n\t• if b is even , then a is a student , c is small \n\t• c is a prime");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);
@@ -130,7 +130,7 @@ form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡�
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item17 = form.addPageBreakItem().setHelpText("Formula:\n( ¬ Small ( a ) → Large ( a ) ) ∧ ∀ x1 Even ( b )\n\nTranslation:\nall these hold : \item if a is not small , then a is large \item for all x1 , b is even");
+var item17 = form.addPageBreakItem().setHelpText("Formula:\n( ¬ Small ( a ) → Large ( a ) ) ∧ ∀ x1 Even ( b )\n\nTranslation:\nall these hold : \n\t• if a is not small , then a is large \n\t• for all x1 , b is even");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);

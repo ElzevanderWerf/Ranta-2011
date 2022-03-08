@@ -20,7 +20,11 @@ def replace_symbols(s):
        64:8704,
        47:8707}
     return s.translate(dct)
+
+def replace_bulleting(s):
+    return s.replace(r'\item', r'\n\t'+chr(8226))
         
 df["Source language"] = df["Source language"].map(replace_symbols)
+df["Translation 1"] = df["Translation 1"].map(replace_bulleting)
 
-df.to_csv(csv, sep=',')
+df[["Source language", "Translation 1"]].to_csv(csv, sep=',')

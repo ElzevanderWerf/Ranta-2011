@@ -11,7 +11,7 @@
 9,"¬ ∃ x ∃ y ( ( Cube ( x ) ∧ Large ( x ) ) → ( Dodec ( y ) ∧ BackOf ( y , x ) ) )","it is not the case that there is an element x such that there is an element y such that if x is a cube and x is large , then y is a dodecahedron and y is in back of x"
 10,∃ x1 Tet ( a ) ∧ ∀ x2 ( Even ( b ) ∧ Dodec ( a ) ),"there is an element x1 such that a is a tetrahedron and for all x2 , b is even and a is a dodecahedron"
 11,"¬ ∀ x1 ∃ x2 Adjoins ( a , x2 )","it is not the case that for all x1 , there is an element x2 such that a is adjacent to x2"
-12,"( ( Adjoins ( a , a ) ∨ Small ( a ) ) → Even ( b ) ) ∨ Even ( b )","at least one of these holds : \item if a is adjacent to itself or a is small , then b is even \item b is even"
+12,"( ( Adjoins ( a , a ) ∨ Small ( a ) ) → Even ( b ) ) ∨ Even ( b )","at least one of these holds : \n\t• if a is adjacent to itself or a is small , then b is even \n\t• b is even"
 13,"¬ ( Even ( a ) → SameSize ( b , b ) ) ∨ ¬ ( BackOf ( b , a ) ∧ SameCol ( a , b ) )","it is not the case that if a is even , then b is of the same size as itself or it is not the case that b is in back of a and a is in the same column as b"
 14,Small ( a ) → ( ¬ Medium ( a ) ∨ ∃ x1 Small ( b ) ),"if a is small , then a is not medium or there is an element x1 such that b is small"
 15,"¬ ∃ x1 ( SameSize ( x1 , a ) ∧ FrontOf ( x1 , x1 ) )",it is not the case that there is an element x1 such that x1 is of the same size as a and x1 is in front of itself

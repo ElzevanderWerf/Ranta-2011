@@ -88,14 +88,14 @@ form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡�
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item11 = form.addPageBreakItem().setHelpText("Formula:\n∀ x1 ∀ x2 SameRow ( x2 , x2 ) ∧ ( ( Pet ( a ) → Even ( a ) ) → ¬ Dodec ( b ) )\n\nTranslation:\nall these hold : \item for all x1 , for all x2 , x2 is in the same row as itself \item if if a is a pet , then a is even , then b is not a dodecahedron");
+var item11 = form.addPageBreakItem().setHelpText("Formula:\n∀ x1 ∀ x2 SameRow ( x2 , x2 ) ∧ ( ( Pet ( a ) → Even ( a ) ) → ¬ Dodec ( b ) )\n\nTranslation:\nall these hold : \n\t• for all x1 , for all x2 , x2 is in the same row as itself \n\t• if if a is a pet , then a is even , then b is not a dodecahedron");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item12 = form.addPageBreakItem().setHelpText("Formula:\n( ∀ x1 Person ( x1 ) → Large ( a ) ) ∨ ( Dodec ( b ) → Prime ( c ) )\n\nTranslation:\nat least one of these holds : \item if for all x1 , x1 is a person , then a is large \item if b is a dodecahedron , then c is a prime");
+var item12 = form.addPageBreakItem().setHelpText("Formula:\n( ∀ x1 Person ( x1 ) → Large ( a ) ) ∨ ( Dodec ( b ) → Prime ( c ) )\n\nTranslation:\nat least one of these holds : \n\t• if for all x1 , x1 is a person , then a is large \n\t• if b is a dodecahedron , then c is a prime");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);
@@ -109,7 +109,7 @@ form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡�
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item14 = form.addPageBreakItem().setHelpText("Formula:\n¬ SameSize ( a , a ) ∧ ( ( Tet ( b ) ∨ LeftOf ( b , a ) ) ∨ ( SameRow ( b , c ) → Medium ( d ) ) )\n\nTranslation:\na is not of the same size as a and at least one of these holds : \item b is a tetrahedron , b is to the left of a \item if b is in the same row as c , then d is medium");
+var item14 = form.addPageBreakItem().setHelpText("Formula:\n¬ SameSize ( a , a ) ∧ ( ( Tet ( b ) ∨ LeftOf ( b , a ) ) ∨ ( SameRow ( b , c ) → Medium ( d ) ) )\n\nTranslation:\na is not of the same size as a and at least one of these holds : \n\t• b is a tetrahedron , b is to the left of a \n\t• if b is in the same row as c , then d is medium");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);
@@ -130,7 +130,7 @@ form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡�
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item17 = form.addPageBreakItem().setHelpText("Formula:\nAdjoins ( a , a ) → ( ∃ x1 Dodec ( b ) ∧ ( Small ( c ) ∨ Medium ( a ) ) )\n\nTranslation:\nif a is adjacent to itself , then all these hold : \item there is an element x1 such that b is a dodecahedron \item c is small or a is medium");
+var item17 = form.addPageBreakItem().setHelpText("Formula:\nAdjoins ( a , a ) → ( ∃ x1 Dodec ( b ) ∧ ( Small ( c ) ∨ Medium ( a ) ) )\n\nTranslation:\nif a is adjacent to itself , then all these hold : \n\t• there is an element x1 such that b is a dodecahedron \n\t• c is small or a is medium");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);

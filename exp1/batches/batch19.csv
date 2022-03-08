@@ -9,12 +9,12 @@
 7,"¬ SameShape ( d , b ) ∨ SameSize ( d , b )",d is not of the same shape as b or d is of the same size as b
 8,∃ x ( Cube ( x ) ∧ ∃ y Tet ( y ) ∧ ¬ ∃ z Dodec ( z ) ),"there is an element x such that x is a cube , there is an element y such that y is a tetrahedron and it is not the case that there is an element z such that z is a dodecahedron"
 9,∃ w ( Dodec ( w ) ∧ ¬ Large ( w ) ∧ ¬ Small ( w ) ),"there is an element w such that w is a dodecahedron , w is not large and w is not small"
-10,"( ∃ x1 RightOf ( a , a ) → ∀ x2 Small ( a ) ) ∨ ∀ x3 Medium ( x3 )","at least one of these holds : \item if there is an element x1 such that a is to the right of itself , then for all x2 , a is small \item for all x3 , x3 is medium"
+10,"( ∃ x1 RightOf ( a , a ) → ∀ x2 Small ( a ) ) ∨ ∀ x3 Medium ( x3 )","at least one of these holds : \n\t• if there is an element x1 such that a is to the right of itself , then for all x2 , a is small \n\t• for all x3 , x3 is medium"
 11,"¬ ( Medium ( a ) ∧ ( Adjoins ( b , c ) ∧ Large ( c ) ) )","it is not the case that a is medium , b is adjacent to c and c is large"
 12,"∀ x1 ( ∃ x1 Tet ( a ) → ∃ x2 SameSize ( a , x2 ) )","for all x1 , if there is an element x1 such that a is a tetrahedron , then there is an element x2 such that a is of the same size as x2"
 13,"( RightOf ( a , a ) ∧ ∃ x1 Small ( a ) ) → ∀ x1 ( RightOf ( a , x1 ) ∧ Adjoins ( a , x1 ) )","if a is to the right of itself and there is an element x1 such that a is small , then for all x1 , a is to the right of x1 and adjacent to x1"
 14,"∀ x1 ( ∀ x1 Larger ( x1 , x1 ) → ( Larger ( a , b ) ∧ SameShape ( x1 , x1 ) ) )","for all x1 , if for all x1 , x1 is larger than itself , then a is larger than b and x1 is of the same shape as itself"
-15,"¬ ( Person ( a ) → Smaller ( a , b ) ) ∨ ( ( RightOf ( b , b ) → Even ( c ) ) → Student ( d ) )","at least one of these holds : \item it is not the case that if a is a person , then a is smaller than b \item if if b is to the right of itself , then c is even , then d is a student"
+15,"¬ ( Person ( a ) → Smaller ( a , b ) ) ∨ ( ( RightOf ( b , b ) → Even ( c ) ) → Student ( d ) )","at least one of these holds : \n\t• it is not the case that if a is a person , then a is smaller than b \n\t• if if b is to the right of itself , then c is even , then d is a student"
 16,"∀ x1 ( ∀ x1 Pet ( x1 ) → ∃ x1 Adjoins ( a , a ) )","for all x1 , if for all x1 , x1 is a pet , then there is an element x1 such that a is adjacent to itself"
 17,Large ( a ) ∨ ∃ x1 ¬ Prime ( b ),a is large or there is an element x1 such that b is not a prime
 18,"( Large ( a ) ∧ SameShape ( b , a ) ) → ∃ x1 ∃ x1 Smaller ( a , x1 )","if a is large and b is of the same shape as a , then there is an element x1 such that there is an element x1 such that a is smaller than x1"

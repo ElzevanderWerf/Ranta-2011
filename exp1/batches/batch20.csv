@@ -4,15 +4,15 @@
 2,"¬ ∃ x ( Dodec ( x ) ∧ ∀ y ¬ RightOf ( y , x ) ∧ ¬ Small ( x ) )","it is not the case that there is an element x such that x is a dodecahedron , for all y , y is not to the right of x and x is not small"
 3,"∀ x ∀ y ( ( LeftOf ( x , a ) ∧ RightOf ( b , y ) ) → ¬ Smaller ( x , y ) )","for all x , for all y , if x is to the left of a and b is to the right of y , then x is not smaller than y"
 4,"¬ FrontOf ( d , b ) ∧ ¬ FrontOf ( d , b ) ∧ ¬ FrontOf ( c , b ) ∧ ¬ FrontOf ( d , c )","d is not in front of b , d is not in front of b , c is not in front of b and d is not in front of c"
-5,"( FrontOf ( b , c ) ∧ BackOf ( c , b ) ) ∨ ( FrontOf ( c , b ) ∧ BackOf ( b , c ) )",at least one of these holds : \item b is in front of c and c is in back of b \item c is in front of b and b is in back of c
+5,"( FrontOf ( b , c ) ∧ BackOf ( c , b ) ) ∨ ( FrontOf ( c , b ) ∧ BackOf ( b , c ) )",at least one of these holds : \n\t• b is in front of c and c is in back of b \n\t• c is in front of b and b is in back of c
 6,∀ w ( Dodec ( w ) → ¬ Small ( w ) ),"for all dodecahedrons w , w is not small"
 7,"∀ x ∀ y ( ( Dodec ( x ) ∧ ∀ y ¬ RightOf ( y , x ) ) → ∃ z LeftOf ( z , x ) )","for all x , for all y , if x is a dodecahedron and for all y , y is not to the right of x , then there is an element z such that z is to the left of x"
 8,Cube ( b ) ∨ Cube ( d ) ∨ ¬ ( Tet ( a ) ∨ Tet ( c ) ),"b is a cube , d is a cube or it is not the case that a is a tetrahedron or c is a tetrahedron"
 9,"∀ x ( ( Cube ( x ) ∧ Large ( x ) ) → ∀ y ( RightOf ( y , x ) → Small ( y ) ) )","for all x , if x is a cube and x is large , then for all y , if y is to the right of x , then y is small"
-10,∃ x1 ( Person ( a ) ∨ Medium ( b ) ) ∨ ( ( Dodec ( a ) → Tet ( c ) ) ∧ ∃ x1 Small ( d ) ),"there is an element x1 such that a is a person or b is medium or all these hold : \item if a is a dodecahedron , then c is a tetrahedron \item there is an element x1 such that d is small"
+10,∃ x1 ( Person ( a ) ∨ Medium ( b ) ) ∨ ( ( Dodec ( a ) → Tet ( c ) ) ∧ ∃ x1 Small ( d ) ),"there is an element x1 such that a is a person or b is medium or all these hold : \n\t• if a is a dodecahedron , then c is a tetrahedron \n\t• there is an element x1 such that d is small"
 11,"Small ( a ) → ¬ ( LeftOf ( b , a ) ∧ RightOf ( c , a ) )","if a is small , then it is not the case that b is to the left of a and c is to the right of a"
 12,"¬ ( SameRow ( a , a ) ∨ Tet ( a ) ) → ∃ x1 ( SameShape ( x1 , a ) ∨ Dodec ( b ) )","if it is not the case that a is in the same row as itself or a is a tetrahedron , then there is an element x1 such that x1 is of the same shape as a or b is a dodecahedron"
-13,¬ ( ¬ Cube ( a ) ∧ ( Medium ( a ) ∨ Even ( b ) ) ),it is not the case that all these hold : \item a is not a cube \item a is medium or b is even
+13,¬ ( ¬ Cube ( a ) ∧ ( Medium ( a ) ∨ Even ( b ) ) ),it is not the case that all these hold : \n\t• a is not a cube \n\t• a is medium or b is even
 14,"∃ x1 ( Person ( x1 ) → ( Medium ( x1 ) → SameShape ( x1 , a ) ) )","there is an element x1 such that if x1 is a person , then if x1 is medium , then x1 is of the same shape as a"
 15,"∀ x1 ∀ x2 ( Dodec ( a ) ∧ SameShape ( a , x2 ) )","for all x1 , for all x2 , a is a dodecahedron and a is of the same shape as x2"
 16,"Even ( a ) → ∃ x1 ( Adjoins ( x1 , b ) ∨ Medium ( b ) )","if a is even , then there is an element x1 such that x1 is adjacent to b or b is medium"

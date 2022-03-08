@@ -1,16 +1,16 @@
 ,Formula,Translation
 0,"∀ u ( Cube ( u ) → ( FrontOf ( u , e ) ∨ FrontOf ( e , u ) ) )","for all cubes u , u is in front of e or e is in front of u"
 1,"¬ ∃ x ∃ z ( LeftOf ( x , a ) ∧ Smaller ( x , z ) ∧ LeftOf ( z , b ) )","it is not the case that there is an element x such that there is an element z such that x is to the left of a , x is smaller than z and z is to the left of b"
-2,"¬ Tet ( a ) ∨ ( FrontOf ( a , b ) ∧ Tet ( a ) )",at least one of these holds : \item a is not a tetrahedron \item a is in front of b and a is a tetrahedron
+2,"¬ Tet ( a ) ∨ ( FrontOf ( a , b ) ∧ Tet ( a ) )",at least one of these holds : \n\t• a is not a tetrahedron \n\t• a is in front of b and a is a tetrahedron
 3,"∀ x ∃ y ( Cube ( x ) → ( RightOf ( y , x ) ∧ Tet ( y ) ∧ SameSize ( y , x ) ) )","for all x , there is an element y such that if x is a cube , then y is to the right of x , y is a tetrahedron and y is of the same size as x"
 4,"∀ x ∀ y ( Cube ( y ) → ( Cube ( x ) → SameCol ( x , y ) ) )","for all x , for all cubes y , if x is a cube , then x is in the same column as y"
-5,"∀ x ∃ y ( ( Cube ( x ) ∧ ( Tet ( y ) → FrontOf ( x , y ) ) ) → Large ( x ) )","for all x , there is an element y such that if all these hold : \item x is a cube \item if y is a tetrahedron , then x is in front of y , then x is large"
+5,"∀ x ∃ y ( ( Cube ( x ) ∧ ( Tet ( y ) → FrontOf ( x , y ) ) ) → Large ( x ) )","for all x , there is an element y such that if all these hold : \n\t• x is a cube \n\t• if y is a tetrahedron , then x is in front of y , then x is large"
 6,"∀ x ( Tet ( x ) → ∀ z ( Dodec ( z ) → FrontOf ( x , z ) ) )",every tetrahedron is in front of every dodecahedron
 7,"∀ x ¬ ( Tet ( x ) ∧ ∃ z ( Cube ( z ) ∧ SameSize ( x , z ) ) )","for all x , it is not the case that x is a tetrahedron and x is of the same size as some cube"
 8,∀ y ( Cube ( y ) → Small ( y ) ),every cube is small
 9,"Larger ( a , c ) ∧ Larger ( c , e )",a is larger than c and c is larger than e
 10,∀ x1 ¬ Dodec ( a ) → ∀ x2 ∃ x3 Prime ( a ),"if for all x1 , a is not a dodecahedron , then for all x2 , there is an element x3 such that a is a prime"
-11,"( ¬ BackOf ( a , a ) ∨ ( Student ( a ) ∧ SameCol ( b , a ) ) ) → ( Cube ( a ) ∧ ∃ x1 Tet ( b ) )","if at least one of these holds : \item a is not in back of a \item a is a student and b is in the same column as a , then a is a cube and there is an element x1 such that b is a tetrahedron"
+11,"( ¬ BackOf ( a , a ) ∨ ( Student ( a ) ∧ SameCol ( b , a ) ) ) → ( Cube ( a ) ∧ ∃ x1 Tet ( b ) )","if at least one of these holds : \n\t• a is not in back of a \n\t• a is a student and b is in the same column as a , then a is a cube and there is an element x1 such that b is a tetrahedron"
 12,"¬ ( ∃ x1 FrontOf ( x1 , a ) ∧ ∀ x1 Even ( b ) )","it is not the case that there is an element x1 such that x1 is in front of a and for all x1 , b is even"
 13,"∀ x1 SameRow ( x1 , x1 )","for all x1 , x1 is in the same row as itself"
 14,∀ x1 ∀ x1 Large ( a ),"for all x1 , for all x1 , a is large"
@@ -18,7 +18,7 @@
 16,"¬ ( ( Student ( a ) ∨ Even ( b ) ) ∨ ( SameCol ( b , b ) ∨ SameCol ( b , b ) ) )","it is not the case that a is a student , b is even , b is in the same column as itself or b is in the same column as itself"
 17,∃ x1 ∃ x2 Even ( x2 ) ∧ ∀ x3 ∀ x3 Even ( a ),"there is an element x1 such that there is an element x2 such that x2 is even and for all x3 , for all x3 , a is even"
 18,"( ∀ x1 Large ( x1 ) ∧ ¬ Tet ( a ) ) → ∀ x1 ∃ x2 SameShape ( b , a )","if for all x1 , x1 is large and a is not a tetrahedron , then for all x1 , there is an element x2 such that b is of the same shape as a"
-19,"( Tet ( a ) → ( Pet ( a ) → LeftOf ( b , c ) ) ) ∨ ∃ x1 ∃ x2 BackOf ( b , c )","at least one of these holds : \item if a is a tetrahedron , then if a is a pet , then b is to the left of c \item there is an element x1 such that there is an element x2 such that b is in back of c"
+19,"( Tet ( a ) → ( Pet ( a ) → LeftOf ( b , c ) ) ) ∨ ∃ x1 ∃ x2 BackOf ( b , c )","at least one of these holds : \n\t• if a is a tetrahedron , then if a is a pet , then b is to the left of c \n\t• there is an element x1 such that there is an element x2 such that b is in back of c"
 20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
 21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"
 22,"∃ x1 ∀ x2 Larger ( x1 , a ) ∧ ∀ x2 ¬ Pet ( x3 )","there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet"

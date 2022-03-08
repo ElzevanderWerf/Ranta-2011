@@ -13,11 +13,11 @@
 11,"∃ x1 ∃ x2 BackOf ( a , x1 )",there is an element x1 such that there is an element x2 such that a is in back of x1
 12,"∃ x1 SameSize ( x1 , a )",there is an element x1 such that x1 is of the same size as a
 13,"∀ x1 ( ( Tet ( x1 ) ∧ Adjoins ( a , b ) ) ∧ ∃ x1 Tet ( a ) )","for all x1 , x1 is a tetrahedron , a is adjacent to b and there is an element x1 such that a is a tetrahedron"
-14,"( LeftOf ( a , a ) → ( Small ( a ) ∨ Even ( b ) ) ) ∧ ¬ Larger ( c , b )","all these hold : \item if a is to the left of itself , then a is small or b is even \item c is not larger than b"
+14,"( LeftOf ( a , a ) → ( Small ( a ) ∨ Even ( b ) ) ) ∧ ¬ Larger ( c , b )","all these hold : \n\t• if a is to the left of itself , then a is small or b is even \n\t• c is not larger than b"
 15,"∀ x1 ( Medium ( x1 ) ∨ Pet ( x1 ) ) ∧ ∀ x2 ( Larger ( a , x2 ) ∧ BackOf ( x2 , x2 ) )","for all x1 , x1 is medium or x1 is a pet and for all x2 , a is larger than x2 and x2 is in back of itself"
 16,( ∃ x1 Medium ( x1 ) ∨ ∀ x1 Dodec ( x1 ) ) → Tet ( a ),"if there is an element x1 such that x1 is medium or for all x1 , x1 is a dodecahedron , then a is a tetrahedron"
 17,"FrontOf ( a , a ) ∧ ¬ ¬ Medium ( a )",a is in front of itself and it is not the case that a is not medium
-18,"Student ( a ) ∨ ( ( Large ( a ) ∧ Smaller ( a , a ) ) → ( Tet ( b ) → Even ( c ) ) )","at least one of these holds : \item a is a student \item if a is large and a is smaller than itself , then if b is a tetrahedron , then c is even"
+18,"Student ( a ) ∨ ( ( Large ( a ) ∧ Smaller ( a , a ) ) → ( Tet ( b ) → Even ( c ) ) )","at least one of these holds : \n\t• a is a student \n\t• if a is large and a is smaller than itself , then if b is a tetrahedron , then c is even"
 19,"LeftOf ( a , a ) ∧ ¬ ¬ Even ( b )",a is to the left of itself and it is not the case that b is not even
 20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
 21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"

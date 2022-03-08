@@ -102,7 +102,7 @@ form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡�
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item13 = form.addPageBreakItem().setHelpText("Formula:\n( ( Adjoins ( a , a ) ∨ Small ( a ) ) → Even ( b ) ) ∨ Even ( b )\n\nTranslation:\nat least one of these holds : \item if a is adjacent to itself or a is small , then b is even \item b is even");
+var item13 = form.addPageBreakItem().setHelpText("Formula:\n( ( Adjoins ( a , a ) ∨ Small ( a ) ) → Even ( b ) ) ∨ Even ( b )\n\nTranslation:\nat least one of these holds : \n\t• if a is adjacent to itself or a is small , then b is even \n\t• b is even");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);

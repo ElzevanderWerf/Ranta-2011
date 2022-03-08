@@ -16,8 +16,8 @@ fillers_df = pd.read_csv("fillers.csv", header=0, error_bad_lines=False, sep=";"
 # The formula sets for each batch taken from the DataFrames
 batches = []
 for i in range(numberOfForms):
-    ggc_10 = [tuple(ft) for ft in ggc_df.iloc[i*10:i*10+10, 3:5].to_numpy()]
-    rg_10 = [tuple(ft) for ft in rg_df.iloc[i*10:i*10+10, 2:4].to_numpy()]
+    ggc_10 = [tuple(ft) for ft in ggc_df.iloc[i*10:i*10+10, 1:3].to_numpy()]
+    rg_10 = [tuple(ft) for ft in rg_df.iloc[i*10:i*10+10, 1:3].to_numpy()]
     fillers_5 = [tuple(ft) for ft in fillers_df.iloc[:5, 1:3].to_numpy() ]
     batch = ggc_10+rg_10+fillers_5
     pd.DataFrame(batch, columns = ["Formula", "Translation"]).to_csv(
@@ -65,7 +65,7 @@ for form_i in range(numberOfForms):
     
     # the questions per section (each section has one experimental item)
     for item_i in range(numberOfItems):
-        script += [r'var ' + items[item_i] + r' = form.addPageBreakItem().setHelpText("Formula:\n'+ batches[form_i][item_i][0] +r'\n\nTranslation:\n'+ batches[form_i][item_i][1] +r'");']
+        script += [r'var ' + items[item_i] + r' = form.addPageBreakItem().setHelpText("Formula:\n'+ batches[form_i][item_i][0] +r'\n\nTranslation:\n'+ batches[form_i][item_i][1] + r'");']
         script += [r'form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);']
         script += [r'form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");']
         script += [r'form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);']

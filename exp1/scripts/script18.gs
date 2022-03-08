@@ -102,7 +102,7 @@ form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡�
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item13 = form.addPageBreakItem().setHelpText("Formula:\nLarge ( a ) ∨ ( ∃ x1 Even ( b ) → ( LeftOf ( b , c ) → Large ( b ) ) )\n\nTranslation:\nat least one of these holds : \item a is large \item if there is an element x1 such that b is even , then if b is to the left of c , then b is large");
+var item13 = form.addPageBreakItem().setHelpText("Formula:\nLarge ( a ) ∨ ( ∃ x1 Even ( b ) → ( LeftOf ( b , c ) → Large ( b ) ) )\n\nTranslation:\nat least one of these holds : \n\t• a is large \n\t• if there is an element x1 such that b is even , then if b is to the left of c , then b is large");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);
@@ -130,7 +130,7 @@ form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡�
 form.addScaleItem().setTitle("Is the translation fluent?").setHelpText("𝙁𝙡𝙪𝙚𝙣𝙩 means that the sentence sounds as a natural English sentence.").setBounds(1,5).setLabels("Not fluent", "Very fluent").setRequired(true);
 form.addParagraphTextItem().setTitle("Do you have a suggestion for a better translation? If so, then write it down here.");
 
-var item17 = form.addPageBreakItem().setHelpText("Formula:\n∀ x1 ( ∃ x2 SameShape ( a , x2 ) ∧ ( Pet ( x1 ) ∨ Small ( x1 ) ) )\n\nTranslation:\nfor all x1 , all these hold : \item there is an element x2 such that a is of the same shape as x2 \item x1 is a pet or x1 is small");
+var item17 = form.addPageBreakItem().setHelpText("Formula:\n∀ x1 ( ∃ x2 SameShape ( a , x2 ) ∧ ( Pet ( x1 ) ∨ Small ( x1 ) ) )\n\nTranslation:\nfor all x1 , all these hold : \n\t• there is an element x2 such that a is of the same shape as x2 \n\t• x1 is a pet or x1 is small");
 form.addMultipleChoiceItem().setTitle("Is the translation correct?").setHelpText("𝘾𝙤𝙧𝙧𝙚𝙘𝙩 means that the sentence conveys exactly the same information as the input logical formula.").setChoiceValues(["Yes", "No"]).setRequired(true);
 form.addParagraphTextItem().setTitle("If your answer to the previous question was \"no\", explain why the translation is incorrect.");
 form.addScaleItem().setTitle("Is the translation clear?").setHelpText("𝘾𝙡𝙚𝙖𝙧 means that the sentence is understandable and does not have multiple readings.").setBounds(1,5).setLabels("Very unclear", "Very clear").setRequired(true);
