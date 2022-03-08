@@ -102,7 +102,7 @@ I designed a random generation function myself, which generates formulas that ar
 **(Filenames start with exp1)**
 1. I used `makecsv.py` to combine the files `test3GGC.tmp` and `test3Eng.tmp` into a csv (`exp1-rg-to-eng.csv`) for readability:
 
-		>python makecsv.py out/test3GGC.tmp out/test3Eng.tmp exp1/exp1-rg-to-eng.csv
+		>python makecsv.py out/test3GGC.tmp out/test3Eng.tmp exp1/exp1-rg-to-eng.csv		
 2. The Python script in `ggcSubsetFormulasToEng.py` writes a random sample of 1000 formulas and translations from `ggc-formulas-to-eng.csv` to the file `exp1-ggc-to-eng.csv`.
 3. In the Python script `replaceSymbols.py`, the GGC symbols in `exp1-rg-to-eng.csv` and `exp1-ggc-to-eng.csv` are replaced by the common FOL symbols:
         
