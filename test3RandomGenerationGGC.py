@@ -27,39 +27,41 @@ class RandomGenerator:
         check is done such that the final prop does not include outer brackets, 
         because then it will not be parsable by the GF shell.
         """
-        if n == 0:          # termination signal
+        if n == 0:          # termination signal: atomic proposition
             return self.makeAtom(n-1, bindsVars)
         else: 
             i = r.choice(range(7))
             if i == 0:      # atomic proposition
                 return self.makeAtom(n-1, bindsVars)
+            
             elif i == 1:    # negation
                 return "~ " + self.makeProp(n-1, bindsVars)
+            
             elif i == 2:    # conjunction
                 if n == self.maxdepth:      # exclude outer brackets
                     return self.makeProp(n-1, bindsVars) + " & " + self.makeProp(n-1, bindsVars)
-                else:
+                else:                       # include outer brackets
                     return "( " + self.makeProp(n-1, bindsVars) + " & " + self.makeProp(n-1, bindsVars) + " )"
+            
             elif i == 3:    # disjunction
                 if n == self.maxdepth:      # exclude outer brackets
                     return self.makeProp(n-1, bindsVars) + " | " + self.makeProp(n-1, bindsVars)
-                else:
+                else:                       # include outer brackets
                     return "( " + self.makeProp(n-1, bindsVars) + " | " + self.makeProp(n-1, bindsVars) + " )"
+            
             elif i == 4:    # implication
                 if n == self.maxdepth:      # exclude outer brackets
                     return self.makeProp(n-1, bindsVars) + " $ " + self.makeProp(n-1, bindsVars)
-                else:
+                else:                       # include outer brackets
                     return "( " + self.makeProp(n-1, bindsVars) + " $ " + self.makeProp(n-1, bindsVars) + " )"
+            
             elif i == 5:    # universal quantification
                 var, j = self.makeVar(afterQ=True)
-                bindsVars.add(j)
-                print(bindsVars)
-                return "@ " + var + " " + self.makeProp(n-1, bindsVars)
+                return "@ " + var + " " + self.makeProp(n-1, bindsVars.union([j]))
+            
             elif i == 6:    # existential quantification
                 var, j = self.makeVar(afterQ=True)
-                bindsVars.add(j)
-                print(bindsVars)
-                return "/ " + var + " " + self.makeProp(n-1, bindsVars)
+                return "/ " + var + " " + self.makeProp(n-1, bindsVars.union([j]))
     
     def makeAtom(self, n, bound=set()):
         """
@@ -124,28 +126,28 @@ ggcLexicon = Lexicon(["Small", "Medium", "Large", "Even"],      #Pred1s
                         ["Dodec", "Student", "Cube", "Prime", "Person", 
                          "Tet", "Pet"])                 #Kinds
 
-# Test to generate 1 proposition        
-rg = RandomGenerator(ggcLexicon, 3)  
-random_formula = rg.makeProp(3)
-print(random_formula)
+# # Test to generate 1 proposition        
+# rg = RandomGenerator(ggcLexicon, 3)  
+# random_formula = rg.makeProp(3)
+# print(random_formula)
 
 
-# # Randomly generate 1000 formulas with a certain maximum depth
-# depth = 3       # maximum depth
-# formulas = []
-# rg = RandomGenerator(ggcLexicon, depth)
+# Randomly generate 1000 formulas with a certain maximum depth
+depth = 3       # maximum depth
+formulas = []
+rg = RandomGenerator(ggcLexicon, depth)
 
-# while len(formulas) < 1000:
-#     prop = rg.makeProp(depth, set())
-#     if len(prop) >= 20 and len(prop) <= 100:
-#         formulas.append(prop)
-#     rg.new_var_i = 0    #set again to 0 for generating a new prop
-#     rg.new_cons_i = 0   #set again to 0 for generating a new prop
+while len(formulas) < 1000:
+    prop = rg.makeProp(depth, set())
+    if len(prop) >= 20 and len(prop) <= 100:
+        formulas.append(prop)
+    rg.new_var_i = 0    #set again to 0 for generating a new prop
+    rg.new_cons_i = 0   #set again to 0 for generating a new prop
 
-# # Write formulas to file with newlines
-# with(open(r'out/test3GGC.tmp', 'w')) as f:
-#     f.write('\n'.join(formulas))
-# f.close()
+# Write formulas to file with newlines
+with(open(r'out/test3GGC.tmp', 'w')) as f:
+    f.write('\n'.join(formulas))
+f.close()
 
 # DISCUSSION generation of new variables and constants is now pseudorandom (there is a
 #   random choice between the list of currently chosen variables and 
