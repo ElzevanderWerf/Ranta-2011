@@ -9,18 +9,18 @@
 7,"¬ Dodec ( b ) ∨ ( BackOf ( b , d ) → FrontOf ( b , d ) )","at least one of these holds : \n\t• b is not a dodecahedron \n\t• if b is in back of d , then b is in front of d"
 8,"Larger ( e , b ) ∧ Larger ( d , b ) ∧ FrontOf ( b , d ) ∧ FrontOf ( b , e )","e is larger than b , d is larger than b , b is in front of d and b is in front of e"
 9,( Cube ( b ) ∧ ¬ Tet ( c ) ) ∨ Tet ( c ),at least one of these holds : \n\t• b is a cube and c is not a tetrahedron \n\t• c is a tetrahedron
-10,∀ x1 ( ( Person ( x1 ) ∧ Large ( x1 ) ) ∨ Large ( x1 ) ),"for all x1 , at least one of these holds : \n\t• x1 is a person and x1 is large \n\t• x1 is large"
-11,"∃ x1 ( ( Pet ( a ) ∧ FrontOf ( x1 , a ) ) ∨ ( Pet ( a ) → Tet ( b ) ) )","there is an element x1 such that at least one of these holds : \n\t• a is a pet and x1 is in front of a \n\t• if a is a pet , then b is a tetrahedron"
-12,"∀ x1 ( Pet ( x1 ) → BackOf ( a , x1 ) ) ∨ ∀ x1 Adjoins ( a , b )","a is in back of every pet or for all x1 , a is adjacent to b"
-13,Dodec ( a ) → ∃ x1 ∀ x2 Small ( b ),"if a is a dodecahedron , then there is an element x1 such that for all x2 , b is small"
-14,∀ x1 ( Small ( x1 ) ∨ Small ( a ) ) ∨ Dodec ( a ),"for all x1 , x1 or a is small or a is a dodecahedron"
-15,"Adjoins ( a , b ) → ( ( Person ( b ) → FrontOf ( a , b ) ) ∧ ( Small ( c ) ∧ Small ( b ) ) )","if a is adjacent to b , then all these hold : \n\t• if b is a person , then a is in front of b , c is small \n\t• b is small"
-16,"∀ x1 ¬ Smaller ( x1 , x1 ) ∧ ( ( Small ( a ) ∨ Dodec ( a ) ) ∨ Large ( b ) )","all these hold : \n\t• for all x1 , x1 is not smaller than x1 \n\t• a is small , a is a dodecahedron or b is large"
-17,"∃ x1 ( Adjoins ( a , x1 ) → SameShape ( b , a ) ) → ( ∀ x1 Even ( x1 ) ∧ ¬ Large ( b ) )","if there is an element x1 such that if a is adjacent to x1 , then b is of the same shape as a , then for all x1 , x1 is even and b is not large"
-18,"¬ ¬ ¬ SameCol ( a , a )",it is not the case that it is not the case that a is not in the same column as a
-19,"∀ x1 ( Cube ( x1 ) ∧ SameShape ( x1 , a ) ) ∧ ( ( Smaller ( b , a ) → Small ( c ) ) ∨ Large ( a ) )","for all x1 , x1 is a cube and x1 is of the same shape as a and at least one of these holds : \n\t• if b is smaller than a , then c is small \n\t• a is large"
-20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
-21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"
-22,"∃ x1 ∀ x2 Larger ( x1 , a ) ∧ ∀ x2 ¬ Pet ( x3 )","there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet"
-23,"∃ x1 ( ( ( SameShape ( x1 , a ) ∧ Tet ( x1 ) ) → Adjoins ( x1 , a ) )","for all x1 , if x1 is of the same shape as a, then x1 is adjacent to a"
-24,"∃ x1 Cube ( x1 ) ( Person ( a ) → Adjoins ( x1 , a ) )",there is a cube such that a is a person or x1 is adjacent to a
+10,∃ x ( ∃ y Even ( a ) ∨ ∃ y Tet ( y ) ),there is an element x such that there is an element y such that a is even or there is an element y such that y is a tetrahedron
+11,"∃ x ( ¬ SameRow ( a , a ) → ∀ y SameRow ( a , a ) )","there is an element x such that if a is not in the same row as a , then for all y , a is in the same row as itself"
+12,"∀ x ( Medium ( a ) → Medium ( x ) ) ∨ ∃ x ( Larger ( a , x ) ∧ Medium ( x ) )","for all x , if a is medium , then x is medium or there is an element x such that a is larger than x and x is medium"
+13,"¬ ( SameRow ( a , b ) ∧ Dodec ( b ) ) → ∃ x ( Person ( a ) → Even ( x ) )","if it is not the case that a is in the same row as b and b is a dodecahedron , then there is an element x such that if a is a person , then x is even"
+14,"∃ x ( ∃ x Smaller ( x , x ) → ¬ Pet ( x ) )","there is an element x such that if there is an element x such that x is smaller than itself , then x is not a pet"
+15,∀ x ( Small ( a ) ∧ Prime ( x ) ) ∨ Even ( a ),"for all x , a is small and x is a prime or a is even"
+16,"( ∃ x Student ( a ) ∧ ∃ x Person ( b ) ) → ( ( Pet ( a ) ∨ Adjoins ( a , b ) ) ∨ ¬ Cube ( a ) )","if there is an element x such that a is a student and there is an element x such that b is a person , then a is a pet , a is adjacent to b or a is not a cube"
+17,"Small ( a ) ∧ ( Medium ( a ) → ( Larger ( a , a ) ∧ SameCol ( b , c ) ) )","all these hold : \n\t• a is small \n\t• if a is medium , then a is larger than itself and b is in the same column as c"
+18,∃ x ( ¬ Cube ( a ) ∨ Large ( x ) ),there is an element x such that a is not a cube or x is large
+19,∀ x ¬ ( Medium ( x ) ∨ Pet ( x ) ),"for all x , it is not the case that x is medium or x is a pet"
+20,"¬ ∃ x ( SameShape ( a , b ) → SameRow ( c , c ) )",it is not the case that there is an element x such that a is in the same shape as b and c is in the same row as itself
+21,∀ x ( Tet ( x ) ∨ Prime ( a ) ) ∨ ∃ x ( Person ( x ) → Student ( a ) ),"for all x , x is a tetrahedron or a is a prime or there is an element x such that a is a student"
+22,"∃ x ∀ y Larger ( x , a ) ∧ ∀ y ¬ Pet ( b )","there is an element x such that for all y , x is larger than a and there is an element x such that for all y , b is not a pet"
+23,"∃ x ( ( ( SameShape ( x , a ) ∧ Tet ( x ) ) → Adjoins ( x , a ) )","for all x , if x is of the same shape as a, then x is adjacent to a"
+24,"∃ x Cube ( x ) ( Person ( a ) → Adjoins ( x , a ) )",there is a cube such that a is a person or x is adjacent to a

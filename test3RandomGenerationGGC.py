@@ -14,6 +14,7 @@ class Lexicon:
 class RandomGenerator:
     def __init__(self, lexicon, maxdepth):
         self.lex = lexicon
+        self.variables = ["x", "y", "z", "w", "v"]
         self.new_var_i = 0      # integer for a new variable
         self.new_cons_i = 0     # index for a new constant
         self.maxdepth = maxdepth       # maximum depth of a generated proposition
@@ -104,10 +105,10 @@ class RandomGenerator:
             i = r.randint(0, self.new_var_i)
             if i == self.new_var_i:
                 self.new_var_i += 1
-            return ("x" + str(i+1), i+1)
+            return (self.variables[i], i)
         else:
             i = r.choice(list(bound))
-            return "x" + str(i)
+            return self.variables[i]
             
     def makeCons(self):
         """
