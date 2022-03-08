@@ -9,16 +9,16 @@
 7,"∀ x ( ( Tet ( x ) ∧ ¬ Small ( x ) ) → ∃ y ( Tet ( y ) ∧ FrontOf ( y , x ) ∧ SameCol ( y , x ) ) )","for all x , if x is a tetrahedron and x is not small , then there is an element y such that y is a tetrahedron , y is in front of x and y is in the same column as x"
 8,"∀ u ( ( Dodec ( u ) ∧ ∃ v ( Cube ( v ) ∧ LeftOf ( u , v ) ) ) → Large ( u ) )","for all u , if u is a dodecahedron and u is to the left of some cube , then u is large"
 9,"¬ ∀ z ( Tet ( z ) → ∀ x ( Tet ( x ) → SameCol ( x , z ) ) )",it is not the case that every tetrahedron is in the same column as every tetrahedron
-10,"∃ x1 Student ( a ) → ( ∀ x2 Larger ( a , x1 ) ∨ ( BackOf ( b , a ) → Student ( x2 ) ) )","if there is an element x1 such that a is a student , then at least one of these holds : \item for all x2 , a is larger than x1 \item if b is in back of a , then x2 is a student"
-11,∀ x1 ∀ x1 ¬ Small ( x1 ),"for all x1 , for all x1 , x1 is not small"
-12,"∃ x1 ( ∀ x1 SameSize ( x2 , x2 ) ∨ ∀ x1 Small ( x2 ) )","there is an element x1 such that for all x1 , x2 is of the same size as itself or for all x1 , x2 is small"
-13,"∃ x1 ∀ x1 Prime ( a ) → ¬ ( Even ( b ) ∧ Adjoins ( x2 , x3 ) )","if there is an element x1 such that for all x1 , a is a prime , then it is not the case that b is even and x2 is adjacent to x3"
-14,"¬ Smaller ( x1 , a )",x1 is not smaller than a
-15,"SameSize ( a , x1 ) → ( ( Small ( a ) ∨ Person ( a ) ) ∧ Cube ( a ) )","if a is of the same size as x1 , then all these hold : \item a is small or a is a person \item a is a cube"
-16,∃ x1 ( Tet ( x1 ) ∧ ( Student ( a ) → Even ( b ) ) ),"there is a tetrahedron x1 such that if a is a student , then b is even"
-17,"∀ x1 ( ( Medium ( x2 ) ∨ Dodec ( a ) ) ∧ ( Cube ( b ) ∧ SameCol ( a , x3 ) ) )","for all x1 , all these hold : \item x2 is medium or a is a dodecahedron , b is a cube \item a is in the same column as x3"
-18,"∃ x1 LeftOf ( x1 , a )",there is an element x1 such that x1 is to the left of a
-19,"( ∃ x1 Smaller ( a , x2 ) ∧ ( Even ( a ) → Dodec ( x3 ) ) ) ∨ Cube ( b )","all these hold : \item there is an element x1 such that a is smaller than x2 \item if a is even , then x3 is a dodecahedron or b is a cube"
+10,"( ¬ BackOf ( a , b ) ∨ ( RightOf ( a , b ) ∧ Small ( b ) ) ) ∨ Medium ( a )","at least one of these holds : \item a is not in back of b , a is to the right of b and b is small \item a is medium"
+11,"( SameCol ( a , a ) → ¬ Person ( b ) ) ∧ ¬ Dodec ( b )","all these hold : \item if a is in the same column as itself , then b is not a person \item b is not a dodecahedron"
+12,∀ x1 ( Even ( x1 ) → Dodec ( a ) ),"for all x1 , if x1 is even , then a is a dodecahedron"
+13,¬ Dodec ( a ) ∧ ( ( Even ( b ) → Student ( a ) ) ∨ ( Small ( c ) ∨ Prime ( c ) ) ),"a is not a dodecahedron and at least one of these holds : \item if b is even , then a is a student , c is small \item c is a prime"
+14,∃ x1 ( Cube ( a ) → ∀ x1 Dodec ( x1 ) ),"there is an element x1 such that if a is a cube , then for all x1 , x1 is a dodecahedron"
+15,∀ x1 ∃ x1 ¬ Small ( x1 ),"for all x1 , there is an element x1 such that x1 is not small"
+16,( ¬ Small ( a ) → Large ( a ) ) ∧ ∀ x1 Even ( b ),"all these hold : \item if a is not small , then a is large \item for all x1 , b is even"
+17,"¬ ¬ ∃ x1 FrontOf ( a , a )",it is not the case that it is not the case that there is an element x1 such that a is in front of itself
+18,"∀ x1 ( ∀ x1 SameCol ( x1 , a ) ∧ Student ( a ) )","for all x1 , for all x1 , x1 is in the same column as a and a is a student"
+19,¬ ( ∀ x1 Even ( x1 ) ∨ ∀ x1 Even ( x1 ) ),"it is not the case that for all x1 , x1 is even or for all x1 , x1 is even"
 20,"¬ ∃ x1 ( SameShape ( a , b ) → SameRow ( x2 , x2 ) )",it is not the case that there is an element x1 such that a is in the same shape as b and x2 is in the same row as itself
 21,∀ x1 ( Tet ( x1 ) ∨ Prime ( x2 ) ) ∨ ∃ x1 ( Person ( x1 ) → Student ( x2 ) ),"for all x1 , x1 is a tetrahedron or x2 is a prime or there is an element x1 such that x2 is a student"
 22,"∃ x1 ∀ x2 Larger ( x1 , a ) ∧ ∀ x2 ¬ Pet ( x3 )","there is an element x1 such that for all x2 , x1 is larger than a and there is an element x1 such that for all x2 , x3 is not a pet"
