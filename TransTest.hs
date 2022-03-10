@@ -31,7 +31,7 @@ main = do
 
 --doTrans :: PGF -> Language -> Language -> String -> String
 doTrans pgf from_l to_l s = case parse pgf from_l (startCat pgf) s of 
-  ts -> unlines [linearize pgf to_l (transfers t) | t <- ts] --This assumes the input sentences are parsable!
-  -- I removed the noFreeVars check because gr also generates formulas with free variables, and I want them to be translated as well.
+  ts -> unlines [linearize pgf to_l (transfers t) | t <- ts] -- This assumes the input sentences are parsable!
+  -- I removed the noFreeVars check because gr also generates formulas with free variables, and I want them to be translated as well for test 1.
  where
    transfers t = transfer MOptimize t
