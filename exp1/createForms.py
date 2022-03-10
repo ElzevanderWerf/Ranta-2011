@@ -6,7 +6,7 @@ script.google.com. The batches of experimental items are written to folder
 import pandas as pd
 
 # Initialization
-numberOfForms = 20      # The number of different forms to generate
+numberOfForms = 30      # The number of different forms to generate
 numberOfItems = 25      # The number of experimental items
 
 ggc_df = pd.read_csv("exp1-ggc-to-eng.csv", header=0, error_bad_lines=False, encoding="utf-8")
