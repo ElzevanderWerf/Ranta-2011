@@ -20,7 +20,12 @@ for i in range(numberOfForms):
     rg_10 = [tuple(ft) for ft in rg_df.iloc[i*10:i*10+10, 1:3].to_numpy()]
     fillers_5 = [tuple(ft) for ft in fillers_df.iloc[:5, 1:3].to_numpy() ]
     batch = ggc_10+rg_10+fillers_5
-    pd.DataFrame(batch, columns = ["Formula", "Translation"]).to_csv(
+    
+    batch_df = pd.DataFrame(batch, columns = ["Formula", "Translation"])
+    batch_df.insert(loc=0, 
+                    column = "Condition",
+                    value = 10 * ["GGC"] + 10 * ["RG"] + 5 * ["Filler"])
+    batch_df.to_csv(
         "batches/batch"+ str(i+1) + ".csv", sep=',')
     
     batches.append(batch)
