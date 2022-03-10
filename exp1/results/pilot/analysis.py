@@ -36,7 +36,7 @@ for i in range(25):
 columns += ["General review", "Final comments"]
 
 # TODO change Read the TSVs into a list of Pandas DataFrames
-DFs = [pd.read_csv("pilot/1." + str(i+1) + ".tsv", 
+DFs = [pd.read_csv("1." + str(i+1) + ".tsv", 
                    sep="\t", header=0, names=columns) for i in range(responses)]
 
 
@@ -118,7 +118,7 @@ print("\t\tNot edited:", countNullValues(RGedits), countNullValues(RGedits) / le
 ##############################################################################
 # 2. Write to CSV
 for r in range(responses):
-    batch_df = pd.read_csv("pilot/batch" + str(r+1) + ".csv", header=0)
+    batch_df = pd.read_csv("batch" + str(r+1) + ".csv", header=0)
     
     batch_df["Correct?"] = filterQs(DFs[r], "Correct?", 1, 26, multiple=False)
     batch_df["Why incorrect?"] = filterQs(DFs[r], "Why incorrect?", 1, 26, multiple=False)
@@ -126,7 +126,7 @@ for r in range(responses):
     batch_df["Fluent?"] = filterQs(DFs[r], "Fluent?", 1, 26, multiple=False)
     batch_df["Post-Edit"] = filterQs(DFs[r], "Post-Edit", 1, 26, multiple=False)
         
-    batch_df.to_csv("pilot/1." + str(r+1) + ".csv", sep=',')
+    batch_df.to_csv("1." + str(r+1) + ".csv", sep=',')
 
 
 
