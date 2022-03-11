@@ -15,18 +15,24 @@ def countNonNullValues(l):
 def countNullValues(l):
     return sum(1 for e in l if pd.isna(e))
 
-def filterQs(DFs, q, qi, qj, multiple=True):
+def filterQs(DFs, q, rangeij, multiple=True):
     if multiple:
         return flatten([df.loc[:, tuple([str(k) + q 
-                                         for k in range(qi,qj)])].iloc[0].tolist() 
+                                         for k in rangeij])].iloc[0].tolist() 
                         for df in DFs])
     else:
         return DFs.loc[:, tuple([str(k) + q 
-                                         for k in range(qi,qj)])].iloc[0].tolist()
+                                         for k in rangeij])].iloc[0].tolist()
         
 ##############################################################################
 # 1. IMPORT RESULTS
-responses = 2  # number of responses, TODO change
+responses = 2  # number of responses, TODO change]
+
+allqs = range(1,26)
+GGCqs = range(1,11)
+RGqs = range(11,21)
+nonfillerqs = range(1,21)
+fillerqs = range(21,26)
 
 # List of column names to use when reading the TSVs (bc there are duplicates)
 # TODO add Informed Consent + remove why incorrect?
@@ -61,17 +67,25 @@ print("\tSD:", stat.stdev(experiences))
 
 # FILLER CORRECTNESS
 # TODO misschien per participant kijken. Als ze minder dan drie fillers gespot hebben, iets doen?
-fillers = filterQs(DFs, "Correct?", 21, 26)
+fillers = filterQs(DFs, "Correct?", fillerqs)
 print("\n\nFiller correctness\n\tYes:", fillers.count("Yes"), fillers.count("Yes") / len(fillers))
 print("\tNo:", fillers.count("No"), fillers.count("No") / len(fillers))
 
+#Find participants that spotted less than 3 fillers
+print("Participants who spotted less than 3 fillers:")
+fillersPerParticipant = [df.loc[:, tuple([str(k) + "Correct?" 
+                                          for k in fillerqs])].iloc[0].tolist() 
+                         for df in DFs]
+for p in range(len(fillersPerParticipant)):
+    if fillersPerParticipant[p].count("Incorrect") < 3:
+        print(p+1, fillersPerParticipant[p])
 
 
 print("\n\n\nFor the normal (non-filler) items:")
 # CORRECTNESS
-correct = filterQs(DFs, "Correct?", 1, 21)
-GGCcorrect = filterQs(DFs, "Correct?", 1, 11)
-RGcorrect = filterQs(DFs, "Correct?", 11, 21)
+correct = filterQs(DFs, "Correct?", nonfillerqs)
+GGCcorrect = filterQs(DFs, "Correct?", GGCqs)
+RGcorrect = filterQs(DFs, "Correct?", RGqs)
 
 print("Correctness\n\tOverall\n\t\tYes:", correct.count("Yes"), correct.count("Yes") / len(correct))
 print("\t\tNo:", correct.count("No"), correct.count("No") / len(correct))
@@ -81,9 +95,9 @@ print("\tFor RG formulas:\n\t\tYes:", RGcorrect.count("Yes"), RGcorrect.count("Y
 print("\t\tNo:", RGcorrect.count("No"), RGcorrect.count("No") / len(RGcorrect))
 
 # CLARITY
-clear = filterQs(DFs, "Clear?", 1, 21)
-GGCclear = filterQs(DFs, "Clear?", 1, 11)
-RGclear = filterQs(DFs, "Clear?", 11, 21)
+clear = filterQs(DFs, "Clear?", nonfillerqs)
+GGCclear = filterQs(DFs, "Clear?", GGCqs)
+RGclear = filterQs(DFs, "Clear?", RGqs)
 
 print("\n\nClarity\n\tOverall\n\t\tMean:", stat.mean(clear))
 print("\t\tSD:", stat.stdev(clear))
@@ -93,9 +107,9 @@ print("\tFor RG formulas:\n\t\tMean:", stat.mean(RGclear))
 print("\t\tSD:", stat.stdev(RGclear))
 
 # FLUENCY
-fluent = filterQs(DFs, "Fluent?", 1, 21)
-GGCfluent = filterQs(DFs, "Fluent?", 1, 11)
-RGfluent = filterQs(DFs, "Fluent?", 11, 21)
+fluent = filterQs(DFs, "Fluent?", nonfillerqs)
+GGCfluent = filterQs(DFs, "Fluent?", GGCqs)
+RGfluent = filterQs(DFs, "Fluent?", RGqs)
 
 print("\n\nFluency\n\tMean:", stat.mean(fluent))
 print("\tSD:", stat.stdev(fluent))
@@ -105,9 +119,9 @@ print("\tFor RG formulas:\n\t\tMean:", stat.mean(RGfluent))
 print("\t\tSD:", stat.stdev(RGfluent))
 
 # POST-EDITS
-edits = filterQs(DFs, "Post-Edit", 1, 21)
-GGCedits = filterQs(DFs, "Post-Edit", 1, 11)
-RGedits = filterQs(DFs, "Post-Edit", 11, 21)
+edits = filterQs(DFs, "Post-Edit", nonfillerqs)
+GGCedits = filterQs(DFs, "Post-Edit", GGCqs)
+RGedits = filterQs(DFs, "Post-Edit", RGqs)
 
 print("\n\nPost-edits\n\tOverall\n\t\tEdited:", countNonNullValues(edits), countNonNullValues(edits) / len(edits))
 print("\t\tNot edited:", countNullValues(edits), countNullValues(edits) / len(edits))
@@ -121,10 +135,10 @@ print("\t\tNot edited:", countNullValues(RGedits), countNullValues(RGedits) / le
 for r in range(responses):
     batch_df = pd.read_csv("batches/batch" + str(r+1) + ".csv", header=0)
     
-    batch_df["Correct?"] = filterQs(DFs[r], "Correct?", 1, 26, multiple=False)
-    batch_df["Clear?"] = filterQs(DFs[r], "Clear?", 1, 26, multiple=False)
-    batch_df["Fluent?"] = filterQs(DFs[r], "Fluent?", 1, 26, multiple=False)
-    batch_df["Post-Edit"] = filterQs(DFs[r], "Post-Edit", 1, 26, multiple=False)
+    batch_df["Correct?"] = filterQs(DFs[r], "Correct?", allqs , multiple=False)
+    batch_df["Clear?"] = filterQs(DFs[r], "Clear?", allqs, multiple=False)
+    batch_df["Fluent?"] = filterQs(DFs[r], "Fluent?", allqs, multiple=False)
+    batch_df["Post-Edit"] = filterQs(DFs[r], "Post-Edit", allqs, multiple=False)
         
     batch_df.to_csv("results/CSVs/1." + str(r+1) + " test try.csv", sep=',')
 
