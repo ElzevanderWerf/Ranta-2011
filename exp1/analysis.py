@@ -19,14 +19,14 @@ def filterQs(DFs, q, rangeij, multiple=True):
     if multiple:
         return flatten([df.loc[:, tuple([str(k) + q 
                                          for k in rangeij])].iloc[0].tolist() 
-                        for df in DFs])
+                        for df in DFs.values()])
     else:
         return DFs.loc[:, tuple([str(k) + q 
                                          for k in rangeij])].iloc[0].tolist()
         
 ##############################################################################
 # 1. IMPORT RESULTS
-responses = 2  # number of responses, TODO change]
+responses = [1,2,3,6,8,11] #TODO change
 
 allqs = range(1,26)
 GGCqs = range(1,11)
@@ -35,38 +35,37 @@ nonfillerqs = range(1,21)
 fillerqs = range(21,26)
 
 # List of column names to use when reading the TSVs (bc there are duplicates)
-# TODO add Informed Consent + remove why incorrect?
 columns = ["Informed consent", "Gender", "Age", "Logic experience"]
 for i in range(25):
     columns += [str(i+1) + q  for q in ["Correct?", "Clear?", "Fluent?", "Post-Edit"]]
 columns += ["General review", "Final comments"]
 
 # Read the TSVs into a list of Pandas DataFrames
-# TODO remove " test try"
-DFs = [pd.read_csv("results/TSVs/1." + str(i+1) + " test try.tsv", 
-                   sep="\t", header=0, names=columns) for i in range(responses)]
+DFs = {}
+for r in responses:
+    DFs[r] = pd.read_csv("results/TSVs/1." + str(r) + " results.tsv", 
+                   sep="\t", header=0, names=columns)
 
 
 ##############################################################################
 # 2. ANALYSES
 # GENDER
-genders = [df.iloc[0]["Gender"] for df in DFs]
+genders = [df.iloc[0]["Gender"] for df in DFs.values()]
 print("Gender\n\tMale:", genders.count("Male"), genders.count("Male") / len(genders))
 print("\tFemale:", genders.count("Female"), genders.count("Female") / len(genders))
 print("\tPrefer not to say:", genders.count("Prefer not to say"), genders.count("Prefer not to say") / len(genders))
 
 # AGE
-ages = [df.iloc[0]["Age"] for df in DFs]
+ages = [df.iloc[0]["Age"] for df in DFs.values()]
 print("\n\nAge\n\tMean:", stat.mean(ages))
 print("\tSD:", stat.stdev(ages))
 
 # LOGIC EXPERIENCE
-experiences = [df.iloc[0]["Logic experience"] for df in DFs]
+experiences = [df.iloc[0]["Logic experience"] for df in DFs.values()]
 print("\n\nLogic experience\n\tMean:", stat.mean(experiences))
 print("\tSD:", stat.stdev(experiences))
 
 # FILLER CORRECTNESS
-# TODO misschien per participant kijken. Als ze minder dan drie fillers gespot hebben, iets doen?
 fillers = filterQs(DFs, "Correct?", fillerqs)
 print("\n\nFiller correctness\n\tYes:", fillers.count("Yes"), fillers.count("Yes") / len(fillers))
 print("\tNo:", fillers.count("No"), fillers.count("No") / len(fillers))
@@ -75,9 +74,9 @@ print("\tNo:", fillers.count("No"), fillers.count("No") / len(fillers))
 print("Participants who spotted less than 3 fillers:")
 fillersPerParticipant = [df.loc[:, tuple([str(k) + "Correct?" 
                                           for k in fillerqs])].iloc[0].tolist() 
-                         for df in DFs]
+                         for df in DFs.values()]
 for p in range(len(fillersPerParticipant)):
-    if fillersPerParticipant[p].count("Incorrect") < 3:
+    if fillersPerParticipant[p].count("No") < 3:
         print(p+1, fillersPerParticipant[p])
 
 
@@ -132,15 +131,13 @@ print("\t\tNot edited:", countNullValues(RGedits), countNullValues(RGedits) / le
 
 ##############################################################################
 # 2. Write to CSV
-for r in range(responses):
-    batch_df = pd.read_csv("batches/batch" + str(r+1) + ".csv", header=0)
+for r in responses:
+    batch_df = pd.read_csv("batches/batch" + str(r) + ".csv", header=0)
     
-    batch_df["Correct?"] = filterQs(DFs[r], "Correct?", allqs , multiple=False)
-    batch_df["Clear?"] = filterQs(DFs[r], "Clear?", allqs, multiple=False)
-    batch_df["Fluent?"] = filterQs(DFs[r], "Fluent?", allqs, multiple=False)
-    batch_df["Post-Edit"] = filterQs(DFs[r], "Post-Edit", allqs, multiple=False)
+    for q in ["Correct?", "Clear?", "Fluent?", "Post-Edit"]:
+        batch_df[q] = filterQs(DFs[r], q, allqs, multiple=False)
         
-    batch_df.to_csv("results/CSVs/1." + str(r+1) + " test try.csv", sep=',')
+    batch_df.to_csv("results/CSVs/1." + str(r) + " results.csv", sep=',')
 
 
 
