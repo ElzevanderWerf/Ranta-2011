@@ -2,7 +2,7 @@
 TSV file per response."""
 
 import pandas as pd
-import statistics as stat
+import numpy as np
 
 ##############################################################################
 # FUNCTIONS
@@ -57,13 +57,13 @@ print("\tPrefer not to say:", genders.count("Prefer not to say"), genders.count(
 
 # AGE
 ages = [df.iloc[0]["Age"] for df in DFs.values()]
-print("\n\nAge\n\tMean:", stat.mean(ages))
-print("\tSD:", stat.stdev(ages))
+print("\n\nAge\n\tMean:", np.mean(ages))
+print("\tSD:", np.std(ages))
 
 # LOGIC EXPERIENCE
 experiences = [df.iloc[0]["Logic experience"] for df in DFs.values()]
-print("\n\nLogic experience\n\tMean:", stat.mean(experiences))
-print("\tSD:", stat.stdev(experiences))
+print("\n\nLogic experience\n\tMean:", np.mean(experiences))
+print("\tSD:", np.std(experiences))
 
 # FILLER CORRECTNESS
 fillers = filterQs(DFs, "Correct?", fillerqs)
@@ -98,24 +98,24 @@ clear = filterQs(DFs, "Clear?", nonfillerqs)
 GGCclear = filterQs(DFs, "Clear?", GGCqs)
 RGclear = filterQs(DFs, "Clear?", RGqs)
 
-print("\n\nClarity\n\tOverall\n\t\tMean:", stat.mean(clear))
-print("\t\tSD:", stat.stdev(clear))
-print("\tFor GGC formulas:\n\t\tMean:", stat.mean(GGCclear))
-print("\t\tSD:", stat.stdev(GGCclear))
-print("\tFor RG formulas:\n\t\tMean:", stat.mean(RGclear))
-print("\t\tSD:", stat.stdev(RGclear))
+print("\n\nClarity\n\tOverall\n\t\tMean:", np.mean(clear))
+print("\t\tSD:", np.std(clear))
+print("\tFor GGC formulas:\n\t\tMean:", np.mean(GGCclear))
+print("\t\tSD:", np.std(GGCclear))
+print("\tFor RG formulas:\n\t\tMean:", np.mean(RGclear))
+print("\t\tSD:", np.std(RGclear))
 
 # FLUENCY
 fluent = filterQs(DFs, "Fluent?", nonfillerqs)
 GGCfluent = filterQs(DFs, "Fluent?", GGCqs)
 RGfluent = filterQs(DFs, "Fluent?", RGqs)
 
-print("\n\nFluency\n\tMean:", stat.mean(fluent))
-print("\tSD:", stat.stdev(fluent))
-print("\tFor GGC formulas:\n\t\tMean:", stat.mean(GGCfluent))
-print("\t\tSD:", stat.stdev(GGCfluent))
-print("\tFor RG formulas:\n\t\tMean:", stat.mean(RGfluent))
-print("\t\tSD:", stat.stdev(RGfluent))
+print("\n\nFluency\n\tOverall\n\t\tMean:", np.mean(fluent))
+print("\tSD:", np.std(fluent))
+print("\tFor GGC formulas:\n\t\tMean:", np.mean(GGCfluent))
+print("\t\tSD:", np.std(GGCfluent))
+print("\tFor RG formulas:\n\t\tMean:", np.mean(RGfluent))
+print("\t\tSD:", np.std(RGfluent))
 
 # POST-EDITS
 edits = filterQs(DFs, "Post-Edit", nonfillerqs)
