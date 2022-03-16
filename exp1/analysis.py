@@ -71,13 +71,12 @@ print("\n\nFiller correctness\n\tYes:", fillers.count("Yes"), fillers.count("Yes
 print("\tNo:", fillers.count("No"), fillers.count("No") / len(fillers))
 
 #Find participants that spotted less than 3 fillers
-print("Participants who spotted less than 3 fillers:")
-fillersPerParticipant = [df.loc[:, tuple([str(k) + "Correct?" 
-                                          for k in fillerqs])].iloc[0].tolist() 
-                         for df in DFs.values()]
-for p in range(len(fillersPerParticipant)):
-    if fillersPerParticipant[p].count("No") < 3:
-        print(p+1, fillersPerParticipant[p])
+print("Participants who spotted less than 3 fillers:")        
+for p, df in DFs.items():
+    fillers = df.loc[:, tuple([str(k) + "Correct?" 
+                                          for k in fillerqs])].iloc[0].tolist()
+    if fillers.count("No") < 3:
+        print("\tParticipant", p)
 
 
 print("\n\n\nFor the normal (non-filler) items:")
