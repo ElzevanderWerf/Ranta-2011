@@ -113,23 +113,26 @@ I designed a random generation function myself, which generates formulas that ar
 
 #### EXPERIMENT 1 ANALYSIS
 **(Files in folder exp1)**
-1. For each response, I exported TSV files from the (Google) Forms, which contain the results of the experiment.
+1. For each response, I exported TSV files from the Google Forms (in `results/TSVs`), which contain the results of the experiment.
 There are x? responses to the following set of questions:
     - "What is your gender?" (multiple-choice between "Male", "Female", and "Prefer not to say")
     - "How old are you?" (multiple-choice)
     - "How would you rate your knowledge of and familiarity with first-order logic?" (5-point Likert scale)
-    - For each of the test items in each batch in folder `batches`, the following questions:
+    - For each of the test items in each batch in the folder `batches`, the following questions:
         1. "Is the translation correct?" (multiple-choice between "Yes" and "No")
-        2. "If your answer to the previous question was "no", explain why the translation is incorrect." (open question)
-        3. "Is the translation clear?" (5-point Likert scale)
-        4. "Is the translation fluent?" (5-point Likert scale)
-        5. "Do you have a suggestion for a better translation? If so, then write it down here." (open question)
+        2. "Is the translation clear?" (5-point Likert scale)
+        3. "Is the translation fluent?" (5-point Likert scale)
+        4. "Do you have a suggestion for a better translation? If so, then write it down here." (open question)
     - "Give a general structured review of the strengths and weaknesses of the translation system. With which types of formulas does the system have difficulties? For which types of formulas do you believe the system performs sufficiently well?" (open question)
     - "Do you have any final comments?" (open question)
-2. The Python script in `results/analysis.py` does some preprocessing steps on the TSVs, and performs some small analyses:
-    1. Gender percentages
-    2. Age average and standard deviations
-    3. Experience average and standard deviations
-    3. Correctness ?
-    3. Clarity average and standard deviations
-    4. Fluency average and standard deviations
+2. The Python script in `analysis.py` does some preprocessing steps on the TSVs, and performs some small analyses:
+    - Gender percentages
+    - Age average and standard deviations
+    - Experience average and standard deviations
+    - Correctness of the fillers
+    For all non-filler items:
+    - Correctness percentages
+    - Clarity average and standard deviations
+    - Fluency average and standard deviations
+    - Post-edit percentages
+    The results on the experimental items are written to CSV files in `results/CSVs` in a more readable format.
