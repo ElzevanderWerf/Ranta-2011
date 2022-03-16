@@ -26,7 +26,7 @@ def filterQs(DFs, q, rangeij, multiple=True):
         
 ##############################################################################
 # 1. IMPORT RESULTS
-responses = [1,2,3,6,8,11] #TODO change
+responses = [1,2,3,5,6,8,9,11] #TODO change
 
 allqs = range(1,26)
 GGCqs = range(1,11)
@@ -111,7 +111,7 @@ GGCfluent = filterQs(DFs, "Fluent?", GGCqs)
 RGfluent = filterQs(DFs, "Fluent?", RGqs)
 
 print("\n\nFluency\n\tOverall\n\t\tMean:", np.mean(fluent))
-print("\tSD:", np.std(fluent))
+print("\t\tSD:", np.std(fluent))
 print("\tFor GGC formulas:\n\t\tMean:", np.mean(GGCfluent))
 print("\t\tSD:", np.std(GGCfluent))
 print("\tFor RG formulas:\n\t\tMean:", np.mean(RGfluent))
