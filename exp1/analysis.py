@@ -18,40 +18,29 @@ def countNullValues(l):
     """Return the count of null values in a given list."""
     return sum(1 for e in l if pd.isna(e))
 
-def filterQs(DFs, q, rangeij, multiple=True):
+def filterQs(participants, q, rangeij):
     """
-    If multiple = True: return answers to a subset of questions in a range of 
-    experimental items, for each participant, as a list of lists.
-    If multiple = False: return answers to a subset of questions in a range of
-    experimental items, for the given participant, as a list.
-    
+    Return answers to a particular question in a range of experimental items, 
+    for the given participant(s), as a flattened list.
 
     Parameters
     ----------
-    DFs : Dictionary of DataFrames
-        A dictionary of participant IDs and corresponding pandas DataFrames,
-        or, if multiple=False, a DataFrame.
+    participants : List
+        The participant IDs.
     q : String
         The question.
     rangeij : Range
         The experimental item range (e.g., range(11,21) = the RG questions).
-    multiple : Boolean, optional
-        Whether there are multiple DFs or only 1. The default is True.
 
     Returns
     -------
     List
-        If multiple = True: a list of lists (answers per participant)
-        If multiple = False: a list of answers for the participant
-
+        A flattened list of answers of the participant(s) to the question
+        in the range of experimental items.
     """
-    if multiple:
-        return flatten([df.loc[:, tuple([str(k) + q 
+    return flatten([DFs[p].loc[:, tuple([str(k) + q 
                                          for k in rangeij])].iloc[0].tolist() 
-                        for df in DFs.values()])
-    else:
-        return DFs.loc[:, tuple([str(k) + q 
-                                         for k in rangeij])].iloc[0].tolist()
+                        for p in participants])
         
 ##############################################################################
 # 1. IMPORT RESULTS
@@ -95,7 +84,7 @@ print("\n\nLogic experience\n\tMean:", np.mean(experiences))
 print("\tSD:", np.std(experiences))
 
 # FILLER CORRECTNESS
-fillers = filterQs(DFs, "Correct?", fillerqs)
+fillers = filterQs(participants, "Correct?", fillerqs)
 print("\n\nFiller correctness\n\tYes:", fillers.count("Yes"), fillers.count("Yes") / len(fillers))
 print("\tNo:", fillers.count("No"), fillers.count("No") / len(fillers))
 
@@ -110,9 +99,9 @@ for p, df in DFs.items():
 
 print("\n\n\nFor the normal (non-filler) items:")
 # CORRECTNESS
-correct = filterQs(DFs, "Correct?", nonfillerqs)
-GGCcorrect = filterQs(DFs, "Correct?", GGCqs)
-RGcorrect = filterQs(DFs, "Correct?", RGqs)
+correct = filterQs(participants, "Correct?", nonfillerqs)
+GGCcorrect = filterQs(participants, "Correct?", GGCqs)
+RGcorrect = filterQs(participants, "Correct?", RGqs)
 
 print("Correctness\n\tOverall\n\t\tYes:", correct.count("Yes"), correct.count("Yes") / len(correct))
 print("\t\tNo:", correct.count("No"), correct.count("No") / len(correct))
@@ -122,9 +111,9 @@ print("\tFor RG formulas:\n\t\tYes:", RGcorrect.count("Yes"), RGcorrect.count("Y
 print("\t\tNo:", RGcorrect.count("No"), RGcorrect.count("No") / len(RGcorrect))
 
 # CLARITY
-clear = filterQs(DFs, "Clear?", nonfillerqs)
-GGCclear = filterQs(DFs, "Clear?", GGCqs)
-RGclear = filterQs(DFs, "Clear?", RGqs)
+clear = filterQs(participants, "Clear?", nonfillerqs)
+GGCclear = filterQs(participants, "Clear?", GGCqs)
+RGclear = filterQs(participants, "Clear?", RGqs)
 
 print("\n\nClarity\n\tOverall\n\t\tMean:", np.mean(clear))
 print("\t\tSD:", np.std(clear))
@@ -134,9 +123,9 @@ print("\tFor RG formulas:\n\t\tMean:", np.mean(RGclear))
 print("\t\tSD:", np.std(RGclear))
 
 # FLUENCY
-fluent = filterQs(DFs, "Fluent?", nonfillerqs)
-GGCfluent = filterQs(DFs, "Fluent?", GGCqs)
-RGfluent = filterQs(DFs, "Fluent?", RGqs)
+fluent = filterQs(participants, "Fluent?", nonfillerqs)
+GGCfluent = filterQs(participants, "Fluent?", GGCqs)
+RGfluent = filterQs(participants, "Fluent?", RGqs)
 
 print("\n\nFluency\n\tOverall\n\t\tMean:", np.mean(fluent))
 print("\t\tSD:", np.std(fluent))
@@ -146,9 +135,9 @@ print("\tFor RG formulas:\n\t\tMean:", np.mean(RGfluent))
 print("\t\tSD:", np.std(RGfluent))
 
 # POST-EDITS
-edits = filterQs(DFs, "Post-Edit", nonfillerqs)
-GGCedits = filterQs(DFs, "Post-Edit", GGCqs)
-RGedits = filterQs(DFs, "Post-Edit", RGqs)
+edits = filterQs(participants, "Post-Edit", nonfillerqs)
+GGCedits = filterQs(participants, "Post-Edit", GGCqs)
+RGedits = filterQs(participants, "Post-Edit", RGqs)
 
 print("\n\nPost-edits\n\tOverall\n\t\tEdited:", countNonNullValues(edits), countNonNullValues(edits) / len(edits))
 print("\t\tNot edited:", countNullValues(edits), countNullValues(edits) / len(edits))
@@ -163,7 +152,7 @@ for p in participants:
     batch_df = pd.read_csv("batches/batch" + str(p) + ".csv", header=0)
     
     for q in ["Correct?", "Clear?", "Fluent?", "Post-Edit"]:
-        batch_df[q] = filterQs(DFs[p], q, allqs, multiple=False)
+        batch_df[q] = filterQs([p], q, allqs)
         
     batch_df.to_csv("results/CSVs/1." + str(p) + " results.csv", sep=',')
 
