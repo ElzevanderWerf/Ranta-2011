@@ -7,15 +7,44 @@ import numpy as np
 ##############################################################################
 # FUNCTIONS
 def flatten(listOfLists):
+    """Flatten a list of lists to a list"""
     return [item for l in listOfLists for item in l]
 
 def countNonNullValues(l):
+    """Return the count of non null values in a given list."""
     return sum(1 for e in l if not pd.isna(e))
 
 def countNullValues(l):
+    """Return the count of null values in a given list."""
     return sum(1 for e in l if pd.isna(e))
 
 def filterQs(DFs, q, rangeij, multiple=True):
+    """
+    If multiple = True: return answers to a subset of questions in a range of 
+    experimental items, for each participant, as a list of lists.
+    If multiple = False: return answers to a subset of questions in a range of
+    experimental items, for the given participant, as a list.
+    
+
+    Parameters
+    ----------
+    DFs : Dictionary of DataFrames
+        A dictionary of participant IDs and corresponding pandas DataFrames,
+        or, if multiple=False, a DataFrame.
+    q : String
+        The question.
+    rangeij : Range
+        The experimental item range (e.g., range(11,21) = the RG questions).
+    multiple : Boolean, optional
+        Whether there are multiple DFs or only 1. The default is True.
+
+    Returns
+    -------
+    List
+        If multiple = True: a list of lists (answers per participant)
+        If multiple = False: a list of answers for the participant
+
+    """
     if multiple:
         return flatten([df.loc[:, tuple([str(k) + q 
                                          for k in rangeij])].iloc[0].tolist() 
@@ -26,7 +55,7 @@ def filterQs(DFs, q, rangeij, multiple=True):
         
 ##############################################################################
 # 1. IMPORT RESULTS
-responses = [1,2,3,4,5,6,8,9,10,11] #TODO change
+participants = [1,2,3,4,5,6,8,9,10,11] #TODO change
 
 allqs = range(1,26)
 GGCqs = range(1,11)
@@ -42,8 +71,8 @@ columns += ["General review", "Final comments"]
 
 # Read the TSVs into a list of Pandas DataFrames
 DFs = {}
-for r in responses:
-    DFs[r] = pd.read_csv("results/TSVs/1." + str(r) + " results.tsv", 
+for p in participants:
+    DFs[p] = pd.read_csv("results/TSVs/1." + str(p) + " results.tsv", 
                    sep="\t", header=0, names=columns)
 
 
@@ -130,13 +159,13 @@ print("\t\tNot edited:", countNullValues(RGedits), countNullValues(RGedits) / le
 
 ##############################################################################
 # 2. Write to CSV
-for r in responses:
-    batch_df = pd.read_csv("batches/batch" + str(r) + ".csv", header=0)
+for p in participants:
+    batch_df = pd.read_csv("batches/batch" + str(p) + ".csv", header=0)
     
     for q in ["Correct?", "Clear?", "Fluent?", "Post-Edit"]:
-        batch_df[q] = filterQs(DFs[r], q, allqs, multiple=False)
+        batch_df[q] = filterQs(DFs[p], q, allqs, multiple=False)
         
-    batch_df.to_csv("results/CSVs/1." + str(r) + " results.csv", sep=',')
+    batch_df.to_csv("results/CSVs/1." + str(p) + " results.csv", sep=',')
 
 
 
