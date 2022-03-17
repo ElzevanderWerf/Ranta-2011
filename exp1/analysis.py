@@ -3,6 +3,7 @@ TSV file per response."""
 
 import pandas as pd
 import numpy as np
+from scipy.stats.stats import pearsonr
 
 ##############################################################################
 # FUNCTIONS
@@ -145,6 +146,9 @@ print("\tFor GGC formulas:\n\t\tEdited:", countNonNullValues(GGCedits), countNon
 print("\t\tNot edited:", countNullValues(GGCedits), countNullValues(GGCedits) / len(GGCedits))
 print("\tFor RG formulas:\n\t\tEdited:", countNonNullValues(RGedits), countNonNullValues(RGedits) / len(RGedits))
 print("\t\tNot edited:", countNullValues(RGedits), countNullValues(RGedits) / len(RGedits))
+
+# CORRELATION CLARITY AND FLUENCY
+print("\n\nCorrelation between clarity and fluency:", pearsonr(clear, fluent))
 
 ##############################################################################
 # 2. Write to CSV
