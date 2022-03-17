@@ -150,6 +150,15 @@ print("\t\tNot edited:", countNullValues(RGedits), countNullValues(RGedits) / le
 # CORRELATION CLARITY AND FLUENCY
 print("\n\nCorrelation between clarity and fluency:", pearsonr(clear, fluent))
 
+# CORRELATION FORMULA LENGTH AND CLARITY/FLUENCY
+formulas = flatten([pd.read_csv("batches/batch" + str(p) + ".csv", 
+                                header=0).loc[:19, "Formula"] 
+                    for p in participants])
+formula_lengths = [len(f) for f in formulas]
+print("Correlation between formula length and clarity:", pearsonr(formula_lengths, clear))
+print("Correlation between formula length and fluency:", pearsonr(formula_lengths, fluent))
+ 
+
 ##############################################################################
 # 2. Write to CSV
 for p in participants:
@@ -159,6 +168,7 @@ for p in participants:
         batch_df[q] = filterQs([p], q, allqs)
         
     batch_df.to_csv("results/CSVs/1." + str(p) + " results.csv", sep=',')
+
 
 
 
