@@ -26,7 +26,7 @@ def filterQs(DFs, q, rangeij, multiple=True):
         
 ##############################################################################
 # 1. IMPORT RESULTS
-responses = [1,2,3,5,6,8,9,11] #TODO change
+responses = [1,2,3,4,5,6,8,9,10,11] #TODO change
 
 allqs = range(1,26)
 GGCqs = range(1,11)
