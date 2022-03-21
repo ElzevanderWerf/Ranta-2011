@@ -42,6 +42,9 @@ def filterQs(participants, q, rangeij):
     return flatten([DFs[p].loc[:, tuple([str(k) + q 
                                          for k in rangeij])].iloc[0].tolist() 
                         for p in participants])
+
+def changeInLength(s1, s2):
+    return 100 * len(s2) / len(s1) 
         
 ##############################################################################
 # 1. IMPORT RESULTS
@@ -70,9 +73,12 @@ for p in participants:
 # 2. ANALYSES
 # GENDER
 genders = [df.iloc[0]["Gender"] for df in DFs.values()]
-print("Gender\n\tMale:", genders.count("Male"), genders.count("Male") / len(genders))
-print("\tFemale:", genders.count("Female"), genders.count("Female") / len(genders))
-print("\tPrefer not to say:", genders.count("Prefer not to say"), genders.count("Prefer not to say") / len(genders))
+print("Gender\n\tMale:", genders.count("Male"), 
+      genders.count("Male") / len(genders))
+print("\tFemale:", genders.count("Female"), 
+      genders.count("Female") / len(genders))
+print("\tPrefer not to say:", genders.count("Prefer not to say"), 
+      genders.count("Prefer not to say") / len(genders))
 
 # AGE
 ages = [df.iloc[0]["Age"] for df in DFs.values()]
@@ -86,8 +92,10 @@ print("\tSD:", np.std(experiences))
 
 # FILLER CORRECTNESS
 fillers = filterQs(participants, "Correct?", fillerqs)
-print("\n\nFiller correctness\n\tYes:", fillers.count("Yes"), fillers.count("Yes") / len(fillers))
-print("\tNo:", fillers.count("No"), fillers.count("No") / len(fillers))
+print("\n\nFiller correctness\n\tYes:", fillers.count("Yes"), 
+      fillers.count("Yes") / len(fillers))
+print("\tNo:", fillers.count("No"), 
+      fillers.count("No") / len(fillers))
 
 #Find participants that spotted less than 3 fillers
 print("Participants who spotted less than 3 fillers:")        
@@ -104,12 +112,18 @@ correct = filterQs(participants, "Correct?", nonfillerqs)
 GGCcorrect = filterQs(participants, "Correct?", GGCqs)
 RGcorrect = filterQs(participants, "Correct?", RGqs)
 
-print("Correctness\n\tOverall\n\t\tYes:", correct.count("Yes"), correct.count("Yes") / len(correct))
-print("\t\tNo:", correct.count("No"), correct.count("No") / len(correct))
-print("\tFor GGC formulas:\n\t\tYes:", GGCcorrect.count("Yes"), GGCcorrect.count("Yes") / len(GGCcorrect))
-print("\t\tNo:", GGCcorrect.count("No"), GGCcorrect.count("No") / len(GGCcorrect))
-print("\tFor RG formulas:\n\t\tYes:", RGcorrect.count("Yes"), RGcorrect.count("Yes") / len(RGcorrect))
-print("\t\tNo:", RGcorrect.count("No"), RGcorrect.count("No") / len(RGcorrect))
+print("Correctness\n\tOverall\n\t\tYes:", 
+      correct.count("Yes"), correct.count("Yes") / len(correct))
+print("\t\tNo:", correct.count("No"), 
+      correct.count("No") / len(correct))
+print("\tFor GGC formulas:\n\t\tYes:", 
+      GGCcorrect.count("Yes"), GGCcorrect.count("Yes") / len(GGCcorrect))
+print("\t\tNo:", GGCcorrect.count("No"), 
+      GGCcorrect.count("No") / len(GGCcorrect))
+print("\tFor RG formulas:\n\t\tYes:", 
+      RGcorrect.count("Yes"), RGcorrect.count("Yes") / len(RGcorrect))
+print("\t\tNo:", RGcorrect.count("No"), 
+      RGcorrect.count("No") / len(RGcorrect))
 
 # CLARITY
 clear = filterQs(participants, "Clear?", nonfillerqs)
@@ -140,12 +154,18 @@ edits = filterQs(participants, "Post-Edit", nonfillerqs)
 GGCedits = filterQs(participants, "Post-Edit", GGCqs)
 RGedits = filterQs(participants, "Post-Edit", RGqs)
 
-print("\n\nPost-edits\n\tOverall\n\t\tEdited:", countNonNullValues(edits), countNonNullValues(edits) / len(edits))
-print("\t\tNot edited:", countNullValues(edits), countNullValues(edits) / len(edits))
-print("\tFor GGC formulas:\n\t\tEdited:", countNonNullValues(GGCedits), countNonNullValues(GGCedits) / len(GGCedits))
-print("\t\tNot edited:", countNullValues(GGCedits), countNullValues(GGCedits) / len(GGCedits))
-print("\tFor RG formulas:\n\t\tEdited:", countNonNullValues(RGedits), countNonNullValues(RGedits) / len(RGedits))
-print("\t\tNot edited:", countNullValues(RGedits), countNullValues(RGedits) / len(RGedits))
+print("\n\nPost-edits\n\tOverall\n\t\tEdited:", 
+      countNonNullValues(edits), countNonNullValues(edits) / len(edits))
+print("\t\tNot edited:", 
+      countNullValues(edits), countNullValues(edits) / len(edits))
+print("\tFor GGC formulas:\n\t\tEdited:", 
+      countNonNullValues(GGCedits), countNonNullValues(GGCedits) / len(GGCedits))
+print("\t\tNot edited:", 
+      countNullValues(GGCedits), countNullValues(GGCedits) / len(GGCedits))
+print("\tFor RG formulas:\n\t\tEdited:", 
+      countNonNullValues(RGedits), countNonNullValues(RGedits) / len(RGedits))
+print("\t\tNot edited:", 
+      countNullValues(RGedits), countNullValues(RGedits) / len(RGedits))
 
 # CORRELATION CLARITY AND FLUENCY
 print("\n\nCorrelation between clarity and fluency:", pearsonr(clear, fluent))
@@ -155,10 +175,27 @@ formulas = flatten([pd.read_csv("batches/batch" + str(p) + ".csv",
                                 header=0).loc[:19, "Formula"] 
                     for p in participants])
 formula_lengths = [len(f) for f in formulas]
-print("Correlation between formula length and clarity:", pearsonr(formula_lengths, clear))
-print("Correlation between formula length and fluency:", pearsonr(formula_lengths, fluent))
- 
+print("Correlation between formula length and clarity:", 
+      pearsonr(formula_lengths, clear))
+print("Correlation between formula length and fluency:", 
+      pearsonr(formula_lengths, fluent))
+print("Degrees of freedom:", len(formulas) - 2) 
 
+# CHANGE IN LENGTH BETWEEN OLD AND NEW TRANSLATIONS
+translations = flatten([pd.read_csv("batches/batch" + str(p) + ".csv", 
+                                header=0).loc[:19, "Translation"] 
+                    for p in participants])
+
+edited_translations = [translations[i] for i in range(len(translations))
+                       if not pd.isna(edits[i])] #if the translation is edited
+nonNullEdits = [e for e in edits 
+         if not pd.isna(e)] #if the translation is edited
+
+length_change = [changeInLength(t,e) 
+                 for t, e in zip(edited_translations, nonNullEdits)]
+print("Average change in length between original translations and edits:", 
+      sum(length_change)/len(length_change))
+        
 ##############################################################################
 # 2. Write to CSV
 for p in participants:
