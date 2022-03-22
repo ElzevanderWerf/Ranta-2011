@@ -44,6 +44,7 @@ def filterQs(participants, q, rangeij):
                         for p in participants])
 
 def changeInLength(s1, s2):
+    """Return the percentage of the length of s2 given that s1 = 100%."""
     return 100 * len(s2) / len(s1) 
         
 ##############################################################################
@@ -193,9 +194,41 @@ nonNullEdits = [e for e in edits
 
 length_change = [changeInLength(t,e) 
                  for t, e in zip(edited_translations, nonNullEdits)]
-print("Average change in length between original translations and edits:", 
-      sum(length_change)/len(length_change))
-        
+print("\n\nAverage change in length between original translations and edits:\n\tMean:", 
+      np.mean(length_change), "\n\tSD:", np.std(length_change))
+
+# CLARITY AND FLUENCY OF THE TRANSLATIONS WITH AND WITHOUT VARIABLES
+withVarsIndices = [t for t in range(len(translations)) if 
+            any(s in translations[t] for s in [' ' + c + ' ' for c in "xyzwv"])]
+withoutVarsIndices = [t for t in range(len(translations)) if not
+            any(s in translations[t] for s in [' ' + c + ' ' for c in "xyzwv"])] 
+withVarsClear = [clear[i] for i in withVarsIndices]
+withoutVarsClear = [clear[i] for i in withoutVarsIndices]
+withVarsFluent = [fluent[i] for i in withVarsIndices]
+withoutVarsFluent = [fluent[i] for i in withoutVarsIndices]
+withVarsCorrect = [correct[i] for i in withVarsIndices]
+withoutVarsCorrect = [correct[i] for i in withoutVarsIndices]
+print("\n\nThere were", len(withVarsIndices), "translations with variables and",
+      len(withoutVarsIndices), "translations without variables.")
+print("Average clarity of formulas with variables:\n\tMean:", 
+      np.mean(withVarsClear), "\n\tSD:", np.std(withVarsClear))
+print("Average clarity of formulas without variables:\n\tMean:", 
+      np.mean(withoutVarsClear), "\n\tSD:", np.std(withoutVarsClear))
+print("Average fluency of formulas with variables:\n\tMean:", 
+      np.mean(withVarsFluent), "\n\tSD:", np.std(withVarsFluent))
+print("Average fluency of formulas without variables:\n\tMean:", 
+      np.mean(withoutVarsFluent), "\n\tSD:", np.std(withoutVarsFluent))
+
+print("Correctness\n\tWith variables\n\t\tYes:", 
+      withVarsCorrect.count("Yes"), withVarsCorrect.count("Yes") / len(withVarsCorrect))
+print("\t\tNo:", withVarsCorrect.count("No"), 
+      withVarsCorrect.count("No") / len(withVarsCorrect))
+print("\tWithout variables:\n\t\tYes:", 
+      withoutVarsCorrect.count("Yes"), withoutVarsCorrect.count("Yes") / len(withoutVarsCorrect))
+print("\t\tNo:", GGCcorrect.count("No"), 
+      withoutVarsCorrect.count("No") / len(withoutVarsCorrect))
+
+
 ##############################################################################
 # 2. Write to CSV
 for p in participants:
