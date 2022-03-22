@@ -105,7 +105,12 @@ for p, df in DFs.items():
                                           for k in fillerqs])].iloc[0].tolist()
     if fillers.count("No") < 3:
         print("\tParticipant", p)
-
+print("Participants who spotted less than 2 fillers:")        
+for p, df in DFs.items():
+    fillers = df.loc[:, tuple([str(k) + "Correct?" 
+                                          for k in fillerqs])].iloc[0].tolist()
+    if fillers.count("No") < 2:
+        print("\tParticipant", p)
 
 print("\n\n\nFor the normal (non-filler) items:")
 # CORRECTNESS
