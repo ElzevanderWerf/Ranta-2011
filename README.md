@@ -17,6 +17,7 @@ I have done the following three tests to create a set of logical formulas and th
 									 
 #### TEST 1 (Unused): GF random generation
 **(Filenames start with test1)**
+
 0. In `Prop.gf` and `PropLatex.gf`, I removed (commented out) the geometry lexicon (the functions `Vertical`, `Horizontal`, `Parallel`, `Line`, `Point`, `Centre`, and `Intersection`), so that I would only generate formulas with arithmetic predicates and functions.
    
 1. Random generation. I opened the GF shell and imported the Latex grammar as follows:
@@ -37,13 +38,14 @@ I have done the following three tests to create a set of logical formulas and th
 4. Running `Trans.hs`:
     I build the executable `trans.exe`:
 
+        >make pgf
 		>stack build
 		
     To run `Trans.hs`, do
 
-		>>stack run trans <source-language> <input-file> <target-language> <output-file>
+		>stack run trans <source-language> <input-file> <target-language> <output-file>
 		
-	So in our case, translating a file of Latex formulas into English:
+	So in our case, translating a file of Latex formulas into English (make sure you've commented out the right part of the lexicon in the gf files when you run this):
 	
 		>stack run trans PropLatex out/test1Latex.tmp PropEng out/test1Eng.tmp
 		
@@ -68,7 +70,7 @@ The usefulness of the formula-translation pairs of test 1 is very low, because o
 	- Remove formulas with more than 100 characters (because the GF shell gets stuck at the formulas that are too long)
 
 	Running took about 8 minutes.
-2. I made a GF grammar for the GGC notation, called `PropGGC` in `PropGGC.gf` (in this way, I could do the translations from GGC to Latex notation very easily).
+2. I made a GF grammar for the GGC notation, called `PropGGC` in `PropGGC.gf` (in this way, I could do the translations from GGC to Latex notation very easily). I added this grammar to the `Makefile`.
 3. The Python script in `ggcExtractPredicates.py` extracts the list of 1- and 2-place predicates used in the corpus. I added these predicates to the grammars of English, Latex and GGC, and commented out the other two test lexicons.
 4. I ran TransTest.hs with arguments `ggc-formulas.tmp` and `ggc-eng.tmp` (this took about 15 minutes):
 
