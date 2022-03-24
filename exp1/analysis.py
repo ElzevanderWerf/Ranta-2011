@@ -1,5 +1,5 @@
-"""Extract some useful values from the results of experiment 1. There is one
-TSV file per response."""
+"""Calculate some values to be reported on the results of experiment 1. 
+There is one TSV file per response."""
 
 import pandas as pd
 import numpy as np
@@ -49,15 +49,9 @@ def changeInLength(s1, s2):
         
 ##############################################################################
 # 1. IMPORT RESULTS
-participants = [1,2,3,4,5,6,8,9,10,11] #TODO change
+participants = [1,2,3,4,5,6,8,9,10,11] # Tthe participant IDs
 
-allqs = range(1,26)
-GGCqs = range(1,11)
-RGqs = range(11,21)
-nonfillerqs = range(1,21)
-fillerqs = range(21,26)
-
-# List of column names to use when reading the TSVs (bc there are duplicates)
+# List of column names to use when reading the TSVs (bc there are duplicate questions)
 columns = ["Informed consent", "Gender", "Age", "Logic experience"]
 for i in range(25):
     columns += [str(i+1) + q  for q in ["Correct?", "Clear?", "Fluent?", "Post-Edit"]]
@@ -68,170 +62,181 @@ DFs = {}
 for p in participants:
     DFs[p] = pd.read_csv("results/TSVs/1." + str(p) + " results.tsv", 
                    sep="\t", header=0, names=columns)
+    
+translations = flatten([pd.read_csv("batches/batch" + str(p) + ".csv", 
+                                header=0).loc[:19, "Translation"] 
+                    for p in participants])    
+
+# Question ranges
+allqs = range(1,26)
+GGCqs = range(1,11)
+RGqs = range(11,21)
+nonfillerqs = range(1,21)
+fillerqs = range(21,26)
 
 
 ##############################################################################
 # 2. ANALYSES
-# GENDER
+lines = []
+#lines.append("".format())
+
+
+lines.append("GENDER")
 genders = [df.iloc[0]["Gender"] for df in DFs.values()]
-print("Gender\n\tMale:", genders.count("Male"), 
-      genders.count("Male") / len(genders))
-print("\tFemale:", genders.count("Female"), 
-      genders.count("Female") / len(genders))
-print("\tPrefer not to say:", genders.count("Prefer not to say"), 
-      genders.count("Prefer not to say") / len(genders))
+lines.append("\tMale: {} out of {} is {} percent".format(
+    genders.count("Male"), 
+    len(participants), 
+    genders.count("Male")/len(participants)))
+lines.append("\tFemale: {} out of {} is {} percent".format(
+    genders.count("Female"), 
+    len(participants), 
+    genders.count("Female")/len(participants)))
+lines.append("\tPrefer not to say: {} out of {} is {} percent".format(
+    genders.count("Prefer not to say"), 
+    len(participants), 
+    genders.count("Prefer not to say")/len(participants)))
 
-# AGE
+
+lines.append("\nAGE")
 ages = [df.iloc[0]["Age"] for df in DFs.values()]
-print("\n\nAge\n\tMean:", np.mean(ages))
-print("\tSD:", np.std(ages))
+lines.append("\tMean: {}".format(np.mean(ages)))
+lines.append("\tSD: {}".format(np.std(ages)))
 
-# LOGIC EXPERIENCE
+
+lines.append("\nLOGIC EXPERIENCE")
 experiences = [df.iloc[0]["Logic experience"] for df in DFs.values()]
-print("\n\nLogic experience\n\tMean:", np.mean(experiences))
-print("\tSD:", np.std(experiences))
+lines.append("\tMean: {}".format(np.mean(experiences)))
+lines.append("\tSD: {}".format(np.std(experiences)))
 
-# FILLER CORRECTNESS
+
+lines.append("\nFILLER CORRECTNESS")
 fillers = filterQs(participants, "Correct?", fillerqs)
-print("\n\nFiller correctness\n\tYes:", fillers.count("Yes"), 
-      fillers.count("Yes") / len(fillers))
-print("\tNo:", fillers.count("No"), 
-      fillers.count("No") / len(fillers))
+lines.append("\tCorrect: {} out of {} is {} percent".format(
+    fillers.count("Yes"), 
+    len(fillers), 
+    fillers.count("Yes")/len(fillers)))
+lines.append("\tIncorrect: {} out of {} is {} percent".format(
+    fillers.count("No"), 
+    len(fillers), 
+    fillers.count("No")/len(fillers)))
 
-#Find participants that spotted less than 3 fillers
-print("Participants who spotted less than 3 fillers:")        
-for p, df in DFs.items():
-    fillers = df.loc[:, tuple([str(k) + "Correct?" 
-                                          for k in fillerqs])].iloc[0].tolist()
-    if fillers.count("No") < 3:
-        print("\tParticipant", p)
-print("Participants who spotted less than 2 fillers:")        
+
+lines.append("\nPARTICIPANTS WHO SPOTTED LESS THAN 2 FILLERS")
+ignore =[]    
 for p, df in DFs.items():
     fillers = df.loc[:, tuple([str(k) + "Correct?" 
                                           for k in fillerqs])].iloc[0].tolist()
     if fillers.count("No") < 2:
-        print("\tParticipant", p)
+        ignore.append(p)
+        lines.append("\tParticipant {}".format(p))
+if len(ignore) == 0:
+    lines.append("\tNone of the participants")
 
-print("\n\n\nFor the normal (non-filler) items:")
-# CORRECTNESS
-correct = filterQs(participants, "Correct?", nonfillerqs)
-GGCcorrect = filterQs(participants, "Correct?", GGCqs)
-RGcorrect = filterQs(participants, "Correct?", RGqs)
 
-print("Correctness\n\tOverall\n\t\tYes:", 
-      correct.count("Yes"), correct.count("Yes") / len(correct))
-print("\t\tNo:", correct.count("No"), 
-      correct.count("No") / len(correct))
-print("\tFor GGC formulas:\n\t\tYes:", 
-      GGCcorrect.count("Yes"), GGCcorrect.count("Yes") / len(GGCcorrect))
-print("\t\tNo:", GGCcorrect.count("No"), 
-      GGCcorrect.count("No") / len(GGCcorrect))
-print("\tFor RG formulas:\n\t\tYes:", 
-      RGcorrect.count("Yes"), RGcorrect.count("Yes") / len(RGcorrect))
-print("\t\tNo:", RGcorrect.count("No"), 
-      RGcorrect.count("No") / len(RGcorrect))
 
-# CLARITY
-clear = filterQs(participants, "Clear?", nonfillerqs)
-GGCclear = filterQs(participants, "Clear?", GGCqs)
-RGclear = filterQs(participants, "Clear?", RGqs)
-
-print("\n\nClarity\n\tOverall\n\t\tMean:", np.mean(clear))
-print("\t\tSD:", np.std(clear))
-print("\tFor GGC formulas:\n\t\tMean:", np.mean(GGCclear))
-print("\t\tSD:", np.std(GGCclear))
-print("\tFor RG formulas:\n\t\tMean:", np.mean(RGclear))
-print("\t\tSD:", np.std(RGclear))
-
-# FLUENCY
-fluent = filterQs(participants, "Fluent?", nonfillerqs)
-GGCfluent = filterQs(participants, "Fluent?", GGCqs)
-RGfluent = filterQs(participants, "Fluent?", RGqs)
-
-print("\n\nFluency\n\tOverall\n\t\tMean:", np.mean(fluent))
-print("\t\tSD:", np.std(fluent))
-print("\tFor GGC formulas:\n\t\tMean:", np.mean(GGCfluent))
-print("\t\tSD:", np.std(GGCfluent))
-print("\tFor RG formulas:\n\t\tMean:", np.mean(RGfluent))
-print("\t\tSD:", np.std(RGfluent))
-
-# POST-EDITS
-edits = filterQs(participants, "Post-Edit", nonfillerqs)
-GGCedits = filterQs(participants, "Post-Edit", GGCqs)
-RGedits = filterQs(participants, "Post-Edit", RGqs)
-
-print("\n\nPost-edits\n\tOverall\n\t\tEdited:", 
-      countNonNullValues(edits), countNonNullValues(edits) / len(edits))
-print("\t\tNot edited:", 
-      countNullValues(edits), countNullValues(edits) / len(edits))
-print("\tFor GGC formulas:\n\t\tEdited:", 
-      countNonNullValues(GGCedits), countNonNullValues(GGCedits) / len(GGCedits))
-print("\t\tNot edited:", 
-      countNullValues(GGCedits), countNullValues(GGCedits) / len(GGCedits))
-print("\tFor RG formulas:\n\t\tEdited:", 
-      countNonNullValues(RGedits), countNonNullValues(RGedits) / len(RGedits))
-print("\t\tNot edited:", 
-      countNullValues(RGedits), countNullValues(RGedits) / len(RGedits))
-
-# CORRELATION CLARITY AND FLUENCY
-print("\n\nCorrelation between clarity and fluency:", pearsonr(clear, fluent))
-
-# CORRELATION FORMULA LENGTH AND CLARITY/FLUENCY
-formulas = flatten([pd.read_csv("batches/batch" + str(p) + ".csv", 
-                                header=0).loc[:19, "Formula"] 
-                    for p in participants])
-formula_lengths = [len(f) for f in formulas]
-print("Correlation between formula length and clarity:", 
-      pearsonr(formula_lengths, clear))
-print("Correlation between formula length and fluency:", 
-      pearsonr(formula_lengths, fluent))
-print("Degrees of freedom:", len(formulas) - 2) 
-
-# CHANGE IN LENGTH BETWEEN OLD AND NEW TRANSLATIONS
-translations = flatten([pd.read_csv("batches/batch" + str(p) + ".csv", 
-                                header=0).loc[:19, "Translation"] 
-                    for p in participants])
-
-edited_translations = [translations[i] for i in range(len(translations))
-                       if not pd.isna(edits[i])] #if the translation is edited
-nonNullEdits = [e for e in edits 
-         if not pd.isna(e)] #if the translation is edited
-
-length_change = [changeInLength(t,e) 
-                 for t, e in zip(edited_translations, nonNullEdits)]
-print("\n\nAverage change in length between original translations and edits:\n\tMean:", 
-      np.mean(length_change), "\n\tSD:", np.std(length_change))
-
-# CLARITY AND FLUENCY OF THE TRANSLATIONS WITH AND WITHOUT VARIABLES
+lines.append("\n\nNOW FOR THE NORMAL (NON-FILLER ITEMS):")
 withVarsIndices = [t for t in range(len(translations)) if 
             any(s in translations[t] for s in [' ' + c + ' ' for c in "xyzwv"])]
 withoutVarsIndices = [t for t in range(len(translations)) if not
             any(s in translations[t] for s in [' ' + c + ' ' for c in "xyzwv"])] 
-withVarsClear = [clear[i] for i in withVarsIndices]
-withoutVarsClear = [clear[i] for i in withoutVarsIndices]
-withVarsFluent = [fluent[i] for i in withVarsIndices]
-withoutVarsFluent = [fluent[i] for i in withoutVarsIndices]
+
+correct = filterQs(participants, "Correct?", nonfillerqs)
+GGCcorrect = filterQs(participants, "Correct?", GGCqs)
+RGcorrect = filterQs(participants, "Correct?", RGqs)
 withVarsCorrect = [correct[i] for i in withVarsIndices]
 withoutVarsCorrect = [correct[i] for i in withoutVarsIndices]
-print("\n\nThere were", len(withVarsIndices), "translations with variables and",
-      len(withoutVarsIndices), "translations without variables.")
-print("Average clarity of formulas with variables:\n\tMean:", 
-      np.mean(withVarsClear), "\n\tSD:", np.std(withVarsClear))
-print("Average clarity of formulas without variables:\n\tMean:", 
-      np.mean(withoutVarsClear), "\n\tSD:", np.std(withoutVarsClear))
-print("Average fluency of formulas with variables:\n\tMean:", 
-      np.mean(withVarsFluent), "\n\tSD:", np.std(withVarsFluent))
-print("Average fluency of formulas without variables:\n\tMean:", 
-      np.mean(withoutVarsFluent), "\n\tSD:", np.std(withoutVarsFluent))
 
-print("Correctness\n\tWith variables\n\t\tYes:", 
-      withVarsCorrect.count("Yes"), withVarsCorrect.count("Yes") / len(withVarsCorrect))
-print("\t\tNo:", withVarsCorrect.count("No"), 
-      withVarsCorrect.count("No") / len(withVarsCorrect))
-print("\tWithout variables:\n\t\tYes:", 
-      withoutVarsCorrect.count("Yes"), withoutVarsCorrect.count("Yes") / len(withoutVarsCorrect))
-print("\t\tNo:", GGCcorrect.count("No"), 
-      withoutVarsCorrect.count("No") / len(withoutVarsCorrect))
+clear = filterQs(participants, "Clear?", nonfillerqs)
+GGCclear = filterQs(participants, "Clear?", GGCqs)
+RGclear = filterQs(participants, "Clear?", RGqs)
+withVarsClear = [clear[i] for i in withVarsIndices]
+withoutVarsClear = [clear[i] for i in withoutVarsIndices]
+
+fluent = filterQs(participants, "Fluent?", nonfillerqs)
+GGCfluent = filterQs(participants, "Fluent?", GGCqs)
+RGfluent = filterQs(participants, "Fluent?", RGqs)
+withVarsFluent = [fluent[i] for i in withVarsIndices]
+withoutVarsFluent = [fluent[i] for i in withoutVarsIndices]
+
+edits = filterQs(participants, "Post-Edit", nonfillerqs)
+GGCedits = filterQs(participants, "Post-Edit", GGCqs)
+RGedits = filterQs(participants, "Post-Edit", RGqs)
+
+subsets = {"all translations":[correct, clear, fluent, edits],
+     "GGC translations":[GGCcorrect, GGCclear, GGCfluent, GGCedits],
+     "RG translations":[RGcorrect, RGclear, RGfluent, RGedits],
+     "translations with variables":[withVarsCorrect, withVarsClear, withVarsFluent],
+     "translations without variables":[withoutVarsCorrect, withoutVarsClear, withoutVarsFluent]}
+
+
+lines.append("\nCORRECTNESS")
+for s, l in subsets.items():
+    lines.append("\tFor {}".format(s))
+    lines.append("\t\tYes: {} out of {} is {} percent".format( 
+      l[0].count("Yes"), len(l[0]), l[0].count("Yes") / len(l[0])))
+    lines.append("\t\tNo: {} out of {} is {} percent".format( 
+          l[0].count("No"), len(l[0]), l[0].count("No") / len(l[0])))
+
+
+lines.append("\nCLARITY")
+for s, l in subsets.items():
+    lines.append("\tFor {}".format(s))
+    lines.append("\t\tMean: {}".format(np.mean(l[1])))
+    lines.append("\t\tSD: {}".format(np.std(l[1])))
+
+
+lines.append("\nFLUENCY")
+for s, l in subsets.items():
+    lines.append("\tFor {}".format(s))
+    lines.append("\t\tMean: {}".format(np.mean(l[2])))
+    lines.append("\t\tSD: {}".format(np.std(l[2])))
+
+
+lines.append("\nPOST-EDITS")
+for s in ["all translations", "GGC translations", "RG translations"]:
+    lines.append("\tFor {}".format(s))
+    lines.append("\t\tEdited: {} out of {} is {} percent".format( 
+      countNonNullValues(subsets[s][3]), len(subsets[s][3]), countNonNullValues(subsets[s][3]) / len(subsets[s][3])))
+    lines.append("\t\tNot edited: {} out of {} is {} percent".format( 
+          countNullValues(subsets[s][3]), len(subsets[s][3]), countNullValues(subsets[s][3]) / len(subsets[s][3])))
+
+
+lines.append("\nCORRELATION BETWEEN CLARITY AND FLUENCY")
+lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
+    pearsonr(clear, fluent)[0],
+    pearsonr(clear, fluent)[1],
+    len(clear) - 2))
+
+
+formulas = flatten([pd.read_csv("batches/batch" + str(p) + ".csv", 
+                                header=0).loc[:19, "Formula"] 
+                    for p in participants])
+formula_lengths = [len(f) for f in formulas]
+lines.append("\nCORRELATION BETWEEN FORMULA LENGTH AND CLARITY")
+lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
+    pearsonr(formula_lengths, clear)[0],
+    pearsonr(formula_lengths, clear)[1],
+    len(formulas) - 2))
+lines.append("CORRELATION BETWEEN FORMULA LENGTH AND FLUENCY")
+lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
+    pearsonr(formula_lengths, fluent)[0],
+    pearsonr(formula_lengths, fluent)[1],
+    len(formulas) - 2))
+
+
+lines.append("\nCHANGE IN LENGTH BETWEEN OLD AND NEW TRANSLATIONS")
+edited_translations = [translations[i] for i in range(len(translations))
+                       if not pd.isna(edits[i])] #if the translation is edited
+nonNullEdits = [e for e in edits 
+         if not pd.isna(e)] #if the translation is edited
+length_change = [changeInLength(t,e) 
+                 for t, e in zip(edited_translations, nonNullEdits)]
+lines.append("\tMean: {}".format(np.mean(length_change)))
+lines.append("\tSD: {}".format(np.std(length_change)))
+
+with open("analysis.txt", "w") as f:
+    f.writelines([l + "\n" for l in lines])
+f.close()
 
 
 ##############################################################################

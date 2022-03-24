@@ -1,0 +1,96 @@
+GENDER
+	Male: 4 out of 10 is 0.4 percent
+	Female: 6 out of 10 is 0.6 percent
+	Prefer not to say: 0 out of 10 is 0.0 percent
+
+AGE
+	Mean: 24.2
+	SD: 1.2489995996796797
+
+LOGIC EXPERIENCE
+	Mean: 3.1
+	SD: 0.7000000000000001
+
+FILLER CORRECTNESS
+	Correct: 11 out of 50 is 0.22 percent
+	Incorrect: 39 out of 50 is 0.78 percent
+
+PARTICIPANTS WHO SPOTTED LESS THAN 2 FILLERS
+	None of the participants
+
+
+NOW FOR THE NORMAL (NON-FILLER ITEMS):
+
+CORRECTNESS
+	For all translations
+		Yes: 181 out of 200 is 0.905 percent
+		No: 19 out of 200 is 0.095 percent
+	For GGC translations
+		Yes: 93 out of 100 is 0.93 percent
+		No: 7 out of 100 is 0.07 percent
+	For RG translations
+		Yes: 88 out of 100 is 0.88 percent
+		No: 12 out of 100 is 0.12 percent
+	For translations with variables
+		Yes: 136 out of 152 is 0.8947368421052632 percent
+		No: 16 out of 152 is 0.10526315789473684 percent
+	For translations without variables
+		Yes: 45 out of 48 is 0.9375 percent
+		No: 3 out of 48 is 0.0625 percent
+
+CLARITY
+	For all translations
+		Mean: 3.985
+		SD: 1.0976224305288225
+	For GGC translations
+		Mean: 4.1
+		SD: 1.0246950765959597
+	For RG translations
+		Mean: 3.87
+		SD: 1.1545994976614185
+	For translations with variables
+		Mean: 3.8947368421052633
+		SD: 1.0708942078618844
+	For translations without variables
+		Mean: 4.270833333333333
+		SD: 1.1317314046284226
+
+FLUENCY
+	For all translations
+		Mean: 3.26
+		SD: 1.3199999999999998
+	For GGC translations
+		Mean: 3.37
+		SD: 1.3390668392578466
+	For RG translations
+		Mean: 3.15
+		SD: 1.291317157014496
+	For translations with variables
+		Mean: 3.1052631578947367
+		SD: 1.298571556997403
+	For translations without variables
+		Mean: 3.75
+		SD: 1.2665570127975554
+
+POST-EDITS
+	For all translations
+		Edited: 101 out of 200 is 0.505 percent
+		Not edited: 99 out of 200 is 0.495 percent
+	For GGC translations
+		Edited: 53 out of 100 is 0.53 percent
+		Not edited: 47 out of 100 is 0.47 percent
+	For RG translations
+		Edited: 48 out of 100 is 0.48 percent
+		Not edited: 52 out of 100 is 0.52 percent
+
+CORRELATION BETWEEN CLARITY AND FLUENCY
+Correlation: 0.5997122120039352		P-value: 6.402322029030582e-21		DF: 198
+
+CORRELATION BETWEEN FORMULA LENGTH AND CLARITY
+Correlation: -0.023317926486773752		P-value: 0.7431060894785326		DF: 198
+CORRELATION BETWEEN FORMULA LENGTH AND FLUENCY
+Correlation: -0.02848745457815017		P-value: 0.6888401965005151		DF: 198
+
+CHANGE IN LENGTH BETWEEN OLD AND NEW TRANSLATIONS
+	Mean: 81.26314073146102
+	SD: 26.306882786165787
