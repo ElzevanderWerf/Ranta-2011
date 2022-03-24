@@ -10,7 +10,7 @@ cabal-version: >=1.10
 executable trans
   hs-source-dirs:
     .
-  main-is: TransTest.hs
+  main-is: Trans.hs
   other-modules:
     TransProp, Prop
   build-depends:
