@@ -15,9 +15,9 @@ class RandomGenerator:
     def __init__(self, lexicon, maxdepth):
         self.lex = lexicon
         self.variables = ["x", "y", "z", "w", "v"]
-        self.new_var_i = 0      # integer for a new variable
-        self.new_cons_i = 0     # index for a new constant
-        self.maxdepth = maxdepth       # maximum depth of a generated proposition
+        self.new_var_i = 0          # integer for a new variable
+        self.new_cons_i = 0         # index for a new constant
+        self.maxdepth = maxdepth    # maximum depth of a generated proposition
 
     def makeProp(self, n, bindsVars=set()):
         """
@@ -99,7 +99,8 @@ class RandomGenerator:
         Generate a variable (new or already used) in the lexicon. If the
         variable comes directly after a quantifier (afterQ == True), then
         pick a new or already used variable. Otherwise, pick from the list 
-        bound (integers of the variables that can be bound in the proposition).
+        called bound (integers of the variables that can be bound in the 
+                      proposition).
         """
         if afterQ:
             i = r.randint(0, self.new_var_i)
@@ -133,7 +134,8 @@ ggcLexicon = Lexicon(["Small", "Medium", "Large", "Even"],      #Pred1s
 # print(random_formula)
 
 
-# Randomly generate 1000 formulas with a certain maximum depth
+# Randomly generate 1000 formulas with a certain maximum depth, that are
+# not too long and not too short
 depth = 3       # maximum depth
 formulas = []
 rg = RandomGenerator(ggcLexicon, depth)
@@ -149,11 +151,6 @@ while len(formulas) < 1000:
 with(open(r'out/test3GGC.tmp', 'w')) as f:
     f.write('\n'.join(formulas))
 f.close()
-
-# DISCUSSION generation of new variables and constants is now pseudorandom (there is a
-#   random choice between the list of currently chosen variables and 
-#   a new one in the list of integers)
-
 
         
         
