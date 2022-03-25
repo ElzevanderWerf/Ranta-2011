@@ -212,29 +212,41 @@ lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
     len(clear) - 2))
 
 
-formula_lengths = [len(f) for f in formulas]
-lines.append("\nCORRELATION BETWEEN FORMULA LENGTH AND CLARITY")
+from collections import Counter
+def complexity(s):
+    connectives = [chr(n) for n in [172, 8743, 8744, 8594, 8704, 8707]]
+    c = Counter(s)
+    return sum([c[conn] for conn in connectives])
+formula_complexity = [complexity(f) for f in formulas]
+lines.append("\nCORRELATION BETWEEN FORMULA COMPLEXITY AND CLARITY")
 lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
-    pearsonr(formula_lengths, clear)[0],
-    pearsonr(formula_lengths, clear)[1],
-    len(formulas) - 2))
-lines.append("CORRELATION BETWEEN FORMULA LENGTH AND FLUENCY")
+    pearsonr(formula_complexity, clear)[0],
+    pearsonr(formula_complexity, clear)[1],
+    len(formula_complexity) - 2))
+lines.append("CORRELATION BETWEEN FORMULA COMPLEXITY AND FLUENCY")
 lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
-    pearsonr(formula_lengths, fluent)[0],
-    pearsonr(formula_lengths, fluent)[1],
-    len(formulas) - 2))
+    pearsonr(formula_complexity, fluent)[0],
+    pearsonr(formula_complexity, fluent)[1],
+    len(formula_complexity) - 2))
 
-translation_lengths = [len(t) for t in translations]
-lines.append("\nCORRELATION BETWEEN TRANSLATION LENGTH AND CLARITY")
+def wordCount(s):
+    l = s.split()
+    for punc in [",", "•", ":"]:
+        while punc in l:
+            l.remove(punc)
+    return len(l)
+translation_wordcounts = [wordCount(t) for t in translations]
+lines.append("\nCORRELATION BETWEEN TRANSLATION WORD COUNT AND CLARITY")
 lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
-    pearsonr(translation_lengths, clear)[0],
-    pearsonr(translation_lengths, clear)[1],
-    len(translations) - 2))
-lines.append("CORRELATION BETWEEN TRANSLATION LENGTH AND FLUENCY")
+    pearsonr(translation_wordcounts, clear)[0],
+    pearsonr(translation_wordcounts, clear)[1],
+    len(translation_wordcounts) - 2))
+lines.append("CORRELATION BETWEEN TRANSLATION WORD COUNT AND FLUENCY")
 lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
-    pearsonr(translation_lengths, fluent)[0],
-    pearsonr(translation_lengths, fluent)[1],
-    len(translations) - 2))
+    pearsonr(translation_wordcounts, fluent)[0],
+    pearsonr(translation_wordcounts, fluent)[1],
+    len(translation_wordcounts) - 2))
+
 
 
 lines.append("\nCHANGE IN LENGTH BETWEEN OLD AND NEW TRANSLATIONS")
