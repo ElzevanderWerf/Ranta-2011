@@ -62,7 +62,11 @@ DFs = {}
 for p in participants:
     DFs[p] = pd.read_csv("results/TSVs/1." + str(p) + " results.tsv", 
                    sep="\t", header=0, names=columns)
-    
+
+# Flattened lists of non-filler formulas and translations
+formulas = flatten([pd.read_csv("batches/batch" + str(p) + ".csv", 
+                                header=0).loc[:19, "Formula"] 
+                    for p in participants])    
 translations = flatten([pd.read_csv("batches/batch" + str(p) + ".csv", 
                                 header=0).loc[:19, "Translation"] 
                     for p in participants])    
@@ -208,9 +212,6 @@ lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
     len(clear) - 2))
 
 
-formulas = flatten([pd.read_csv("batches/batch" + str(p) + ".csv", 
-                                header=0).loc[:19, "Formula"] 
-                    for p in participants])
 formula_lengths = [len(f) for f in formulas]
 lines.append("\nCORRELATION BETWEEN FORMULA LENGTH AND CLARITY")
 lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
@@ -222,6 +223,18 @@ lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
     pearsonr(formula_lengths, fluent)[0],
     pearsonr(formula_lengths, fluent)[1],
     len(formulas) - 2))
+
+translation_lengths = [len(t) for t in translations]
+lines.append("\nCORRELATION BETWEEN TRANSLATION LENGTH AND CLARITY")
+lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
+    pearsonr(translation_lengths, clear)[0],
+    pearsonr(translation_lengths, clear)[1],
+    len(translations) - 2))
+lines.append("CORRELATION BETWEEN TRANSLATION LENGTH AND FLUENCY")
+lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
+    pearsonr(translation_lengths, fluent)[0],
+    pearsonr(translation_lengths, fluent)[1],
+    len(translations) - 2))
 
 
 lines.append("\nCHANGE IN LENGTH BETWEEN OLD AND NEW TRANSLATIONS")
