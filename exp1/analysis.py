@@ -42,10 +42,16 @@ def filterQs(participants, q, rangeij):
     return flatten([DFs[p].loc[:, tuple([str(k) + q 
                                          for k in rangeij])].iloc[0].tolist() 
                         for p in participants])
+def wordCount(s):
+    l = s.split()
+    for punc in [",", "•", ":"]:
+        while punc in l:
+            l.remove(punc)
+    return len(l)
 
 def changeInLength(s1, s2):
     """Return the percentage of the length of s2 given that s1 = 100%."""
-    return 100 * len(s2) / len(s1) 
+    return 100 * wordCount(s2) / wordCount(s1) 
         
 ##############################################################################
 # 1. IMPORT RESULTS
@@ -229,12 +235,6 @@ lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
     pearsonr(formula_complexity, fluent)[1],
     len(formula_complexity) - 2))
 
-def wordCount(s):
-    l = s.split()
-    for punc in [",", "•", ":"]:
-        while punc in l:
-            l.remove(punc)
-    return len(l)
 translation_wordcounts = [wordCount(t) for t in translations]
 lines.append("\nCORRELATION BETWEEN TRANSLATION WORD COUNT AND CLARITY")
 lines.append("Correlation: {}\t\tP-value: {}\t\tDF: {}".format(
