@@ -128,29 +128,29 @@ ggcLexicon = Lexicon(["Small", "Medium", "Large", "Even"],      #Pred1s
                         ["Dodec", "Student", "Cube", "Prime", "Person", 
                          "Tet", "Pet"])                 #Kinds
 
-# Test to generate 1 proposition        
-rg = RandomGenerator(ggcLexicon, 3)  
-random_formula = rg.makeProp(3)
-print(random_formula)
+# # Test to generate 1 proposition        
+# rg = RandomGenerator(ggcLexicon, 3)  
+# random_formula = rg.makeProp(3)
+# print(random_formula)
 
 
-# # Randomly generate 1000 formulas with a certain maximum depth, that are
-# # not too long and not too short
-# depth = 3       # maximum depth
-# formulas = []
-# rg = RandomGenerator(ggcLexicon, depth)
+# Randomly generate 1000 formulas with a certain maximum depth, that are
+# not too long and not too short
+depth = 3       # maximum depth
+formulas = []
+rg = RandomGenerator(ggcLexicon, depth)
 
-# while len(formulas) < 1000:
-#     prop = rg.makeProp(depth, set())
-#     if len(prop) >= 20 and len(prop) <= 100:
-#         formulas.append(prop)
-#     rg.new_var_i = 0    #set again to 0 for generating a new prop
-#     rg.new_cons_i = 0   #set again to 0 for generating a new prop
+while len(formulas) < 1000:
+    prop = rg.makeProp(depth, set())
+    if len(prop) >= 20 and len(prop) <= 100:
+        formulas.append(prop)
+    rg.new_var_i = 0    #set again to 0 for generating a new prop
+    rg.new_cons_i = 0   #set again to 0 for generating a new prop
 
-# # Write formulas to file with newlines
-# with(open(r'out/test3GGC.tmp', 'w')) as f:
-#     f.write('\n'.join(formulas))
-# f.close()
+# Write formulas to file with newlines
+with(open(r'out/test3GGC.tmp', 'w')) as f:
+    f.write('\n'.join(formulas))
+f.close()
 
         
         
